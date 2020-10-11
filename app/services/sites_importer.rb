@@ -3,22 +3,63 @@ class SitesImporter
   # "Code_postal", 'Ouvert_au_public', "Conditions_usage", "Volume_valorise", "Nombre_Contributeurs",
   # "Nombre_repas_annuel", "Exploitant_structure", "Exploitant_contact", "Contact_responsable_site",
   # "Acteur_accompagnateur", "Fonctionnement_du_site", "Date_mise_en_route_du_site", "x","y"]
-  def import
-    csv_handler = CsvHandler.new
-    csv_data = csv_handler.read('data/sites-eisenia-geocompost.csv')
-    csv_data.each do |csv_line|
-      site_data = map_site_data(csv_line)
-      eisenia = Organisation.first
-      site = eisenia.sites.build(site_data)
-      site.save
-    end
+  ORGANISATIONS = [:eisenia, :grand_lyon_metropole]
+
+  def import(slug)
+    return 'organisation unknown' unless ORGANISATIONS.include? slug.to_sym
+    import_from(slug)
   rescue => e
     binding.pry
   end
 
+  def import_from(slug)
+    csv_data = send("data_#{slug}".to_sym)
+    csv_data.each do |csv_line|
+      site_data = map_site_data(slug, csv_line)
+      organisation = Organisation.find_by_slug(slug)
+      site = organisation.sites.build(site_data)
+      sleep 1 unless site.geocoded? # respect Nominatim quota https://github.com/alexreisner/geocoder/blob/master/README_API_GUIDE.md
+      site.save
+      rescue => e
+        binding.pry
+    end
+  end
+
+  def data_grand_lyon_metropole
+    csv_handler.read('data/sites-grand-lyon.csv')
+  end
+
+  def data_eisenia
+    csv_handler.read('data/sites-eisenia-geocompost.csv')
+  end
+
   private
 
-  def map_site_data(csv_line)
+  def csv_handler
+    @csv_handler ||= CsvHandler.new
+  end
+
+  def map_site_data(name, csv_line)
+    name == :grand_lyon_metropole ? map_grand_lyon_metropole_site_data(csv_line) : map_geocompost_site_data(csv_line)
+  end
+
+  def map_grand_lyon_metropole_site_data(csv_line)
+    {
+      name: csv_line["nom"],
+      city: csv_line["commune"],
+      address: csv_line["adresse"],
+      location_information: csv_line["infoloc"],
+      zipcode: csv_line["codpostal"],
+      site_type: csv_line["typesite"],
+      installation_date: csv_line["dateinstal"].to_date,
+      public: (csv_line["typesite"] == 'Quartier'),
+      website_url: csv_line["url"],
+      contact_email: csv_line["mail"],
+      data: csv_line.to_json
+    }
+  end
+
+  def map_geocompost_site_data(csv_line)
     {
       name: csv_line["Nom Du Site"],
       city: csv_line["Ville"],

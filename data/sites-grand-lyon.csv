@@ -1,0 +1,296 @@
+gml_id,nom,typesite,adresse,infoloc,mail,url,commune,insee,codpostal,dateinstal,gid
+gip_proprete.gipcomposteur_latest.1,Les Sources,Pied d'immeuble,14 Avenue des Sources,,,,Écully,69081,69130,2012-10-30,1
+gip_proprete.gipcomposteur_latest.2,Noveo Park,Pied d'immeuble,91 rue Francis de Pressensé,Batiment D,,,Vénissieux,69259,69200,2018-05-09,2
+gip_proprete.gipcomposteur_latest.3,De Lattre Tassigny,Pied d'immeuble,26 Avenue de Lattre de Tassigny,,,,Bron,69029,69500,2017-04-06,3
+gip_proprete.gipcomposteur_latest.4,Résidence le Grillon,Pied d'immeuble,2 rue de Chantegrillet,,,,Francheville,69089,69340,2012-03-17,4
+gip_proprete.gipcomposteur_latest.5,Le Petit ChAvenueril,Pied d'immeuble,80 A Chemin de ChAvenueril,,,,Sainte-Foy-lès-Lyon,69202,69110,2013-06-08,5
+gip_proprete.gipcomposteur_latest.6,Jardin partagé Monplaisir - 1 rue Saint Matthieu,Quartier,1 rue Saint Matthieu,,jardinpartagemonplaisir@gmail.com,,Lyon 8e Arrondissement,69388,69008,2018-04-19,6
+gip_proprete.gipcomposteur_latest.7,Les Bruyères,Pied d'immeuble,8 chemin des Bruyères,du 8 au 14,,,Écully,69081,69130,2014-11-29,7
+gip_proprete.gipcomposteur_latest.8,Neuville en Sel,Quartier,12 rue Pierre Dugelay,,neuville.en.sel@gmail.com,,Neuville-sur-Saône,69143,69250,2019-03-07,8
+gip_proprete.gipcomposteur_latest.9,Square République 2,Pied d'immeuble,101 cours Emile Zola,,,,Villeurbanne,69266,69100,2019-04-25,9
+gip_proprete.gipcomposteur_latest.10,Square Jacques Prévert,Quartier,59 cours Tolstoï,dans le square Jacques PREVERT,prevert.compost@gmail.com,,Villeurbanne,69266,69100,2019-05-20,10
+gip_proprete.gipcomposteur_latest.11,Roosevelt jardins de fort,Quartier,1 avenue de la République,dans le square de la République,conseilsdequartier@ville-bron.fr,,Bron,69029,69500,2019-10-02,11
+gip_proprete.gipcomposteur_latest.12,Chantoiseau B,Pied d'immeuble,9 H montée des soldats,,,,Caluire-et-Cuire,69034,69300,2019-10-18,12
+gip_proprete.gipcomposteur_latest.13,Le Canter,Pied d'immeuble,18 rue de la Doua,,,,Villeurbanne,69266,69100,2019-10-22,13
+gip_proprete.gipcomposteur_latest.14,Les perspectives,Pied d'immeuble,21 rue Clément Michut,du 19 au 23,,,Villeurbanne,69266,69100,2019-10-30,14
+gip_proprete.gipcomposteur_latest.15,Jardin des Emmeraudes,Quartier,9 rue des Emeraudes,,jardin.emeraudes@outlook.com,,Lyon 6e Arrondissement,69386,69006,2015-11-07,15
+gip_proprete.gipcomposteur_latest.16,Envie partagée,Quartier,68 quai Rambaud,"dans le jardin partagé ""envie partagée""",enviepartagee@gmail.com,,Lyon 2e Arrondissement,69382,69002,2017-11-18,16
+gip_proprete.gipcomposteur_latest.17,Composteur de la Madeleine,Quartier,2 rue de la madeleine,acroisement rue de la madeleine et grande rue de la guillotière,composteurs.emir@mailo.com,,Lyon 7e Arrondissement,69387,69007,2018-01-30,17
+gip_proprete.gipcomposteur_latest.18,Le nouveau trion,Pied d'immeuble,67 rue de Trion,du 63 au 69,,,Lyon 5e Arrondissement,69385,69005,2018-09-14,18
+gip_proprete.gipcomposteur_latest.19,Gingko B,Pied d'immeuble,33 rue du 24 mars 1852,,,,Lyon 9e Arrondissement,69389,69009,2019-10-31,19
+gip_proprete.gipcomposteur_latest.20,Composteur Edgar Quinet,Quartier,44 rue Vauban,Angle des rues Vauban et Vendôme (sur la contre-allée),composteur-quinet@laposte.net,,Lyon 6e Arrondissement,69386,69006,2020-03-07,20
+gip_proprete.gipcomposteur_latest.21,TUBA Composte,Quartier,8 Rue Juliette Récamier,,,,Lyon 6e Arrondissement,69386,69006,2020-06-04,21
+gip_proprete.gipcomposteur_latest.22,Village vertical Villeurbanne,Pied d'immeuble,3 rue Terracher,,,,Villeurbanne,69266,69100,2013-11-30,22
+gip_proprete.gipcomposteur_latest.23,Résidence Leclerc,Pied d'immeuble,21 Avenue Leclerc,du 19 au 21 ter,,,Tassin-la-Demi-Lune,69244,69160,2020-02-05,23
+gip_proprete.gipcomposteur_latest.24,MJC vieux Lyon,Quartier,Place Valencio,,,,Lyon 5e Arrondissement,69385,69005,2012-11-24,24
+gip_proprete.gipcomposteur_latest.25,Les Pierres Plantées,Pied d'immeuble,9 et 11 rue des Pierres Plantées,,,,Lyon 1er Arrondissement,69381,69001,2013-02-23,25
+gip_proprete.gipcomposteur_latest.26,MJC Confluence Perrache,Quartier,"Terrasse Saône du Centre d'Echanges de Lyon Perrache, Cours de Verdun",,compost@mjc-confluence.fr,,Lyon 2e Arrondissement,69382,69002,2013-12-04,26
+gip_proprete.gipcomposteur_latest.27,Mazagrand,Quartier,Place Mazagran,,,,Lyon 7e Arrondissement,69387,69007,2015-03-08,27
+gip_proprete.gipcomposteur_latest.28,Parc Bazin,Quartier,Parc bazin,côté rue des accacias,montchat.vert@gmail.com,,Lyon 3e Arrondissement,69383,69003,2017-09-01,28
+gip_proprete.gipcomposteur_latest.29,Les Florianes,Pied d'immeuble,25 rue du Colonel Girard,,,,Lyon 7e Arrondissement,69387,69007,2017-10-12,29
+gip_proprete.gipcomposteur_latest.30,Jardins suspendus,Quartier,"Centre d'échange de perrache, terrasse Saône",dans le jardin suspendus,compost@mjc-confluence.fr,,Lyon 2e Arrondissement,69382,69002,2017-11-18,30
+gip_proprete.gipcomposteur_latest.31,Parc Roquette,Quartier,Parc Roquette,,idees.9@lilo.org,,Lyon 9e Arrondissement,69389,69009,2017-11-21,31
+gip_proprete.gipcomposteur_latest.32,Square pelloux,Quartier,square Pierre Pelloux,,pelloux@voltaire.org,,Lyon 3e Arrondissement,69383,69003,2018-12-15,32
+gip_proprete.gipcomposteur_latest.33,Trarieux (square Noël Aymard),Quartier,square Noël Aymard,,compost.trarieux@gmail.com,,Lyon 3e Arrondissement,69383,69003,2019-04-09,33
+gip_proprete.gipcomposteur_latest.34,Jardin des 44 enfants d'Izieu,Quartier,Jardin des 44 enfants d'Izieu,,compostjardinIzieu@gmail.com,,Lyon 7e Arrondissement,69387,69007,2019-05-22,34
+gip_proprete.gipcomposteur_latest.35,Le compost Masaryk,Quartier,16 Quai Hippolyte Jaÿr,,Lecompostmazaryk@gmail.com,,Lyon 9e Arrondissement,69389,69009,2019-10-09,35
+gip_proprete.gipcomposteur_latest.36,Lugdunum,Pied d'immeuble,157 Montée de Choulans,et 159,,,Lyon 5e Arrondissement,69385,69005,2019-10-14,36
+gip_proprete.gipcomposteur_latest.37,Le Prieuré,Pied d'immeuble,63 bis rue Hénon,,,,Lyon 4e Arrondissement,69384,69004,2019-12-18,37
+gip_proprete.gipcomposteur_latest.38,Compost Bahadourian (de la Guill),Quartier,Place Bahadourian,,composterre69@gmail.com,,Lyon 3e Arrondissement,69383,69003,2020-06-02,38
+gip_proprete.gipcomposteur_latest.39,Le saxe-gambetta,Pied d'immeuble,5 rue Alphonse Daudetet 324 rue Duguesclin,et 7 rue Alphonse Daudetet et 324 rue Duguesclin,,,Lyon 7e Arrondissement,69387,69007,2020-06-15,39
+gip_proprete.gipcomposteur_latest.40,Composteur de la Martinière,Quartier,Place Rambaud,,martine.composte@lilo.org,,Lyon 1er Arrondissement,69381,69001,2019-12-15,40
+gip_proprete.gipcomposteur_latest.41,Trêves Pâques,Quartier,Place Général de Gaulle,,,,Collonges-au-Mont-d'Or,69063,69660,2017-11-17,41
+gip_proprete.gipcomposteur_latest.42,Les jardins d'Aurélie,Pied d'immeuble,189 rue pressensé,,,,Villeurbanne,69266,69100,2018-04-23,42
+gip_proprete.gipcomposteur_latest.43,Graines de Fleurentin,Quartier,47 Bis grande rue de Fleurieur,Jardin de la cure - rue du stade,,,Fleurieu-sur-Saône,69085,69250,2018-07-02,43
+gip_proprete.gipcomposteur_latest.44,Résidence les dames,Pied d'immeuble,15 Avenue du 11 novembre 1918,du 07 au 25,,,Sainte-Foy-lès-Lyon,69202,69110,2019-05-02,44
+gip_proprete.gipcomposteur_latest.45,Résidence Mansart,Pied d'immeuble,12 rue François Mansart,du 12 au 17,,,Saint-Priest,69290,69800,2019-09-24,45
+gip_proprete.gipcomposteur_latest.46,Les Charpennes,Pied d'immeuble,109 rue de Pressensé,et 111,,,Villeurbanne,69266,69100,2019-11-07,46
+gip_proprete.gipcomposteur_latest.47,La Ferme Croix-Rousse,Quartier,51 rue Philippe de Lassalle,"dans la ferme de la croix rousse, accès par le 86 rue chazière",compost.fermexr@gmail.com,,Lyon 4e Arrondissement,69384,69004,2019-04-03,47
+gip_proprete.gipcomposteur_latest.48,Square de la Rotonde,Quartier,Place Anatole France,dans le passage vers la rue Narcisse Bertholey,composteurlarotonde@gmail.com,,Oullins,69149,69600,2019-04-11,48
+gip_proprete.gipcomposteur_latest.49,Composteur du val de Saône,Quartier,allée du stade,,compost.sathonaycamp@gmail.com,,Sathonay-Camp,69292,69580,2019-12-10,49
+gip_proprete.gipcomposteur_latest.50,Valombre,Pied d'immeuble,allée de Valombre,,,,Caluire-et-Cuire,69034,69300,2019-12-12,50
+gip_proprete.gipcomposteur_latest.51,L'impasse Chevreuil,Quartier,impasse Chevreul,,compostchevreul@gmail.com,,Villeurbanne,69266,69100,2020-04-03,51
+gip_proprete.gipcomposteur_latest.52,Jules Guesde,Quartier,Place Jules Guesde,dans le square,compost.julesguesde@gmail.com,https://compostjulesguesde.weebly.com,Lyon 7e Arrondissement,69387,69007,2017-04-08,52
+gip_proprete.gipcomposteur_latest.53,Sainte Blandine,Quartier,place de l'hippodrome,"derrière l'Eglise, rue smith",compost@mjc-confluence.fr,,Lyon 2e Arrondissement,69382,69002,2018-01-30,53
+gip_proprete.gipcomposteur_latest.54,Dauphiné,Pied d'immeuble,rue du Dauphiné,,,,Lyon 3e Arrondissement,69383,69003,2018-05-17,54
+gip_proprete.gipcomposteur_latest.55,Place de l'Europe,Quartier,Place de l'Europe,,composteurdeleurope@gmail.com,,Lyon 6e Arrondissement,69386,69006,2018-10-11,55
+gip_proprete.gipcomposteur_latest.56,Place Stalingrad,Quartier,place Stalingrad,,compostalingrad@gmail.com,,Lyon 7e Arrondissement,69387,69007,2019-03-26,56
+gip_proprete.gipcomposteur_latest.57,Composteur Briand Lyon,Quartier,Place Aristide Briand,,briand@volterre.org,,Lyon 3e Arrondissement,69383,69003,2019-12-14,57
+gip_proprete.gipcomposteur_latest.58,Résidence Le Consulat,Pied d'immeuble,50 rue Pierre Brunier,,,,Caluire-et-Cuire,69034,69300,2012-05-05,58
+gip_proprete.gipcomposteur_latest.59,Les Naturiales,Quartier,2 rue du Vingtain,dans le jardin de Mancat,contact@lesnaturiales-salvagny.fr,,La Tour-de-Salvagny,69250,69890,2012-10-27,59
+gip_proprete.gipcomposteur_latest.60,Jardin découverte Décines,Quartier,81 rue Paul Bert,,,,Décines-Charpieu,69275,69150,2013-06-15,60
+gip_proprete.gipcomposteur_latest.61,Basse Barrolles,Quartier,50 place des Basses Barolles,"Jardin du CSC Barolles ""pause-jardin""",,,Saint-Genis-Laval,69204,69230,2013-10-05,61
+gip_proprete.gipcomposteur_latest.62,Les doua verts,Quartier,7 avenue des arts,en face de la rue de la Physique,ledouavert@gmail.com,,Villeurbanne,69266,69100,2014-10-23,62
+gip_proprete.gipcomposteur_latest.63,ICF Jardin des Fleurs,Pied d'immeuble,29 rue Pierre Brunier,,,,Caluire-et-Cuire,69034,69300,2014-11-10,63
+gip_proprete.gipcomposteur_latest.64,Gratte Ciel,Quartier,22 rue Léon Chomel,,composteurgratteciel@framalistes.org,,Villeurbanne,69266,69100,2014-11-22,64
+gip_proprete.gipcomposteur_latest.65,Couzon Villeneuve,Quartier,7 rue Georges Villeneuve,,,,Couzon-au-Mont-d'Or,69068,69270,2015-09-19,65
+gip_proprete.gipcomposteur_latest.66,Couzon Pierre Dupont,Quartier,25 rue pierre Dupont,,,,Couzon-au-Mont-d'Or,69068,69270,2015-09-26,66
+gip_proprete.gipcomposteur_latest.67,Les Ormes,Pied d'immeuble,174 rue du 8 mai 1945,174 et 176,,,Villeurbanne,69266,69100,2015-10-17,67
+gip_proprete.gipcomposteur_latest.68,Les Sapins OPAC,Quartier,41 rue de la Pagère,,,,Bron,69029,69500,2015-11-21,68
+gip_proprete.gipcomposteur_latest.69,Jardins d'Yvonne,Quartier,78 Avenue Roger Salengro,,,,Villeurbanne,69266,69100,2016-04-10,69
+gip_proprete.gipcomposteur_latest.70,Sakura,Pied d'immeuble,23 rue Guillotte,23 et 25,,,Villeurbanne,69266,69100,2017-03-11,70
+gip_proprete.gipcomposteur_latest.71,L'Yzeron,Pied d'immeuble,53 Boulevard Emile Zola,,,,Oullins,69149,69600,2017-03-18,71
+gip_proprete.gipcomposteur_latest.72,Levant,Pied d'immeuble,105 cours Gambetta,105 et 107,,,Lyon 3e Arrondissement,69383,69003,2017-04-08,72
+gip_proprete.gipcomposteur_latest.73,Le jardin sage,Pied d'immeuble,60 rue Pierre Brunier,du 58 au 62,,,Caluire-et-Cuire,69034,69300,2017-09-07,73
+gip_proprete.gipcomposteur_latest.74,Ecole centrale - Logement de fonction,Pied d'immeuble,36 Avenue Guy de Collongue,,,,Écully,69081,69130,2017-10-04,74
+gip_proprete.gipcomposteur_latest.75,Ecole Centrale - Paul Comparat,Quartier,36 Avenue Guy de Collongue,,,,Écully,69081,69130,2017-10-18,75
+gip_proprete.gipcomposteur_latest.76,Le Delaunay,Pied d'immeuble,73 rue Coste,,,,Caluire-et-Cuire,69034,69300,2017-10-19,76
+gip_proprete.gipcomposteur_latest.77,Résidence Foch La Salette,Pied d'immeuble,29 Avenue Maréchal Foch,,,,Sainte-Foy-lès-Lyon,69202,69110,2018-03-24,77
+gip_proprete.gipcomposteur_latest.78,Le Velasquez,Pied d'immeuble,24 rue Pierre Bourgeois,du 22 au 26,,,Caluire-et-Cuire,69034,69300,2018-03-29,78
+gip_proprete.gipcomposteur_latest.79,Résidence de la Poste,Pied d'immeuble,72 rue François Peissel,,,,Caluire-et-Cuire,69034,69300,2018-04-03,79
+gip_proprete.gipcomposteur_latest.80,Brossolette,Pied d'immeuble,51 bis Avenue Pierre Brossolette,,,,Bron,69029,69500,2018-04-05,80
+gip_proprete.gipcomposteur_latest.81,Plazza,Pied d'immeuble,36 rue Gervais Bussière,,,,Villeurbanne,69266,69100,2018-05-02,81
+gip_proprete.gipcomposteur_latest.82,Résidence Genas,Pied d'immeuble,27 route de Genas,,,,Villeurbanne,69266,69100,2018-05-14,82
+gip_proprete.gipcomposteur_latest.83,Prairial II,Pied d'immeuble,32 rue de la Baïsse,,,,Villeurbanne,69266,69100,2018-05-16,83
+gip_proprete.gipcomposteur_latest.84,Le Sundial,Pied d'immeuble,25 rue Lafontaine,,,,Villeurbanne,69266,69100,2018-05-22,84
+gip_proprete.gipcomposteur_latest.85,Le Million Zola,Pied d'immeuble,8 impasse Million,,,,Villeurbanne,69266,69100,2018-05-31,85
+gip_proprete.gipcomposteur_latest.86,La Terrasse de Saint-Julien,Pied d'immeuble,24 rue Pierre Baratin,du 22 au 26,,,Villeurbanne,69266,69100,2018-06-01,86
+gip_proprete.gipcomposteur_latest.87,Résidence Les Terrasses des Mont d'Or,Pied d'immeuble,61 rue François Peissel,,,,Caluire-et-Cuire,69034,69300,2018-06-22,87
+gip_proprete.gipcomposteur_latest.88,Les hauts de Baunant,Pied d'immeuble,4 allée Salvador Allende,,,,Oullins,69149,69600,2018-06-25,88
+gip_proprete.gipcomposteur_latest.89,Le Capitol,Pied d'immeuble,29 rue Charles Montaland,,,,Villeurbanne,69266,69100,2018-09-10,89
+gip_proprete.gipcomposteur_latest.90,Les Serenides,Pied d'immeuble,105 rue du Grand Revoyet,,,,Oullins,69149,69600,2018-09-12,90
+gip_proprete.gipcomposteur_latest.91,Villa Sepia I et Sepia II,Pied d'immeuble,23 grande rue,du 23 au 25,,,Francheville,69089,69340,2018-10-02,91
+gip_proprete.gipcomposteur_latest.92,Le Consulat,Pied d'immeuble,50 rue Pierre Brunier,,,,Caluire-et-Cuire,69034,69300,2018-10-03,92
+gip_proprete.gipcomposteur_latest.93,Résidence tête d'or,Pied d'immeuble,18 rue du Tonkin,et 1 rue phélypeaux,,,Villeurbanne,69266,69100,2018-10-12,93
+gip_proprete.gipcomposteur_latest.94,La Creuzette,Pied d'immeuble,28 chemin de la creuzette,du 26 au 30,,,Fontaines-sur-Saône,69088,69270,2018-10-17,94
+gip_proprete.gipcomposteur_latest.95,MOZAIK,Pied d'immeuble,8 rue de la Digue,du 6 au 10,,,Vaulx-en-Velin,69256,69120,2018-10-24,95
+gip_proprete.gipcomposteur_latest.96,Les Terrasses d'Eugeunie,Pied d'immeuble,13 rue François Jacob,du 5 au 19,,,Villeurbanne,69266,69100,2019-03-14,96
+gip_proprete.gipcomposteur_latest.97,Maisons Neuves / Square Florian,Quartier,55 rue Florian,dans le square florian,compostmaisonsneuves@gmail.com,,Villeurbanne,69266,69100,2019-04-01,97
+gip_proprete.gipcomposteur_latest.98,MJC Damidot,Quartier,46 cours Docteur Jean Damidot,,compostheureux@mjc-villeurbanne.org,,Villeurbanne,69266,69100,2019-04-10,98
+gip_proprete.gipcomposteur_latest.99,La Malletière,Pied d'immeuble,2 allée de la malletière,,,,Oullins,69149,69600,2019-04-16,99
+gip_proprete.gipcomposteur_latest.100,Les chenêts,Pied d'immeuble,17 bis chemin des Petites Brosses,,,,Caluire-et-Cuire,69034,69300,2019-05-10,100
+gip_proprete.gipcomposteur_latest.101,Les manoirs des fontanières,Pied d'immeuble,154 chemin de Fontanières,,,,Sainte-Foy-lès-Lyon,69202,69110,2019-05-20,101
+gip_proprete.gipcomposteur_latest.102,Résidence les Hauts de Cuire,Pied d'immeuble,6 rue de la gare de Cuire,et 08,,,Caluire-et-Cuire,69034,69300,2019-05-24,102
+gip_proprete.gipcomposteur_latest.103,Le Clémenceau,Pied d'immeuble,2 quai Clémenceau,,,,Caluire-et-Cuire,69034,69300,2019-06-24,103
+gip_proprete.gipcomposteur_latest.104,Les fronts de Saône,Pied d'immeuble,25 rue André Lassagne,,,,Caluire-et-Cuire,69034,69300,2019-09-13,104
+gip_proprete.gipcomposteur_latest.105,Composteur Jardin Partagé Chénier,Quartier,57 Rue André Chénier,,compostchenier@gmail.com,,Vaulx-en-Velin,69256,69120,2019-10-01,105
+gip_proprete.gipcomposteur_latest.106,Composteur Découvertes,Quartier,71 rue Paul Bert,"dans le jardin pédagogique ""Découvertes""",,,Décines-Charpieu,69275,69150,2019-10-16,106
+gip_proprete.gipcomposteur_latest.107,Les composteurs de Bissardon,Quartier,31 rue de Verdun,dans le square Pierre Polnard,compost.bissardon@yahoo.com,,Caluire-et-Cuire,69034,69300,2019-10-18,107
+gip_proprete.gipcomposteur_latest.108,L'orée du Parc,Pied d'immeuble,60 rue Francis de Pressensé,et 62,,,Villeurbanne,69266,69100,2019-10-25,108
+gip_proprete.gipcomposteur_latest.109,Le Clos de Haute Roche,Pied d'immeuble,5 Rue du Centenaire,"Allée des Jeux, Allée des Acacias, allée des Peupliers, allée du Château",,,Pierre-Bénite,69152,69310,2019-10-28,109
+gip_proprete.gipcomposteur_latest.110,Le domaine de charrière blanche,Pied d'immeuble,24 chemin de charrière blanche,,,,Écully,69081,69130,2019-11-06,110
+gip_proprete.gipcomposteur_latest.111,Les Horizons,Pied d'immeuble,15 Chemin de Boutary,du 11 au 17,,,Caluire-et-Cuire,69034,69300,2019-11-15,111
+gip_proprete.gipcomposteur_latest.112,Le Telstar,Pied d'immeuble,76 rue de Margnolles,et 78,,,Caluire-et-Cuire,69034,69300,2019-11-27,112
+gip_proprete.gipcomposteur_latest.113,Eden Parc,Pied d'immeuble,167 C Avenue Roger Salengro,,,,Vaulx-en-Velin,69256,69120,2019-12-02,113
+gip_proprete.gipcomposteur_latest.114,Compost Aristide Briand Caluire,Quartier,31 cours Aristide Briand,,compost.aristidebriand@lilo.org,,Caluire-et-Cuire,69034,69300,2019-12-17,114
+gip_proprete.gipcomposteur_latest.115,Castel Park,Pied d'immeuble,18 rue Chatelain,,,,Sainte-Foy-lès-Lyon,69202,69110,2020-01-06,115
+gip_proprete.gipcomposteur_latest.116,Résidence des Ormandines,Pied d'immeuble,54 boulevard Eugène Réguillon,,,,Villeurbanne,69266,69100,2020-01-13,116
+gip_proprete.gipcomposteur_latest.117,Résidence Hauteclair,Pied d'immeuble,45 Avenue Maréchal Foch,du 43 au 47,,,Saint-Genis-Laval,69204,69230,2020-01-15,117
+gip_proprete.gipcomposteur_latest.118,Le Castel,Pied d'immeuble,25 Boulevard de la république,et 27,,,Champagne-au-Mont-d'Or,69040,69410,2020-01-16,118
+gip_proprete.gipcomposteur_latest.119,Residence Organza,Pied d'immeuble,10 allée Gerda Taro,du 2 au16 ;  ilot P1 et P2,,,Villeurbanne,69266,69100,2020-01-17,119
+gip_proprete.gipcomposteur_latest.120,Persoz - Damidot,Pied d'immeuble,15 rue Persoz,du 13 au 17 rue Persoz et du 52 au 56 rue Damidot,,,Villeurbanne,69266,69100,2020-01-22,120
+gip_proprete.gipcomposteur_latest.121,La pie Brune,Pied d'immeuble,70 rue Pierre Brunier,,,,Caluire-et-Cuire,69034,69300,2020-01-23,121
+gip_proprete.gipcomposteur_latest.122,Chantefleur,Pied d'immeuble,20 rue de l'Oratoire,,,,Caluire-et-Cuire,69034,69300,2020-01-24,122
+gip_proprete.gipcomposteur_latest.123,Ruy Blas,Pied d'immeuble,15 rue Victor Hugo,,,,Villeurbanne,69266,69100,2020-01-27,123
+gip_proprete.gipcomposteur_latest.124,Le Bosquet,Pied d'immeuble,7 chemin de Boutary,,,,Caluire-et-Cuire,69034,69300,2020-01-31,124
+gip_proprete.gipcomposteur_latest.125,Le Tanagra,Pied d'immeuble,15 rue des Charmettes,,,,Villeurbanne,69266,69100,2020-02-03,125
+gip_proprete.gipcomposteur_latest.126,Le Viret,Pied d'immeuble,30 rue Viret,du 21 au 33,,,Villeurbanne,69266,69100,2020-02-13,126
+gip_proprete.gipcomposteur_latest.127,Le Montjoie,Pied d'immeuble,10 rue Guyot,du 6 au 12A,,,Caluire-et-Cuire,69034,69300,2020-03-10,127
+gip_proprete.gipcomposteur_latest.128,Parc Saint-Louis,Pied d'immeuble,29 quai Jean-Baptiste Simon,,,,Fontaines-sur-Saône,69088,69270,2020-03-11,128
+gip_proprete.gipcomposteur_latest.129,Ô Compost d'or,Quartier,23 rue du Castellard,à côté du centre Laurent Bonnevay,ocompostdor@gmail.com,,Saint-Didier-au-Mont-d'Or,69194,69370,2020-04-15,129
+gip_proprete.gipcomposteur_latest.130,La Closerie des Charmettes,Pied d'immeuble,76 rue des Charmettes,,,,Villeurbanne,69266,69100,2020-05-11,130
+gip_proprete.gipcomposteur_latest.131,Les Bienvenus,Pied d'immeuble,82 rue des bienvenus,du 78 au 87,,,Villeurbanne,69266,69100,2020-05-18,131
+gip_proprete.gipcomposteur_latest.132,Inkermann/Viabert,Pied d'immeuble,37 rue d'Inkermann,,,,Villeurbanne,69266,69100,2020-05-18,132
+gip_proprete.gipcomposteur_latest.133,Les Harmoniales,Pied d'immeuble,36 cours de la République,,,,Villeurbanne,69266,69100,2020-05-19,133
+gip_proprete.gipcomposteur_latest.134,Bois des sources,Pied d'immeuble,4 rue du capitaine Ferber,,,,Caluire-et-Cuire,69034,69300,2020-05-20,134
+gip_proprete.gipcomposteur_latest.135,Le Liberté II,Pied d'immeuble,50 rue Docteur Ollier,,,,Villeurbanne,69266,69100,2020-05-26,135
+gip_proprete.gipcomposteur_latest.136,Résidence des Pyrénées,Pied d'immeuble,4 rue des Pyrénées,,,,Vénissieux,69259,69200,2020-06-02,136
+gip_proprete.gipcomposteur_latest.137,Opus 109,Pied d'immeuble,109 rue Dedieu,,,,Villeurbanne,69266,69100,2020-06-16,137
+gip_proprete.gipcomposteur_latest.138,Jardin d'Annabelle,Pied d'immeuble,21 rue Romain Rolland,,,,Vénissieux,69259,69200,2020-06-19,138
+gip_proprete.gipcomposteur_latest.139,Compostage Potakin,Quartier,47 Rue du Tonkin,dans le jardin partagé du Potakin,potakin@tutanota.com,,Villeurbanne,69266,69100,2020-06-26,139
+gip_proprete.gipcomposteur_latest.140,Moonlight,Pied d'immeuble,11 Avenue du nord,,,,Tassin-la-Demi-Lune,69244,69160,2020-06-10,140
+gip_proprete.gipcomposteur_latest.141,Résidence La Tour du Pin,Pied d'immeuble,2 rue de la Tour du Pin,,,,Lyon 4e Arrondissement,69384,69004,2013-04-16,141
+gip_proprete.gipcomposteur_latest.142,Etats Unis Lyon 8,Quartier,73 Rue Jean Sarrazin,"Centre social des Etats-Unis,",accueil@csetats-unis.org,,Lyon 8e Arrondissement,69388,69008,2013-11-23,142
+gip_proprete.gipcomposteur_latest.143,Voltaire Part Dieu Lyon 3,Quartier,72 rue Chaponnay,du 72 au 74,voltaire@volterre.org,,Lyon 3e Arrondissement,69383,69003,2013-12-14,143
+gip_proprete.gipcomposteur_latest.144,Les Coccinelles de Sans souci,Quartier,28 rue Jeanne Hachette,,contact@coccinelles-sans-souci.org,,Lyon 3e Arrondissement,69383,69003,2014-05-17,144
+gip_proprete.gipcomposteur_latest.145,ICF Jean Zay,Pied d'immeuble,19 rue Jean Zay,du 17 au 23,,,Lyon 9e Arrondissement,69389,69009,2014-06-15,145
+gip_proprete.gipcomposteur_latest.146,Jules Guesdes,Pied d'immeuble,8 place Jules Guesde,,,,Lyon 7e Arrondissement,69387,69007,2014-09-08,146
+gip_proprete.gipcomposteur_latest.147,Châteaubriand,Pied d'immeuble,16 rue Chateaubriand,du 14 au 20,,,Lyon 7e Arrondissement,69387,69007,2014-12-13,147
+gip_proprete.gipcomposteur_latest.148,Chazette,Quartier,8 place Louis Chazette,,"association.place.lc@gmail.com 
+",,Lyon 1er Arrondissement,69381,69001,2015-10-03,148
+gip_proprete.gipcomposteur_latest.149,Quartier St Rambert Ile Barbe,Quartier,49 rue Hector Berlioz,,cquartier-strambert@laposte.net,,Lyon 9e Arrondissement,69389,69009,2015-10-17,149
+gip_proprete.gipcomposteur_latest.150,Rue du repos,Pied d'immeuble,48 rue du Repos,,,,Lyon 7e Arrondissement,69387,69007,2015-10-31,150
+gip_proprete.gipcomposteur_latest.151,Tronchet,Pied d'immeuble,41 rue Tronchet,,,,Lyon 6e Arrondissement,69386,69006,2015-11-14,151
+gip_proprete.gipcomposteur_latest.152,Quai de Serbie,Quartier,11 quai de Serbie,,composteurquaiserbie@riseup.net,,Lyon 6e Arrondissement,69386,69006,2015-11-21,152
+gip_proprete.gipcomposteur_latest.153,Tourvielle,Pied d'immeuble,22 bis rue de Tourvielle,,,,Lyon 5e Arrondissement,69385,69005,2017-03-21,153
+gip_proprete.gipcomposteur_latest.154,Colombier,Pied d'immeuble,24 rue des Trois Pierres,24 et 26,,,Lyon 7e Arrondissement,69387,69007,2017-03-27,154
+gip_proprete.gipcomposteur_latest.155,Arménie,Pied d'immeuble,32 rue d'Arménie,,,,Lyon 3e Arrondissement,69383,69003,2017-03-30,155
+gip_proprete.gipcomposteur_latest.156,Pierre Scize,Pied d'immeuble,11Montée de l'Observance,du 11 au 21,,,Lyon 9e Arrondissement,69389,69009,2017-03-30,156
+gip_proprete.gipcomposteur_latest.157,Ayasse,Pied d'immeuble,26 rue Commandant Ayasse,,,,Lyon 7e Arrondissement,69387,69007,2017-04-01,157
+gip_proprete.gipcomposteur_latest.158,L'Hermitage,Pied d'immeuble,25 rue Guilloud,du 25 au 31,,,Lyon 3e Arrondissement,69383,69003,2017-04-07,158
+gip_proprete.gipcomposteur_latest.159,Le Villon,Pied d'immeuble,89 rue Marius Berliet,,,,Lyon 8e Arrondissement,69388,69008,2017-09-26,159
+gip_proprete.gipcomposteur_latest.160,Faubourg Gambetta,Pied d'immeuble,26 rue Pierre Robin,"et 243/245, grande rue de la Guillotière",,,Lyon 7e Arrondissement,69387,69007,2017-09-28,160
+gip_proprete.gipcomposteur_latest.161,Résidence de la Garde,Pied d'immeuble,34 rue de la Garde,du 30 au 36,,,Lyon 5e Arrondissement,69385,69005,2017-10-17,161
+gip_proprete.gipcomposteur_latest.162,Résidence Saint Just,Pied d'immeuble,43 Avenue Barthélémy Buyer,du 43 au 51,,,Lyon 5e Arrondissement,69385,69005,2017-10-26,162
+gip_proprete.gipcomposteur_latest.163,Les églantiers,Quartier,80 montée de l'Observance,"Jardins ouvriers ""Les Eglantiers""",jardin.leseglantiers@laposte.net,,Lyon 9e Arrondissement,69389,69009,2017-11-14,163
+gip_proprete.gipcomposteur_latest.164,Domer / Colombier,Quartier,92 rue Jaboulay,dans le jardin Camille Roy,compostjeanmace@gmail.com,,Lyon 7e Arrondissement,69387,69007,2017-11-25,164
+gip_proprete.gipcomposteur_latest.165,Le Clos SAvenuearon,Pied d'immeuble,71 rue Henri Gorjus,du 61 au 73,,,Lyon 4e Arrondissement,69384,69004,2018-03-22,165
+gip_proprete.gipcomposteur_latest.166,Résidence Cap Saône,Pied d'immeuble,21 rue Claudius Collonge,,,,Lyon 2e Arrondissement,69382,69002,2018-03-23,166
+gip_proprete.gipcomposteur_latest.167,résidence privilège Montbrillant,Pied d'immeuble,7 rue de montbrillant,"7, 7 bis et 7 ter",,,Lyon 3e Arrondissement,69383,69003,2018-03-28,167
+gip_proprete.gipcomposteur_latest.168,Les Coccinelles de Sans souci,Quartier,28 rue Jeanne Hachette,,contact@coccinelles-sans-souci.org,,Lyon 3e Arrondissement,69383,69003,2018-04-13,168
+gip_proprete.gipcomposteur_latest.169,Jardin Thiers Lafayette,Quartier,171 Avenue Thiers,dans le jaridn partagé entre le gymnase et l'école Antoine Rémond,jardindespartages@gmail.com,,Lyon 6e Arrondissement,69386,69006,2018-04-17,169
+gip_proprete.gipcomposteur_latest.170,Les jardins de l'Avenueenir,Pied d'immeuble,43 rue Maurice Flandin,,,,Lyon 3e Arrondissement,69383,69003,2018-05-25,170
+gip_proprete.gipcomposteur_latest.171,Résidence Atrium,Pied d'immeuble,9 rue professeur Paul Sisley,"7b, 9, 9b, 11 et 11b",,,Lyon 3e Arrondissement,69383,69003,2018-06-04,171
+gip_proprete.gipcomposteur_latest.172,35/39 rue de Cuire,Pied d'immeuble,35 rue de Cuire,du 35 au 39,,,Lyon 4e Arrondissement,69384,69004,2018-06-06,172
+gip_proprete.gipcomposteur_latest.173,Le Serin,Pied d'immeuble,38 quai Joseph Gillet,,,,Lyon 4e Arrondissement,69384,69004,2018-06-07,173
+gip_proprete.gipcomposteur_latest.174,Résidence Les Erables,Pied d'immeuble,257 rue des Erables,,,,Lyon 9e Arrondissement,69389,69009,2018-06-26,174
+gip_proprete.gipcomposteur_latest.175,Résidence L'Ermitage,Pied d'immeuble,7 rue Philibert Roussy,,,,Lyon 4e Arrondissement,69384,69004,2018-06-29,175
+gip_proprete.gipcomposteur_latest.176,Ornano,Pied d'immeuble,13 rue Ornano,,,,Lyon 1er Arrondissement,69381,69001,2018-07-03,176
+gip_proprete.gipcomposteur_latest.177,Résidence Montcalm,Pied d'immeuble,6 rue soeur bouvier,,,,Lyon 5e Arrondissement,69385,69005,2018-07-10,177
+gip_proprete.gipcomposteur_latest.178,Conseil de Quartier St Rambert Ile Barbe - Plateau de St Rambert - rue Hector Berlioz - Face Parc Grand Champ,Quartier,49 rue Hector Berlioz,,cquartier-strambert@laposte.net,,Lyon 9e Arrondissement,69389,69009,2018-07-17,178
+gip_proprete.gipcomposteur_latest.179,Salengro Chinard,Pied d'immeuble,11 rue Chinard,et 17 rue Roger Salengro,,,Lyon 9e Arrondissement,69389,69009,2018-09-07,179
+gip_proprete.gipcomposteur_latest.180,Le Parc Villon,Pied d'immeuble,10 rue Villon,du 10 au 12,,,Lyon 3e Arrondissement,69383,69003,2018-09-20,180
+gip_proprete.gipcomposteur_latest.181,Alter'hostel - Quai Arloing,Quartier,32 quai Arloing,,aubergeparticipative@trotonmail.com,,Lyon 9e Arrondissement,69389,69009,2018-09-20,181
+gip_proprete.gipcomposteur_latest.182,Les jardins de Charial,Pied d'immeuble,16 rue Etienne Richerand,,,,Lyon 3e Arrondissement,69383,69003,2018-09-21,182
+gip_proprete.gipcomposteur_latest.183,Centre d'Hébergement et de Réinsertion Sociale (CHRS) La Charade de LAHSo,Quartier,259 rue Paul Bert,,lacharade@lahso.org,,Lyon 3e Arrondissement,69383,69003,2018-09-25,183
+gip_proprete.gipcomposteur_latest.184,Le Barodet,Pied d'immeuble,19 rue Barodet,du 19 au 21,,,Lyon 4e Arrondissement,69384,69004,2018-09-27,184
+gip_proprete.gipcomposteur_latest.185,Antoine Dumont,Quartier,26 rue Antoine Dumont,dans le square en face du stade,selgtlyon8@gmail.com,,Lyon 8e Arrondissement,69388,69008,2018-10-02,185
+gip_proprete.gipcomposteur_latest.186,immeuble Crimée / Les Héliantes,Pied d'immeuble,11 rue Saint François d'Assise,,,,Lyon 1er Arrondissement,69381,69001,2018-10-10,186
+gip_proprete.gipcomposteur_latest.187,Les Hauts de Saône,Pied d'immeuble,75 bis rue Chazière,et 75 ter,,,Lyon 4e Arrondissement,69384,69004,2018-10-15,187
+gip_proprete.gipcomposteur_latest.188,L'Observance,Pied d'immeuble,21 rue Docteur Rafin,et 21bis,,,Lyon 9e Arrondissement,69389,69009,2018-10-16,188
+gip_proprete.gipcomposteur_latest.189,Lagrange Desmoulins,Pied d'immeuble,10 rue Victor Lagrange,,,,Lyon 7e Arrondissement,69387,69007,2018-10-18,189
+gip_proprete.gipcomposteur_latest.190,Le Patio du Rhone,Pied d'immeuble,11 rue Lieutenant Colonel Girard,et 15,,,Lyon 7e Arrondissement,69387,69007,2018-11-07,190
+gip_proprete.gipcomposteur_latest.191,Les tours vieilles,Pied d'immeuble,14 rue de Tourvielle,du 12 au 14 bis,,,Lyon 5e Arrondissement,69385,69005,2018-11-08,191
+gip_proprete.gipcomposteur_latest.192,Ma Ville Verte Alliade,Pied d'immeuble,8 rue de l'Epée,,,,Lyon 3e Arrondissement,69383,69003,2018-11-14,192
+gip_proprete.gipcomposteur_latest.193,L'Arpège,Pied d'immeuble,40 Avenue Paul Santy,,,,Lyon 8e Arrondissement,69388,69008,2019-03-15,193
+gip_proprete.gipcomposteur_latest.194,24 BCD rue des Alouettes,Pied d'immeuble,24 rue des Alouettes,,,,Lyon 8e Arrondissement,69388,69008,2019-03-18,194
+gip_proprete.gipcomposteur_latest.195,Villa Sepia I et Sepia II,Pied d'immeuble,44 rue des Hérideaux,,,,Lyon 8e Arrondissement,69388,69008,2019-03-21,195
+gip_proprete.gipcomposteur_latest.196,Les Allées de Paris,Pied d'immeuble,7 rue Roger Salengro,,,,Lyon 9e Arrondissement,69389,69009,2019-03-22,196
+gip_proprete.gipcomposteur_latest.197,La Roche Pierre Scize,Pied d'immeuble,13 quai Pierre Scize,et 14,,,Lyon 9e Arrondissement,69389,69009,2019-04-19,197
+gip_proprete.gipcomposteur_latest.198,Orée de Montchat,Pied d'immeuble,3 rue saint Isidore,du 1 bis au 5,,,Lyon 3e Arrondissement,69383,69003,2019-04-23,198
+gip_proprete.gipcomposteur_latest.199,HSJ Les Hauts de Saint Just,Pied d'immeuble,14 rue des Tourelles,du 10 au 18,,,Lyon 5e Arrondissement,69385,69005,2019-05-02,199
+gip_proprete.gipcomposteur_latest.200,Le ventoux,Pied d'immeuble,10 rue Louis Thévenet,,,,Lyon 4e Arrondissement,69384,69004,2019-05-06,200
+gip_proprete.gipcomposteur_latest.201,"90/92 route de vienne et 
+17 rue Benoit Bernard",Pied d'immeuble,92 route de Vienne,90/92 route de Vienne et 17 rue Benoit Bernard,,,Lyon 8e Arrondissement,69388,69008,2019-05-14,201
+gip_proprete.gipcomposteur_latest.202,Garibaldi Lamothe,Pied d'immeuble,331 rue Garibaldi,et 339,,,Lyon 7e Arrondissement,69387,69007,2019-10-15,202
+gip_proprete.gipcomposteur_latest.203,Composteur d'Audrey,Quartier,17 rue Tissot,dans le passage qui rejoint la rue du 24 mars 1852,idees.9@lilo.org,,Lyon 9e Arrondissement,69389,69009,2019-10-15,203
+gip_proprete.gipcomposteur_latest.204,Résidence 9Horizon,Pied d'immeuble,12 Avenue du plateau,,,,Lyon 9e Arrondissement,69389,69009,2019-10-16,204
+gip_proprete.gipcomposteur_latest.205,Reflet de vie,Pied d'immeuble,13 bis rue Claudius Collonge,,,,Lyon 2e Arrondissement,69382,69002,2019-10-17,205
+gip_proprete.gipcomposteur_latest.206,Résidence Le Grand Trianon,Pied d'immeuble,268 rue Paul Bert,,,,Lyon 3e Arrondissement,69383,69003,2019-10-18,206
+gip_proprete.gipcomposteur_latest.207,La Valonnière,Pied d'immeuble,99 Avenue Barthélémy Buyer,et 101,,,Lyon 5e Arrondissement,69385,69005,2019-10-21,207
+gip_proprete.gipcomposteur_latest.208,Le Saint Louis,Pied d'immeuble,96 rue du Bourbonnais,du 94 au 100,,,Lyon 9e Arrondissement,69389,69009,2019-10-23,208
+gip_proprete.gipcomposteur_latest.209,Résidence Le Parc Montel,Pied d'immeuble,42 rue du Bourbonnais,,,,Lyon 9e Arrondissement,69389,69009,2019-11-04,209
+gip_proprete.gipcomposteur_latest.210,Rosae,Pied d'immeuble,38 Avenue Rosa Parks,du 36 au 40,,,Lyon 9e Arrondissement,69389,69009,2019-11-04,210
+gip_proprete.gipcomposteur_latest.211,Val clair,Pied d'immeuble,15 rue des alouettes,,,,Lyon 8e Arrondissement,69388,69008,2019-11-05,211
+gip_proprete.gipcomposteur_latest.212,Follement Gerland,Pied d'immeuble,37 rue Pré Gaudry,,,,Lyon 7e Arrondissement,69387,69007,2019-11-13,212
+gip_proprete.gipcomposteur_latest.213,Résidence Lafayette,Pied d'immeuble,13 rue Etienne Richerand,et 15 rue Etienne Richerand et 36 et 36bis rue Saint Antoine,,,Lyon 3e Arrondissement,69383,69003,2019-11-14,213
+gip_proprete.gipcomposteur_latest.214,Terrasses d'Abondance,Pied d'immeuble,56 rue du Lac,et 58,,,Lyon 3e Arrondissement,69383,69003,2019-11-14,214
+gip_proprete.gipcomposteur_latest.215,Boileau-Garibaldi,Pied d'immeuble,38 rue Crillon,,,,Lyon 6e Arrondissement,69386,69006,2019-11-28,215
+gip_proprete.gipcomposteur_latest.216,Caserne de Gendarmerie DELFOSSE,Pied d'immeuble,2 Rue Bichat,,,,Lyon 2e Arrondissement,69382,69002,2019-12-02,216
+gip_proprete.gipcomposteur_latest.217,La Flandin - Saint Antoine,Pied d'immeuble,15 rue Maurice Flandin,du 11 au 17 rue Maurice Flandin et 11 rue Riboud,,,Lyon 3e Arrondissement,69383,69003,2019-12-03,217
+gip_proprete.gipcomposteur_latest.218,Jardin de Montchat,Pied d'immeuble,76 route de Genas,,,,Lyon 3e Arrondissement,69383,69003,2019-12-05,218
+gip_proprete.gipcomposteur_latest.219,Composteur de la Cité Internationale,Quartier,94 quai Charles de Gaulle,,compost.citeinternationale@gmail.com,,Lyon 6e Arrondissement,69386,69006,2019-12-11,219
+gip_proprete.gipcomposteur_latest.220,Le Belvédère,Pied d'immeuble,2 rue Louis Thévenet,,,,Lyon 4e Arrondissement,69384,69004,2019-12-13,220
+gip_proprete.gipcomposteur_latest.221,Composteur du parc de la Mairie du 5ème,Quartier,14 rue Docteur Edmond Locard,dans le parc de la Mairie,ComposteurParcMairie@fastmail.com,,Lyon 5e Arrondissement,69385,69005,2019-12-14,221
+gip_proprete.gipcomposteur_latest.222,Orée Tête D'Or,Pied d'immeuble,8 rue Antoine Barbier,du 4 au 14 rue Antoine Barbier et 18 rue de Genève,,,Lyon 6e Arrondissement,69386,69006,2019-12-17,222
+gip_proprete.gipcomposteur_latest.223,Vitton Compost,Quartier,68 Boulevard des Belges,dans l'espace arboré à l'angle de l'avenue Verguin et du Boulevard des Belges,vittoncompost@gmail.com.,,Lyon 6e Arrondissement,69386,69006,2019-12-18,223
+gip_proprete.gipcomposteur_latest.224,Le chêne vert,Pied d'immeuble,79 rue des aqueducs,du 79 au 89,,,Lyon 5e Arrondissement,69385,69005,2020-01-06,224
+gip_proprete.gipcomposteur_latest.225,Beal-platriers,Pied d'immeuble,22 rue des platriers,,,,Lyon 9e Arrondissement,69389,69009,2020-01-10,225
+gip_proprete.gipcomposteur_latest.226,Le Jardin des Rancy,Pied d'immeuble,48 rue du Lac,et 50,,,Lyon 3e Arrondissement,69383,69003,2020-01-13,226
+gip_proprete.gipcomposteur_latest.227,Le Wagram,Pied d'immeuble,33 rue Bataille,,,,Lyon 8e Arrondissement,69388,69008,2020-01-14,227
+gip_proprete.gipcomposteur_latest.228,Le Courbet,Pied d'immeuble,50 rue Georges Gouy,du 48 au 54,,,Lyon 7e Arrondissement,69387,69007,2020-01-16,228
+gip_proprete.gipcomposteur_latest.229,Hevea,Pied d'immeuble,19 rue du lac,,,,Lyon 3e Arrondissement,69383,69003,2020-01-20,229
+gip_proprete.gipcomposteur_latest.230,Le Colisée,Pied d'immeuble,30 rue Roger Radisson,du 26 au 36,,,Lyon 5e Arrondissement,69385,69005,2020-01-21,230
+gip_proprete.gipcomposteur_latest.231,Le Parc Saint Irénée,Pied d'immeuble,44 bis rue commandant Charcot,et 48 BIS,,,Lyon 5e Arrondissement,69385,69005,2020-01-28,231
+gip_proprete.gipcomposteur_latest.232,"L'Albion 1,2,3",Pied d'immeuble,11 rue bataille,du 7 au 19,,,Lyon 8e Arrondissement,69388,69008,2020-02-05,232
+gip_proprete.gipcomposteur_latest.233,Le Laetitia,Pied d'immeuble,38 rue Victorien Sardou,36-38 rue Victorien Sardou - 68 rue Domer,,,Lyon 7e Arrondissement,69387,69007,2020-02-06,233
+gip_proprete.gipcomposteur_latest.234,Composteur Chevrier,Quartier,57 rue Père Chevrier,,,,Lyon 7e Arrondissement,69387,69007,2020-03-02,234
+gip_proprete.gipcomposteur_latest.235,La Colombière,Pied d'immeuble,141 rue Challemel Lacour,du 129 au 155,,,Lyon 8e Arrondissement,69388,69008,2020-03-09,235
+gip_proprete.gipcomposteur_latest.236,Le Tourville,Pied d'immeuble,354 rue André Philip,,,,Lyon 7e Arrondissement,69387,69007,2020-03-13,236
+gip_proprete.gipcomposteur_latest.237,Composteur Lumière,Quartier,10 promenade Léa et Napoléon Bullukian,dans le square,lorvertdu8e@gmail.com,,Lyon 8e Arrondissement,69388,69008,2020-03-23,237
+gip_proprete.gipcomposteur_latest.238,Presqu'île verte / Denuzière,Pied d'immeuble,25 rue Claudius Collonge,et 10 rue Denuzière et 21 rue Bichat,,,Lyon 2e Arrondissement,69382,69002,2020-05-13,238
+gip_proprete.gipcomposteur_latest.239,Le Sainet,Pied d'immeuble,6 rue Saint Nestor,et 08,,,Lyon 8e Arrondissement,69388,69008,2020-05-14,239
+gip_proprete.gipcomposteur_latest.240,L'Orée du Village - Le Nemours,Pied d'immeuble,24 rue du Chapeau Rouge,et 26,,,Lyon 9e Arrondissement,69389,69009,2020-05-25,240
+gip_proprete.gipcomposteur_latest.241,Le croix rousse,Pied d'immeuble,40 rue de Cuire,,,,Lyon 4e Arrondissement,69384,69004,2020-05-28,241
+gip_proprete.gipcomposteur_latest.242,Les Toits de la Croix Rousse,Pied d'immeuble,18 rue calliet,,,,Lyon 1er Arrondissement,69381,69001,2020-06-02,242
+gip_proprete.gipcomposteur_latest.243,Lacassagne Rebatel,Pied d'immeuble,2 rue Docteur Rebatel,et 68 Avenue Lacassagne,,,Lyon 3e Arrondissement,69383,69003,2020-06-03,243
+gip_proprete.gipcomposteur_latest.244,Les Cèdres,Pied d'immeuble,44 rue de la Favorite,,,,Lyon 5e Arrondissement,69385,69005,2020-06-03,244
+gip_proprete.gipcomposteur_latest.245,Les Alizées,Pied d'immeuble,13 rue de la claire,13 - 15 RUE DE LA CLAIRE - 37 BIS RUE DE ST CYR,,,Lyon 9e Arrondissement,69389,69009,2020-06-05,245
+gip_proprete.gipcomposteur_latest.246,Résidence Florentine,Pied d'immeuble,27 Avenue Lacassagne,,,,Lyon 3e Arrondissement,69383,69003,2020-06-09,246
+gip_proprete.gipcomposteur_latest.247,Tourvielle,Pied d'immeuble,75 rue Joliot Curie,,,,Lyon 5e Arrondissement,69385,69005,2020-06-09,247
+gip_proprete.gipcomposteur_latest.248,Ynfluences square,Pied d'immeuble,62 rue Smith,,,,Lyon 2e Arrondissement,69382,69002,2020-06-10,248
+gip_proprete.gipcomposteur_latest.249,La croix des Platanes (ASL),Pied d'immeuble,6 rue Docteur Horand,2-8 rue Docteur Horand et 5-9 rue Joaness Masset,,,Lyon 9e Arrondissement,69389,69009,2020-06-11,249
+gip_proprete.gipcomposteur_latest.250,Jardin Partagé des Murières,Quartier,60 rue Joliot Curie,dans le Jardin Partagé des Murières,,,Lyon 5e Arrondissement,69385,69005,2020-06-12,250
+gip_proprete.gipcomposteur_latest.251,Valençay A B C,Pied d'immeuble,30 rue Joseph Chapelle,,,,Lyon 8e Arrondissement,69388,69008,2020-06-16,251
+gip_proprete.gipcomposteur_latest.252,Louis Pradel,Pied d'immeuble,279 rue André Philip,,,,Lyon 3e Arrondissement,69383,69003,2020-06-17,252
+gip_proprete.gipcomposteur_latest.253,Le Rambaud,Pied d'immeuble,90 rue Commandant Charcot,,,,Lyon 5e Arrondissement,69385,69005,2020-06-17,253
+gip_proprete.gipcomposteur_latest.254,La Paix,Pied d'immeuble,18 rue Roger Radisson,du 16 au 20 bis,,,Lyon 5e Arrondissement,69385,69005,2020-06-19,254
+gip_proprete.gipcomposteur_latest.255,Le Lamothe,Pied d'immeuble,66 rue du repos,du 60 au 68 rue du Repos et du 4 au 16 rue Lamothe et au 167 Avenue Berthelot,,,Lyon 7e Arrondissement,69387,69007,2020-06-23,255
+gip_proprete.gipcomposteur_latest.256,L'Or vert des pirates,Quartier,5 Rue de la Fraternité,,lorvertdu8e@gmail.com,,Lyon 8e Arrondissement,69388,69008,2020-07-22,256
+gip_proprete.gipcomposteur_latest.257,Résidence le parc des Canuts,Pied d'immeuble,64 bis Rue Deleuvre,et 66 bis,,,Lyon 4e Arrondissement,69384,69004,2020-01-29,257
+gip_proprete.gipcomposteur_latest.258,Wilson,Pied d'immeuble,10 Avenueenue Roger Salengro,du 08 au 12,,,Villeurbanne,69266,69100,2017-03-16,258
+gip_proprete.gipcomposteur_latest.259,La seigneurerie,Pied d'immeuble,116 rue du Commandant Charcot,,,,Lyon 5e Arrondissement,69385,69005,2017-09-27,259
+gip_proprete.gipcomposteur_latest.260,Résidence les Ombrages,Pied d'immeuble,12 Avenueenue Général de Gaulle,,,,Charbonnières-les-Bains,69044,69260,2018-07-12,260
+gip_proprete.gipcomposteur_latest.261,Pavillon Foch,Pied d'immeuble,12 Avenue du Maréchal Foch,,,,Tassin-la-Demi-Lune,69244,69160,2019-03-20,261
+gip_proprete.gipcomposteur_latest.262,Prieuré,Pied d'immeuble,15 rue Nicolaï,,,,Lyon 7e Arrondissement,69387,69007,2017-03-23,262
+gip_proprete.gipcomposteur_latest.263,Les Buers,Quartier,15 rue Joseph Prudhon,,,,Villeurbanne,69266,69100,2014-09-15,263
+gip_proprete.gipcomposteur_latest.264,Le Monplaisir,Pied d'immeuble,164 Avenue des frères Lumières,et 2 rue neuve de Monplaisir,,,Lyon 8e Arrondissement,69388,69008,2020-01-08,264
+gip_proprete.gipcomposteur_latest.265,Graine de Lait,Quartier,18 Allée Leopold Sédar Seghor,,compost.grainesdelait@gmail.com,,Lyon 7e Arrondissement,69387,69007,2014-09-06,265
+gip_proprete.gipcomposteur_latest.266,Résidence Les Culattes,Pied d'immeuble,184 rue Marcel Merieux,Allée 10,,,Lyon 7e Arrondissement,69387,69007,2018-06-28,266
+gip_proprete.gipcomposteur_latest.267,Les jardins de l'Ecoin,Quartier,2 Avenue Eugène Hénaffe,en face,,,Vaulx-en-Velin,69256,69120,2018-05-03,267
+gip_proprete.gipcomposteur_latest.268,Les Sophores,Pied d'immeuble,20 Montée de la Sœur Vially,,,,Caluire-et-Cuire,69034,69300,2019-03-29,268
+gip_proprete.gipcomposteur_latest.269,Composteur ATOME Village,Quartier,207 rue Francis de Préssenssé,,,,Villeurbanne,69266,69100,2018-07-04,269
+gip_proprete.gipcomposteur_latest.270,Résidence Hikari,Pied d'immeuble,"21 quai Antoine Riboud
+",,,,Lyon 2e Arrondissement,69382,69002,2018-06-21,270
+gip_proprete.gipcomposteur_latest.271,Saint Gervais,Pied d'immeuble,26 rue  Édouard Rochet,du 22 au 28,,,Lyon 8e Arrondissement,69388,69008,2015-11-07,271
+gip_proprete.gipcomposteur_latest.272,Les 2 écoles,Pied d'immeuble,28 rue Frederic Fays,et 30,,,Villeurbanne,69266,69100,2019-05-15,272
+gip_proprete.gipcomposteur_latest.273,L'Olivier,Quartier,30 Rue Maréchal Leclerc  ,,,,Saint-Priest,69290,69800,2013-02-23,273
+gip_proprete.gipcomposteur_latest.274,Le Sisley,Pied d'immeuble,30 rue Professeur Paul Siley,du 30 au 32,,,Lyon 3e Arrondissement,69383,69003,2020-05-20,274
+gip_proprete.gipcomposteur_latest.275,Grange Bruyère,Pied d'immeuble,35 ter rue du Commandant Charcot,,,,Sainte-Foy-lès-Lyon,69202,69110,2020-06-15,275
+gip_proprete.gipcomposteur_latest.276,Le Corrège,Pied d'immeuble,380 Avenueenue Jean Monnet,,,,Caluire-et-Cuire,69034,69300,2018-04-26,276
+gip_proprete.gipcomposteur_latest.277,Les portes de l'esplanade,Pied d'immeuble,42 evenue Lacassagne,et 44,,,Lyon 3e Arrondissement,69383,69003,2020-05-28,277
+gip_proprete.gipcomposteur_latest.278,Résidence Maryse Bastié,Pied d'immeuble,45 rue Maryse BASTIE,,,,Lyon 8e Arrondissement,69388,69008,2019-02-13,278
+gip_proprete.gipcomposteur_latest.279,Monchat,Quartier,48 rue Ferdinand-Buisson,Angle de la rue Ferdinand-Buisson et du Cours Eugénie,compost.montchat@free.fr,,Lyon 3e Arrondissement,69383,69003,2014-06-17,279
+gip_proprete.gipcomposteur_latest.280,Casimir Perrier,Pied d'immeuble,5 rue Casimir Perrier,,,,Lyon 2e Arrondissement,69382,69002,2017-03-25,280
+gip_proprete.gipcomposteur_latest.281,Baraban VI,Pied d'immeuble,50 Avenus Georges Pompidou,,,,Lyon 3e Arrondissement,69383,69003,2020-06-24,281
+gip_proprete.gipcomposteur_latest.282,Villa jardins,Pied d'immeuble,53 Avenue Antoine de Saint Exupéry,,,,Villeurbanne,69266,69100,2017-10-17,282
+gip_proprete.gipcomposteur_latest.283,Jardin Réseau-Santé,Quartier,61 rue Chaziére,,reseau.sante@laposte.net,,Lyon 4e Arrondissement,69384,69004,2018-06-26,283
+gip_proprete.gipcomposteur_latest.284,SACVL Bastion,Pied d'immeuble,7 rue du Cardinal Gerlier,du 01 au 15,,,Lyon 5e Arrondissement,69385,69005,2014-10-25,284
+gip_proprete.gipcomposteur_latest.285,Le fort Saint-Irénée,Pied d'immeuble,72 rue du Fort Saint-Irénée,et 74,,,Lyon 5e Arrondissement,69385,69005,2020-06-04,285
+gip_proprete.gipcomposteur_latest.286,Résidence Charcot-Genin,Pied d'immeuble,74 rue François Genin,du 68 au 78,,,Lyon 5e Arrondissement,69385,69005,2018-04-04,286
+gip_proprete.gipcomposteur_latest.287,Clos de Fourvière,Pied d'immeuble,8 rue Pauline Marie Jaricot,,,,Lyon 5e Arrondissement,69385,69005,2017-04-08,287
+gip_proprete.gipcomposteur_latest.288,Le bahia,Pied d'immeuble,85 Avenue Jean-Jaures,,,,Saint-Priest,69290,69800,2019-11-06,288
+gip_proprete.gipcomposteur_latest.289,Bir Hakeim,Quartier,place Bir Hakeim,,composteur.birhakeim@gmail.com,,Lyon 3e Arrondissement,69383,69003,2017-11-12,289
+gip_proprete.gipcomposteur_latest.290,Ferrandière,Quartier,Place de la ferrandiere,,composteur.ferranterre@gmail.com,,Lyon 3e Arrondissement,69383,69003,2017-11-26,290
+gip_proprete.gipcomposteur_latest.291,Prenez Racines,Quartier,rue Berthe Morizot,"dans le Verger ""Prenez Racines""",prenezracines@gmail.com,,Lyon 8e Arrondissement,69388,69008,2020-01-21,291
+gip_proprete.gipcomposteur_latest.292,Parc Chambovet,Quartier,Parc Chambovet,,jardinenherbes3@gmail.com,,Lyon 3e Arrondissement,69383,69003,2019-04-08,292
