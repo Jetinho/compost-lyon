@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_11_174252) do
+ActiveRecord::Schema.define(version: 2020_10_11_213204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_10_11_174252) do
     t.string "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "slug"
   end
 
   create_table "sites", force: :cascade do |t|
@@ -40,6 +41,9 @@ ActiveRecord::Schema.define(version: 2020_10_11_174252) do
     t.text "operation_conditions"
     t.string "contact_email"
     t.text "data"
+    t.date "installation_date"
+    t.string "website_url"
+    t.string "location_information"
     t.index ["organisation_id"], name: "index_sites_on_organisation_id"
   end
 

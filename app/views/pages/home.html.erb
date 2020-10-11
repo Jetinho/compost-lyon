@@ -23,6 +23,9 @@
   var data = <%= raw @sites %>;
 
 data.forEach((site, i) => {
+  if (site.latitude == null) {
+    return;
+  }
   var marker = L.marker([site.latitude, site.longitude]).addTo(mymap);
   var text = "<h6><b>" + site.name + "</b></h6>"
   text +=  "<p><b>Adresse :</b></p>"
