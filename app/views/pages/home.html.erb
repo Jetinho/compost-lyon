@@ -1,8 +1,8 @@
 <%= stylesheet_link_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.css") %>
 <%= javascript_include_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.js") %>
-<h1>Pages#home</h1>
+<h1>Compost Lyon</h1>
 
-<p>Find me in app/views/pages/home.html.erb</p>
+<p>Tout pour se mettre au compost sur la métropole de Lyon</p>
 
 <div id="map">
 
@@ -19,4 +19,26 @@
       zoomOffset: -1,
       accessToken: '<%= Rails.application.credentials.mapbox[:access_token] %>'
   }).addTo(mymap);
+
+  var data = <%= raw @sites %>;
+
+data.forEach((site, i) => {
+  var marker = L.marker([site.latitude, site.longitude]).addTo(mymap);
+  var text = "<h6><b>" + site.name + "</b></h6>"
+  text +=  "<p><b>Adresse :</b></p>"
+  text +=  "<p>" + site.address + "<br>"
+  text +=  site.zipcode + "<br>"
+  text +=  site.city + "</p>"
+  text +=  "<p><b>Accès :</b></p>"
+  text +=  "<p>" + site.participation_conditions + "<br>"
+  text +=  site.operation_conditions + "</p>"
+  text +=  "<p><b>Contact :</b></p>"
+  text +=  "<p><a href='mailto:" + site.contact_email + "'>" + site.contact_email + "</a></p>"
+  // text +=  "<p><b>Organisme :</b></p>"
+  // text +=  "<p>" + "<a href=" + site.organisation_website + ">"+ site.organisation_name + "</a>\r\n"
+  // text +=  "<p>" + site.organisation_name + "</p>"
+
+  marker.bindPopup(text);
+});
+
 </script>

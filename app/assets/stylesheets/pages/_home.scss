@@ -1,2 +1,6 @@
 // Specific CSS for your home-page
 #map { height: 80vh; }
+.leaflet-popup-content p {
+    margin: 8px 0 5px 0 !important;
+}
+.navbar {display: none;}
