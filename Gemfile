@@ -31,6 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 
 gem 'autoprefixer-rails'
+gem 'mini_racer' # enable autoprefixer to work with node > v10
 gem 'font-awesome-sass'
 gem 'simple_form'
 group :development, :test do  gem 'pry-byebug'
