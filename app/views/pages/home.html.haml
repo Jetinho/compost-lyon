@@ -2,6 +2,18 @@
 = javascript_include_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.js")
 %h1 Compost Lyon
 %p Tout pour se mettre au compost sur la métropole de Lyon
+
+%h2 Trouver un composteur
+
+-# = form_with url: search_sites_path, method: :get, data: {remote: true} do |form|
+-#   = label_tag(:q, "Adresse")
+-#   = text_field_tag(:q)
+-#   = submit_tag("Rechercher")
+
+= link_to 'Chercher', search_sites_path(q: "17 rue de l'abondance, 69003 lyon")
+
+%br
+
 #map
 
 :javascript
