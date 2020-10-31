@@ -7,7 +7,7 @@ class SitesController < ApplicationController
   end
 
   def search
-    address = params[:q]
+    address = params[:address]
     site = Site.near(address).first
     results = Geocoder.search(address)
     # Error if no result

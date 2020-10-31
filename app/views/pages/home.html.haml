@@ -19,14 +19,14 @@
             = link_to('#', class: 'btn btn-secondary') do
               Professionnels : valoriser mes biodéchets
 
-%h2 Trouver un composteur
+.container.py-5
+  %h2 Trouver un composteur
 
--# = form_with url: search_sites_path, method: :get, data: {remote: true} do |form|
--#   = label_tag(:q, "Adresse")
--#   = text_field_tag(:q)
--#   = submit_tag("Rechercher")
-
-= link_to 'Chercher', search_sites_path(q: "17 rue de l'abondance, 69003 lyon")
+  = form_with url: search_sites_path, method: :get, data: {remote: false} do |form|
+    .form-group
+      .row
+        .col-sm-6= text_field_tag(:address, nil, placeholder: 'Saisissez une addresse', class: 'form-control' )
+        .col-sm-6= submit_tag("Rechercher", class: 'btn btn-primary')
 
 %br
 
