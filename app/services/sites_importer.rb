@@ -39,8 +39,8 @@ class SitesImporter
     @csv_handler ||= CsvHandler.new
   end
 
-  def map_site_data(name, csv_line)
-    name == :grand_lyon_metropole ? map_grand_lyon_metropole_site_data(csv_line) : map_geocompost_site_data(csv_line)
+  def map_site_data(slug, csv_line)
+    send("map_#{slug}_site_data", csv_line)
   end
 
   def map_grand_lyon_metropole_site_data(csv_line)
@@ -59,7 +59,8 @@ class SitesImporter
     }
   end
 
-  def map_geocompost_site_data(csv_line)
+  def map_eisenia_site_data(csv_line)
+    # Geocompost format
     {
       name: csv_line["Nom Du Site"],
       city: csv_line["Ville"],
@@ -68,7 +69,7 @@ class SitesImporter
       latitude: csv_line["x"].to_f,
       longitude: csv_line["y"].to_f,
       site_type: csv_line["Type_sites_compostage"],
-      public: (csv_line["Ouvert_au_public"].downcase == 'oui' ? 1 : 0),
+      public: (csv_line["Ouvert_au_public"]&.downcase == 'oui'),
       participation_conditions: csv_line["Conditions_usage"],
       operation_conditions: csv_line["Fonctionnement_du_site"],
       contact_email: csv_line["Contact_responsable_site"],

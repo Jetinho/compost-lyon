@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+ORGANISATIONS = ["Eisenia", "Grand Lyon Métropole"]
+ORGANISATIONS.each do |name|
+  Organisation.create(name: name, slug: name.parameterize.underscore)
+end
+
+importer = SitesImporter.new
+Organisation.all.each do |o|
+  importer.import o.slug
+end
