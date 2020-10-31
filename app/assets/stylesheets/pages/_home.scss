@@ -3,4 +3,12 @@
 .leaflet-popup-content p {
     margin: 8px 0 5px 0 !important;
 }
-.navbar {display: none;}
+#homeBanner {
+  min-height: 60vh;
+  background-position: center;
+  color: white;
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}

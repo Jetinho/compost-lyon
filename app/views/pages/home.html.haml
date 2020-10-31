@@ -1,7 +1,23 @@
 = stylesheet_link_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.css")
 = javascript_include_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.js")
-%h1 Compost Lyon
-%p Tout pour se mettre au compost sur la métropole de Lyon
+
+#homeBanner.banner{style: "background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(#{asset_path('home_background.jpg')})"}
+
+  .container.py-5
+    %h1 Compost Lyon - Tout sur le compost à Lyon
+    %p
+      Vous êtes sensible au sujet de la valorisation des déchets organiques et souhaitez composter vos biodéchets sur Lyon ou sa région ?
+      %br
+      Nous vous informons et vous accompagnons dans votre démarche :
+    .row
+      .col-sm-6
+        .row
+          .col-sm-6
+            = link_to('#', class: 'btn btn-primary mb-3') do
+              Particuliers : Composter à Lyon
+          .col-sm-6
+            = link_to('#', class: 'btn btn-secondary') do
+              Professionnels : valoriser mes biodéchets
 
 %h2 Trouver un composteur
 
