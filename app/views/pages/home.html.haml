@@ -1,26 +1,31 @@
 = stylesheet_link_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.css")
 = javascript_include_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.js")
 
-#homeBanner.banner{style: "background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(#{asset_path('home_background.jpg')})"}
+#homeBanner.banner{style: "background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(#{asset_path('home_background.jpg')})"}
 
   .container.py-5
-    %h1 Compost Lyon - Tout sur le compost à Lyon
-    %p
-      Vous êtes sensible au sujet de la valorisation des déchets organiques et souhaitez composter vos biodéchets sur Lyon ou sa région ?
-      %br
-      Nous vous informons et vous accompagnons dans votre démarche :
     .row
-      .col-sm-6
+      .banner-content.col-sm-8.py-3
+        %h1 Compost Lyon - tout sur le compost à Lyon
+        %p
+          Vous êtes sensible au sujet de la valorisation des déchets organiques et souhaitez composter vos biodéchets sur Lyon ou sa région ?
+          %br
+          Nous vous informons et vous accompagnons dans votre démarche :
         .row
           .col-sm-6
-            = link_to('#', class: 'btn btn-primary mb-3') do
+            = link_to('#particuliers', class: 'btn btn-primary mb-3') do
               Particuliers : Composter à Lyon
           .col-sm-6
             = link_to('#', class: 'btn btn-secondary') do
               Professionnels : valoriser mes biodéchets
 
-.container.py-5
-  %h2 Trouver un composteur
+#composteursDeQuartier.container.py-5
+  %h2 Trouver un composteur collectif à Lyon Métropole
+  %p
+    Sur la carte ci-dessous, vous retrouverez les composteurs collectifs accessibles au public.
+    %br
+    Vous pouvez aussi trouver le plus proche de chez vous à partir d'une adresse :
+    %br
 
   = form_with url: search_sites_path, method: :get, data: {remote: false} do |form|
     .form-group
@@ -28,9 +33,93 @@
         .col-sm-6= text_field_tag(:address, nil, placeholder: 'Saisissez une addresse', class: 'form-control' )
         .col-sm-6= submit_tag("Rechercher", class: 'btn btn-primary')
 
-%br
+    %p
+      Certains composteurs collectifs sont accessibles librement
+      = link_to('Voir les composteurs en libre accès', '#')
+      %br
+      D'autres nécessitent de rejoindre un collectif.
+      = link_to("En savoir plus sur les composteurs collectifs", '#')
+      %p
+        Enfin, bon nombre de composteurs collectifs sont installés sur des espaces privés.
+        %br
+        Peut-être avez-vous la chance d'en avoir un à disposition !
+        = link_to("Voir les composteurs de copropriété / Pied d'immeuble", '#copropriete')
+        (209)
 
 #map
+
+.container.py-5
+  %h2#particuliers Composter à Lyon pour les particuliers
+  %p En tant que particuliers, plusieurs options s'offrent à vous pour valoriser vos déchets organiques
+
+
+  %h3.text-center Le compostage collectif
+  .row.py-3
+    .col-sm-4
+      .compost-option
+        %h4 Compostage de quartier
+        %p
+          Source de rencontres, d'échanges de bonnes pratiques, cette forme de compostage collectif met l'accent sur l'engagement citoyen, le travail collaboratif et la vie de quartier.
+          %br
+          Parmi les composteur de quartier, bon nombre sont des lombricomposteurs collectifs, installés par l'
+          = link_to("association Eisenia", 'https://www.eisenaia.org')
+        .cta.text-center
+          = link_to('Découvrir les composteurs de mon quartier', '#composteursDeQuartier', class: 'btn btn-primary')
+        %p
+          Ces projets sont à l'initiatives de collectifs citoyens, structurés ou non en association.
+          %br
+          Le coût d'installation peut être pris en charge par la métropole.
+        .cta.text-center
+          = link_to('Monter un composteur collectif', '#composteursDeQuartierProjet', class: 'btn btn-secondary')
+    .col-sm-4
+      .compost-option
+        %h4 Composteurs de copropriété
+        %p
+          Pour composter au pied de votre immeuble et avoir l'occasion de rencontrer vos voisins !
+        .cta.text-center
+          = link_to('Découvrir les composteurs de copropriété', '#copropriete', class: 'btn btn-primary')
+        %p
+          A l'initiative d'un ou plusieurs copropriétaires, monter un collectif de voisin permet de diminuer significativement le volume des poubelles d'une copropriété.
+          %br
+          Le coût d'installation peut être pris en charge par la métropole.
+        .cta.text-center
+          = link_to('Monter un composteur de copropriété', '#coproprieteProjet', class: 'btn btn-secondary')
+    .col-sm-4
+      .compost-option
+        %h4 Points d'apport volontaire
+        %p En souscrivant à un abonnement, vous obtenez l'accès à un point d'apport de déchets organiques. Les biodéchets sont régulièrement collectés par l'entreprise en charge du point d'apport.
+        .cta.text-center
+          = link_to("Plus d'infos", '#copropriete', class: 'btn btn-info')
+
+
+  %h3.text-center Le compostage individuel
+  .row.py-3
+    .col-sm-6
+      .compost-option
+        %h4 Lombricompostage
+        %p
+        Pour composter en maison ou rez-de-jardin. En bois ou en plastique
+        .cta.text-center
+          = link_to("Fabriquer un composteur", '#fabriquerLombricomposteurs', class: 'btn btn-primary')
+        .cta.text-center
+          = link_to("Découvrir des modèles", '#lombricomposteurs', class: 'btn btn-primary')
+        %p
+        Pour vous lancer dans le compostage au jardin
+        .cta.text-center
+          = link_to('Lombricompostage : découvrir les bonnes pratiques', '#infoLombricompostage', class: 'btn btn-secondary')
+    .col-sm-6
+      .compost-option
+        %h4 Compostage d'extérieur
+        %p
+          Le compostage 'classique', pour composter en maison ou rez-de-jardin.
+          .cta.text-center
+            = link_to("Fabriquer un composteur", '#fabriquerComposteurDeJardin', class: 'btn btn-primary')
+        .cta.text-center
+          = link_to("Découvrir des composteurs d'extérieur", '#composteursDeJardin', class: 'btn btn-primary')
+        %p
+          Pour vous lancer dans le compostage au jardin
+        .cta.text-center
+          = link_to('Comment faire du compost', '#techniquesDeCompostage', class: 'btn btn-secondary')
 
 :javascript
   var mymap = L.map('map').setView([45.7617, 4.8361], 13);
