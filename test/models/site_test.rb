@@ -11,7 +11,6 @@ class SiteTest < ActiveSupport::TestCase
       it "slug is 'composteur-bahadourian-de-la-guill'" do
         site = @organisation.sites.create(name: "Compost Bahadourian (de la Guill)")
         assert site.formatted_name == "Composteur Bahadourian (de la Guill)"
-        site.save # Don't understand why slug is not set without saving at that point
         assert site.slug == "composteur-bahadourian-de-la-guill"
       end
     end
