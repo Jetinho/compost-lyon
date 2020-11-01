@@ -10,7 +10,15 @@ class SitesController < ApplicationController
     address = params[:address]
     site = Site.near(address).first
     results = Geocoder.search(address)
-    # Error if no result
-    redirect_to site_path(site, distance: site.distance)
+    if results.any?
+      msg = "Voici le composteur le plus proche de l'adresse indiquée :"
+      msg += "\r\n #{site.distance.round(1)} km de #{address}"
+      # Proposer des voir plus de résultats
+      flash[:success] = msg
+      redirect_to site_path(site, distance: site.distance)
+    else
+      msg = "L'adresse indiquée n'a pas été reconnue. Essayez d'être plus précis"
+      redirect_back(fallback_location: root_path, alert: msg)
+    end
   end
 end

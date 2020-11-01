@@ -7,9 +7,10 @@
     .col-sm-6
       %h1= @site.name
       %label.font-weight-bold Adresse
-      %p= @site.address
-      %p= @site.zipcode
-      %p= @site.city
+      %p
+        = @site.address
+        %br
+        = [@site.zipcode, @site.city].join(' ')
       %label.font-weight-bold Accès
       %p= @site.participation_conditions
       %label.font-weight-bold Contact
