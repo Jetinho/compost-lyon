@@ -8,7 +8,7 @@ class SitesController < ApplicationController
 
   def search
     address = params[:address]
-    site = Site.near(address).first
+    site = Site.public_sites.near(address).first
     results = Geocoder.search(address)
     if results.any?
       msg = "Voici le composteur le plus proche de l'adresse indiquée :"
