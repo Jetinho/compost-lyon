@@ -3,7 +3,6 @@ class SitesController < ApplicationController
 
   def show
     @site = Site.find(params[:id])
-    # binding.pry
   end
 
   def search
@@ -13,7 +12,6 @@ class SitesController < ApplicationController
     if results.any?
       msg = "Voici le composteur le plus proche de l'adresse indiquée :"
       msg += "\r\n #{site.distance.round(1)} km de #{address}"
-      # Proposer des voir plus de résultats
       flash[:success] = msg
       redirect_to site_path(site, distance: site.distance)
     else
