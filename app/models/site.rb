@@ -11,6 +11,24 @@ class Site < ApplicationRecord
     [address, city, zipcode, 'France'].join(', ')
   end
 
+  # To be added
+  def photo
+    # code
+  end
+
+  # Move to decorator
+  def description
+    preffix = "Composteur collectif #{format_site_type.downcase}"
+    content = "\'#{formatted_name }\'."
+    suffix = "Rejoignez-nous ou créez votre collectif pour composter à Lyon !"
+    [preffix, content, suffix].join(' ')
+  end
+
+  def format_site_type
+    site_type == "Prive" ? 'Privé' : "De #{site_type.downcase}"
+  end
+  # To decorator
+
   private
 
   def set_formatted_name

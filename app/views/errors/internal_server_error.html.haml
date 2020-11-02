@@ -1,0 +1,12 @@
+.container.text-center.my-5
+  = image_tag('logo.png')
+  %h1 OUPS...
+  %p
+    Une erreur est survenue.
+    %br
+    Nous allons faire tout notre possible pour corriger le problème.
+    %br
+    Pour nous aider, n'hésitez pas à
+    = mail_to('lyoncompost@gmail.com', "nous faire remonter l'info", subject: 'Erreur sur le site')
+    en nous indiquant ce que vous cherchiez à faire.
+  = link_to("Retour à l'accueil", root_path, class: 'btn btn-info')
