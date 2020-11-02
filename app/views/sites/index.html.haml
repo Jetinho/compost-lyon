@@ -1,0 +1,12 @@
+= render 'shared/load_leaflet_fullwidth'
+= content_for :meta_title, "Composteurs collectifs à Lyon et sa métropole"
+= content_for :meta_description, "Retrouvez tous les composteurs collectifs de Lyon métropole, avec les informations pour les rejoindre."
+
+%h1.mt-5 Composteurs collectifs à Lyon et sa métropole
+
+#map.mt-5
+
+.container.mt-5
+  = render partial: "site", collection: @sites
+
+= render 'shared/leaflet_sites_map', sites: @sites.to_json

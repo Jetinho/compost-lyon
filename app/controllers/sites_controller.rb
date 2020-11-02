@@ -5,6 +5,10 @@ class SitesController < ApplicationController
     @site = Site.friendly.find(params[:id])
   end
 
+  def index
+    @sites = Site.public_sites.all
+  end
+
   def search
     store_address_search
     if closest_site

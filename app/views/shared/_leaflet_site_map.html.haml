@@ -1,0 +1,31 @@
+:javascript
+  var mymap = L.map('map').setView(#{@site.to_coordinates}, 20);
+  var accessToken = '#{Rails.application.credentials.mapbox[:access_token]}';
+
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: accessToken
+  }).addTo(mymap);
+
+  var site = #{raw @site.to_json};
+
+  var marker = L.marker([site.latitude, site.longitude]).addTo(mymap);
+  var text = "<h6><b>" + site.name + "</b></h6>"
+  text +=  "<p><b>Adresse :</b></p>"
+  text +=  "<p>" + site.address + "<br>"
+  text +=  site.zipcode + "<br>"
+  text +=  site.city + "</p>"
+  text +=  "<p><b>Accès :</b></p>"
+  text +=  "<p>" + site.participation_conditions + "<br>"
+  text +=  site.operation_conditions + "</p>"
+  text +=  "<p><b>Contact :</b></p>"
+  text +=  "<p><a href='mailto:" + site.contact_email + "'>" + site.contact_email + "</a></p>"
+  // text +=  "<p><b>Organisme :</b></p>"
+  // text +=  "<p>" + "<a href=" + site.organisation_website + ">"+ site.organisation_name + "</a>\r\n"
+  // text +=  "<p>" + site.organisation_name + "</p>"
+
+  marker.bindPopup(text);

@@ -7,6 +7,11 @@
   flex-grow: 0;
 }
 
+.nav-item {
+  margin-left: 10px;
+  &.contact-btn { margin-left: 20px}
+}
+
 .navbar-lewagon .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
