@@ -66,5 +66,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "haml-rails"
 gem 'geocoder'
+
+# SEO related
 gem 'friendly_id'
 gem 'sitemap_generator'
+gem "breadcrumbs_on_rails"

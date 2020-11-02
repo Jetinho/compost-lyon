@@ -1,0 +1,14 @@
+.row
+  .col-sm-9
+    .site-card
+      %h3= site.formatted_name
+      .float-right= link_to("+ d'infos", site_path(site), class: 'btn btn-primary')
+      %label.font-weight-bold Adresse
+      %p
+        = site.address
+        %br
+        = [site.zipcode, site.city].join(' ')
+      %label.font-weight-bold Accès
+      %p= site.participation_conditions
+      %label.font-weight-bold Contact
+      %p= mail_to(site.contact_email, site.contact_email)

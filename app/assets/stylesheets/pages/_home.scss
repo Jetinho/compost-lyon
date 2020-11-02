@@ -1,4 +1,19 @@
+// General, move somewhere else
+
+.breadcrumb {
+  background-color: #F4FAF4;
+  font-size: 0.75rem;
+  li {
+    margin-right: 5px;
+    margin-left: 5px;
+    &:first-child {
+       margin-left: 0;
+    }
+  }
+}
+
 // Specific CSS for your home-page
+
 #map { height: 80vh; }
 .leaflet-popup-content p {
     margin: 8px 0 5px 0 !important;

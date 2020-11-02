@@ -1,8 +1,16 @@
 class SitesController < ApplicationController
   skip_before_action :authenticate_user!#, only: [ :home ]
+    add_breadcrumb "Accueil", :root_path
 
   def show
     @site = Site.friendly.find(params[:id])
+    add_breadcrumb "Composteurs collectifs", :sites_path
+    add_breadcrumb @site.formatted_name, :site_path
+  end
+
+  def index
+    @sites = Site.public_sites.all
+    add_breadcrumb "Composteurs collectifs", :sites_path
   end
 
   def search

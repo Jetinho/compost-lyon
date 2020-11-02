@@ -26,6 +26,7 @@ SitemapGenerator::Sitemap.create do
   #     add article_path(article), :lastmod => article.updated_at
   #   end
   add 'a-propos'
+  add 'composteurs-collectifs'
   Site.find_each do |site|
     add site_path(site), :lastmod => site.updated_at
   end
