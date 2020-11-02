@@ -20,7 +20,7 @@
     <meta name="twitter:description" content="<%= meta_description %>">
     <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
     <meta name="twitter:image:src" content="<%= meta_image %>">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -31,6 +31,11 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
+    <% unless @hide_breadcrumbs %>
+      <ol class='breadcrumb'>
+        <%= render_breadcrumbs tag: :li, separator: ' > ' %>
+      </ol>
+    <% end %>
 
     <%= yield %>
   </body>
