@@ -67,3 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "haml-rails"
 gem 'geocoder'
 gem 'friendly_id'
+gem 'sitemap_generator'
