@@ -21,5 +21,7 @@ module CompostLyon
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.exceptions_app = self.routes
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end

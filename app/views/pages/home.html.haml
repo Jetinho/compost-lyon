@@ -18,7 +18,7 @@
             = link_to('#particuliers', class: 'btn btn-primary mb-3') do
               Particuliers : Composter à Lyon
           .col-sm-6
-            = link_to('#', class: 'btn btn-secondary') do
+            = link_to(t('links.conversion.professionals'), class: 'btn btn-secondary') do
               Professionnels : valoriser mes biodéchets
 
 #composteursDeQuartier.container.py-5
@@ -72,28 +72,28 @@
           %br
           Le coût d'installation peut être pris en charge par la métropole.
         .cta.text-center
-          = link_to('Monter un composteur collectif', '#composteursDeQuartierProjet', class: 'btn btn-secondary')
+          = link_to('Monter un composteur collectif', t('links.conversion.district_compost_creation'), class: 'btn btn-secondary')
     .col-sm-4
       .compost-option
         %h4 Composteurs de copropriété
         %p
           Pour composter au pied de votre immeuble et avoir l'occasion de rencontrer vos voisins !
         .cta.text-center
-          = link_to('Découvrir les composteurs de copropriété', '#copropriete', class: 'btn btn-primary')
+          = link_to('Découvrir les composteurs de copropriété', condominium_sites_path, class: 'btn btn-primary')
         %p
           A l'initiative d'un ou plusieurs copropriétaires, monter un collectif de voisin permet de diminuer significativement le volume des poubelles d'une copropriété.
           %br
           Le coût d'installation peut être pris en charge par la métropole.
         .cta.text-center
-          = link_to('Monter un composteur de copropriété', '#coproprieteProjet', class: 'btn btn-secondary')
+          = link_to('Monter un composteur de copropriété', t('links.conversion.condominium_compost_creation'), class: 'btn btn-secondary')
     .col-sm-4
       .compost-option
         %h4 Points d'apport volontaire
         %p En souscrivant à un abonnement, vous obtenez l'accès à un point d'apport de déchets organiques. Les biodéchets sont régulièrement collectés par l'entreprise en charge du point d'apport.
         .cta.text-center
-          = link_to("Plus d'infos", '#copropriete', class: 'btn btn-info')
+          = link_to("Plus d'infos", '#dropoff', class: 'btn btn-info')
 
-
+.d-none
   %h3.text-center Le compostage individuel
   .row.py-3
     .col-sm-6

@@ -6,6 +6,7 @@ class Site < ApplicationRecord
   friendly_id :formatted_name, use: :slugged
   after_validation :geocode, if: Proc.new { |site| !site.geocoded? || site.address_changed? || site.zipcode_changed? }
   scope :public_sites, -> { where(public: true) }
+  scope :condominium, -> { where(site_type: "Pied d'immeuble") }
 
   def full_address
     [address, city, zipcode, 'France'].join(', ')
