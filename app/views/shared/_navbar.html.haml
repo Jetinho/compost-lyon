@@ -8,7 +8,7 @@
     %ul.navbar-nav.mr-auto
       %li.nav-item= link_to "Les composteurs collectifs", sites_path, class: "nav-link"
       %li.nav-item= link_to "A propos", about_path, class: "nav-link"
-      %li.nav-item.contact-btn= mail_to 'lyomcompost@gmail.com', "Contact", class: "btn btn-primary"
+      %li.nav-item.contact-btn= link_to "Contact", t('links.conversion.contact'), class: "btn btn-primary"
       - if user_signed_in?
         %li.nav-item.active
           = link_to "Home", "#", class: "nav-link"
