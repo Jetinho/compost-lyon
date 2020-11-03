@@ -1,0 +1,12 @@
+= render 'shared/load_leaflet_fullwidth'
+= content_for :meta_title, title
+= content_for :meta_description, description
+
+%h1.mt-3= title
+
+#map.mt-3
+
+.container.mt-5
+  = render partial: "sites/site", collection: sites
+
+= render 'shared/leaflet_sites_map', sites: sites.to_json
