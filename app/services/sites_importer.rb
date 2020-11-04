@@ -3,7 +3,7 @@ class SitesImporter
   # "Code_postal", 'Ouvert_au_public', "Conditions_usage", "Volume_valorise", "Nombre_Contributeurs",
   # "Nombre_repas_annuel", "Exploitant_structure", "Exploitant_contact", "Contact_responsable_site",
   # "Acteur_accompagnateur", "Fonctionnement_du_site", "Date_mise_en_route_du_site", "x","y"]
-  ORGANISATIONS = [:eisenia, :grand_lyon_metropole]
+  ORGANISATIONS = [:eisenia, :grand-lyon-metropole]
 
   def import(slug)
     return 'organisation unknown' unless ORGANISATIONS.include? slug.to_sym
