@@ -1,7 +1,4 @@
-= stylesheet_link_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.css")
-= javascript_include_tag("https://unpkg.com/leaflet@1.6.0/dist/leaflet.js")
-= stylesheet_link_tag("https://unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css")
-= javascript_include_tag("https://unpkg.com/leaflet-gesture-handling")
+= render 'shared/load_leaflet_fullwidth'
 
 #homeBanner.banner{style: "background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(#{asset_path('home_background.jpg')})"}
 

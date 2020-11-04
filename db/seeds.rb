@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 ORGANISATIONS = ["Eisenia", "Grand Lyon Métropole"]
 ORGANISATIONS.each do |name|
-  Organisation.create(name: name, slug: name.parameterize.underscore)
+  Organisation.create(name: name, slug: name.parameterize)
 end
 
 importer = SitesImporter.new

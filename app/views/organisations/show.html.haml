@@ -1,0 +1,21 @@
+- title = @organisation.name
+= render 'shared/load_leaflet_fullwidth'
+= content_for :meta_title, title
+= content_for :meta_description, @organisation.meta_description
+
+.container
+  %h1.mt-3= title
+
+  %p= @organisation.description
+
+  .h2.mb-3
+    = @organisation.slug == 'eisenia' ? "Lombricomposteurs" : "Composteurs"
+    à Lyon et dans la région
+
+
+#map.mt-3
+
+.container.mt-5
+  = render partial: "sites/site", collection: @sites
+
+= render 'shared/leaflet_sites_map', sites: @sites.to_json
