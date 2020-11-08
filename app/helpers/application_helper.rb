@@ -7,7 +7,7 @@ module ApplicationHelper
     I18n.t("resources.#{resource}.name").parameterize
   end
 
-  def resource_name(resource)
+  def display_resource_name(resource)
     I18n.t("resources.#{resource}.name")
   end
 
@@ -21,5 +21,9 @@ module ApplicationHelper
 
   def page_name(page)
     I18n.t("pages.#{page}")
+  end
+
+  def devise_path_name(action)
+    I18n.t("devise.path_names.#{action}")
   end
 end

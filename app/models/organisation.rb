@@ -3,6 +3,12 @@ class Organisation < ApplicationRecord
   friendly_id :name, use: :slugged
   has_many :sites
 
+  EDITABLE_PARAMS = %i(name email website_url phone_number description)
+
+  def self.editable_params
+    EDITABLE_PARAMS
+  end
+
   def description
     self[:description] || name
   end

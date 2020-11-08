@@ -1,0 +1,24 @@
+fr:
+  simple_form:
+    "yes": 'Oui'
+    "no": 'Non'
+    required:
+      text: 'obligatoire'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Erreur, veuillez vérifier vos réponses:"
+    # Labels and hints examples
+    labels:
+      user:
+        password: 'Mot de passe'
+        password_confirmation: 'Confirmer le mot de passe'
+        remember_me: 'Se souvenir de moi'
+      organisation:
+        name: 'Nom'
+    hints:
+      user:
+        password: "Veuillez choisir un mot de passe avec au moins 6 caractères"
+        remember_me: "Cochez cette case si vous souhaitez rester connecter lors de vos prochains accès"

@@ -1,0 +1,14 @@
+- title = "Edition - " + @organisation.name
+= content_for :meta_title, title
+
+.container
+  %h1.mt-3= title
+
+  .row
+    .col-sm-9
+      = simple_form_for(@organisation) do |f|
+        .form-group
+          = f.input :name, class: 'form-control'
+          = f.input :email, class: 'form-control'
+          = f.input :description, class: 'form-control', input_html: { rows: 10 }
+          = f.submit 'Enregistrer', class: 'btn btn-primary'

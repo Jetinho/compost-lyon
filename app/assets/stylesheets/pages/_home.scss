@@ -12,6 +12,11 @@
   }
 }
 
+h1 > small {
+  font-size: 50%;
+  i { font-size: 80%;}
+}
+
 // Specific CSS for your home-page
 
 #map { height: 80vh; }
@@ -40,5 +45,10 @@
 
 .compost-option {
   padding: 20px;
+  @extend .white-box
+}
+
+.white-box {
   box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.35);
+  background-color: white;
 }

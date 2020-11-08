@@ -1,4 +1,8 @@
 fr:
+  users:
+    sign_out: Deconnexion
+    sign_in: Connexion
+    sign_up: Inscription
   pages:
     about: 'A propos'
   resources:

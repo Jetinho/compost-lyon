@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @sites = Site.public_sites.to_json
-    @hide_breadcrumbs = true
+    hide_breadcrumbs
   end
 
   def about
