@@ -1,0 +1,9 @@
+.row
+  .col-sm-9
+    %h3.mt-3= organisation.name
+    .float-right= link_to("Plus d'infos", organisation_path(organisation), class: 'btn btn-info')
+    %p= organisation.description
+    %label.font-weight-bold Sites de compostage :
+    %p
+      = organisation.nb_sites
+      composteurs= div_for organisation

@@ -28,6 +28,14 @@ class Site < ApplicationRecord
   def format_site_type
     site_type == "Prive" ? 'Privé' : "De #{site_type.downcase}"
   end
+
+  def organisation_name
+    organisation.name
+  end
+
+  def organisation_path
+    organisations_path(organisation)
+  end
   # To decorator
 
   private

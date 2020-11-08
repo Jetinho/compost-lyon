@@ -23,5 +23,6 @@ module CompostLyon
     config.exceptions_app = self.routes
 
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.default_locale = :fr 
   end
 end

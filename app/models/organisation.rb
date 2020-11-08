@@ -10,4 +10,8 @@ class Organisation < ApplicationRecord
   def meta_description
     self[:meta_description] || description
   end
+
+  def nb_sites
+    sites.count
+  end
 end

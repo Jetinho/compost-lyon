@@ -6,10 +6,11 @@
   #navbarSupportedContent.collapse.navbar-collapse
     -# .d-none
     %ul.navbar-nav.mr-auto
-      %li.nav-item= link_to "Les composteurs collectifs", sites_path, class: "nav-link"
-      %li.nav-item= link_to "Les composteurs de copro", condominium_sites_path, class: "nav-link"
-      %li.nav-item= link_to "A propos", about_path, class: "nav-link"
-      %li.nav-item.contact-btn= link_to "Contact", t('links.conversion.contact'), class: "btn btn-primary"
+      %li.nav-item= link_to resource_name(:organisations), organisations_path, class: "nav-link"
+      %li.nav-item= link_to resource_name(:sites), sites_path, class: "nav-link"
+      %li.nav-item= link_to resource_name(:condominium_sites), condominium_sites_path, class: "nav-link"
+      %li.nav-item= link_to page_name(:about), about_path, class: "nav-link"
+      %li.nav-item.contact-btn= link_to t('conversion.contact.cta'), t('conversion.contact.link'), class: "btn btn-primary"
       - if user_signed_in?
         %li.nav-item.active
           = link_to "Home", "#", class: "nav-link"

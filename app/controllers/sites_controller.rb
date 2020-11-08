@@ -4,7 +4,8 @@ class SitesController < ApplicationController
 
   def show
     @site = Site.friendly.find(params[:id])
-    add_breadcrumb "Composteurs collectifs", :sites_path
+    add_breadcrumb resource_name(:organisations), :organisations_path
+    add_breadcrumb @site.organisation_name, organisation_path(@site.organisation)
     add_breadcrumb @site.formatted_name, :site_path
   end
 
