@@ -22,6 +22,7 @@ class SitesController < ApplicationController
 
   def index
     @sites = Site.public_sites.all
+    @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
     add_breadcrumb "Composteurs collectifs", :sites_path
   end
 

@@ -4,6 +4,7 @@ class CondominiumSitesController < ApplicationController
 
   def index
     @sites = Site.condominium.all
+    @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
     add_breadcrumb "Composteurs de copropriété (\"Pied d'immeuble\")", :condominium_sites_path
   end
 end

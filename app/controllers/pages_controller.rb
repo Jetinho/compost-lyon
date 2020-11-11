@@ -3,7 +3,6 @@ class PagesController < ApplicationController
 
   def home
     sites = SiteDecorator.decorate_collection(Site.public_sites)
-
     @site_markers_data = sites.to_map_marker_json
     hide_breadcrumbs
   end

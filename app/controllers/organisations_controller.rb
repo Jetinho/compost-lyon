@@ -5,6 +5,7 @@ class OrganisationsController < ApplicationController
 
   def show
     @sites = @organisation.sites.order(site_type: :desc)
+    @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
     add_organisation_breadcrumbs
   end
 
