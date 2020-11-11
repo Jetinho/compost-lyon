@@ -5,12 +5,12 @@ class OrganisationsController < ApplicationController
 
   def show
     @sites = @organisation.sites.order(site_type: :desc)
-    add_breadcrumb display_resource_name(:organisations), :organisations_path
-    add_breadcrumb @organisation.name, :organisation_path
+    add_organisation_breadcrumbs
   end
 
   def edit
     authorize! :edit, @organisation
+    add_organisation_breadcrumbs
   end
 
   def update
@@ -31,5 +31,10 @@ class OrganisationsController < ApplicationController
 
   def organisation_params
     params.require(:organisation).permit(Organisation.editable_params)
+  end
+
+  def add_organisation_breadcrumbs
+    add_breadcrumb display_resource_name(:organisations), :organisations_path
+    add_breadcrumb @organisation.name, :organisation_path
   end
 end

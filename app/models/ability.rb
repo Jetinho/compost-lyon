@@ -8,6 +8,10 @@ class Ability
     user ||= User.new # guest user (not logged in)
     can :read, [Organisation, Site]
     can :update, Organisation, user_id: user.id
+    can :update, Site do |site|
+      site.admin_id == user.id
+    end
+
 
     # Define abilities for the passed in user here. For example:
     #

@@ -11,6 +11,12 @@ class Site < ApplicationRecord
   delegate :admin, to: :organisation
   delegate :admin_id, to: :organisation
 
+  EDITABLE_PARAMS = %i(name contact_email website_url location_information operation_conditions participation_conditions)
+
+  def self.editable_params
+    EDITABLE_PARAMS
+  end
+
   def full_address
     [address, city, zipcode, 'France'].join(', ')
   end

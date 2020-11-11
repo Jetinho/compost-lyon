@@ -1,12 +1,23 @@
 class SitesController < ApplicationController
-  load_and_authorize_resource find_by: :slug
   skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
+  load_resource find_by: :slug, only: [ :show, :edit, :update ]
+  authorize_resource find_by: :slug, only: [ :edit, :update ]
   add_breadcrumb page_name(:home), :root_path
 
   def show
-    add_breadcrumb display_resource_name(:organisations), :organisations_path
-    add_breadcrumb @site.organisation_name, organisation_path(@site.organisation)
-    add_breadcrumb @site.formatted_name, :site_path
+    add_site_breadcrumbs
+  end
+
+  def edit
+    add_site_breadcrumbs
+  end
+
+  def update
+    if @site.update(site_params)
+      redirect_to site_path(@site)
+    else
+      render :edit, alert: @site.errors
+    end
   end
 
   def index
@@ -28,6 +39,16 @@ class SitesController < ApplicationController
   end
 
   private
+
+  def site_params
+    params.require(:site).permit(Site.editable_params)
+  end
+
+  def add_site_breadcrumbs
+    add_breadcrumb display_resource_name(:organisations), :organisations_path
+    add_breadcrumb @site.organisation_name, organisation_path(@site.organisation)
+    add_breadcrumb @site.formatted_name, :site_path
+  end
 
   def store_address_search
     ip = IPAddr.new(request.remote_ip).to_i

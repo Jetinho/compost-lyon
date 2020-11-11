@@ -20,7 +20,22 @@ fr:
         name: 'Nom'
         website_url: 'Adresse du site internet'
         phone_number: 'Numéro de téléphone'
-        contact_email: 'Numéro de téléphone'
+        contact_email: 'Email de contact'
+        slug: "Slug (nom de l'organisation qui apparaîtra dans l'URL, ex pour eisenia 'www.compost-lyon.fr/acteurs/eisenia')"
+      site:
+        name: 'Nom'
+        contact_email: 'Email de contact'
+        website_url: 'Adresse du site internet'
+        phone_number: 'Numéro de téléphone'
+        location_information: "Informations sur la localisation / l'accès"
+        operation_conditions: 'Conditions de fonctionnement'
+        participation_conditions: 'Conditions de participation'
+        city: Ville
+        address: Adresse
+        zipcode: Code postal
+        site_type: Type de site de compostage
+        public: Composteur public ?
+        slug: "Slug (nom du composteur qui apparaîtra dans l'URL, ex pour briand-lyon 'www.compost-lyon.fr/composteurs-collectifs/briand-lyon')"
     hints:
       user:
         password: "Veuillez choisir un mot de passe avec au moins 6 caractères"
