@@ -1,5 +1,6 @@
+- title = @site.formatted_name
 = render 'shared/load_leaflet_map'
-= content_for :meta_title, "#{@site.formatted_name} - #{DEFAULT_META["meta_site_name"]}"
+= content_for :meta_title, "#{title} - #{DEFAULT_META["meta_site_name"]}"
 = content_for :meta_description, @site.description
 - if @site.photo
   = content_for :meta_image, cl_image_path(@site.photo.path)
@@ -8,7 +9,14 @@
 .container
   .row
     .col-sm-6
-      %h1= @site.formatted_name
+      %h1
+        = title
+        - if can? :update, @site
+          %small
+            = link_to edit_site_path(@site) do
+              éditer
+              = icon('far', 'edit', class: '1x')
+
       %label.font-weight-bold Adresse
       %p
         = @site.address

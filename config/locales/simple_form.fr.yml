@@ -1,0 +1,42 @@
+fr:
+  simple_form:
+    "yes": 'Oui'
+    "no": 'Non'
+    required:
+      text: 'obligatoire'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Erreur, veuillez vérifier vos réponses:"
+    # Labels and hints examples
+    labels:
+      user:
+        password: 'Mot de passe'
+        password_confirmation: 'Confirmer le mot de passe'
+        remember_me: 'Se souvenir de moi'
+      organisation:
+        name: 'Nom'
+        website_url: 'Adresse du site internet'
+        phone_number: 'Numéro de téléphone'
+        contact_email: 'Email de contact'
+        slug: "Slug (nom de l'organisation qui apparaîtra dans l'URL, ex pour eisenia 'www.compost-lyon.fr/acteurs/eisenia')"
+      site:
+        name: 'Nom'
+        contact_email: 'Email de contact'
+        website_url: 'Adresse du site internet'
+        phone_number: 'Numéro de téléphone'
+        location_information: "Informations sur la localisation / l'accès"
+        operation_conditions: 'Conditions de fonctionnement'
+        participation_conditions: 'Conditions de participation'
+        city: Ville
+        address: Adresse
+        zipcode: Code postal
+        site_type: Type de site de compostage
+        public: Composteur public ?
+        slug: "Slug (nom du composteur qui apparaîtra dans l'URL, ex pour briand-lyon 'www.compost-lyon.fr/composteurs-collectifs/briand-lyon')"
+    hints:
+      user:
+        password: "Veuillez choisir un mot de passe avec au moins 6 caractères"
+        remember_me: "Cochez cette case si vous souhaitez rester connecter lors de vos prochains accès"

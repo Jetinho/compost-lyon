@@ -1,5 +1,9 @@
 // General, move somewhere else
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .breadcrumb {
   background-color: #F4FAF4;
   font-size: 0.75rem;
@@ -12,12 +16,26 @@
   }
 }
 
+h1 > small {
+  font-size: 50%;
+  i { font-size: 80%;}
+}
+
 // Specific CSS for your home-page
 
 #map { height: 80vh; }
-.leaflet-popup-content p {
-    margin: 8px 0 5px 0 !important;
+.leaflet-popup-content {
+    p {
+      margin: 8px 0 5px 0 !important;
+  }
+  .btn {
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+  }
 }
+
 #homeBanner {
   min-height: 60vh;
   background-position: center;
@@ -40,5 +58,10 @@
 
 .compost-option {
   padding: 20px;
+  @extend .white-box
+}
+
+.white-box {
   box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.35);
+  background-color: white;
 }

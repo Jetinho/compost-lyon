@@ -8,6 +8,14 @@ class Site < ApplicationRecord
   scope :public_sites, -> { where(public: true) }
   scope :condominium, -> { where(site_type: "Pied d'immeuble") }
 
+  delegate :admin, :admin_id, to: :organisation
+
+  EDITABLE_PARAMS = %i(name contact_email website_url location_information operation_conditions participation_conditions)
+
+  def self.editable_params
+    EDITABLE_PARAMS
+  end
+
   def full_address
     [address, city, zipcode, 'France'].join(', ')
   end
@@ -27,6 +35,10 @@ class Site < ApplicationRecord
 
   def format_site_type
     site_type == "Prive" ? 'Privé' : "De #{site_type.downcase}"
+  end
+
+  def organisation_name
+    organisation.name
   end
   # To decorator
 

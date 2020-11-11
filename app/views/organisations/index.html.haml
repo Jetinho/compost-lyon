@@ -1,0 +1,12 @@
+- title = display_resource_name(:organisations)
+- description = resource_description(:organisations)
+= content_for :meta_title, title
+= content_for :meta_description, description
+
+.container
+  %h1.mt-3= title
+
+  %p= description
+
+.container.mt-5
+  = render partial: "organisations/organisation", collection: @organisations
