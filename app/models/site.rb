@@ -41,10 +41,6 @@ class Site < ApplicationRecord
   def organisation_name
     organisation.name
   end
-
-  def organisation_path
-    organisations_path(organisation)
-  end
   # To decorator
 
   private

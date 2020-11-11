@@ -118,4 +118,4 @@
         .cta.text-center
           = link_to('Comment faire du compost', '#techniquesDeCompostage', class: 'btn btn-secondary')
 
-= render 'shared/leaflet_sites_map', sites: @sites
+= render 'shared/leaflet_sites_map', markers_data: @site_markers_data
