@@ -8,7 +8,15 @@
         = site.address
         %br
         = [site.zipcode, site.city].join(' ')
-      %label.font-weight-bold Accès
-      %p= site.participation_conditions
-      %label.font-weight-bold Contact
-      %p= mail_to(site.contact_email, site.contact_email)
+      - if site.location_information
+        %label.font-weight-bold Localisation
+        %p= site.location_information
+      - if site.operation_conditions
+        %label.font-weight-bold Fonctionnement
+        %p= site.operation_conditions
+      - if site.participation_conditions
+        %label.font-weight-bold Participation
+        %p= site.participation_conditions
+      - if site.contact_email
+        %label.font-weight-bold Contact
+        %p= mail_to(site.contact_email, site.contact_email)
