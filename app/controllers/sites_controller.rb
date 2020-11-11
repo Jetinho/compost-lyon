@@ -1,9 +1,9 @@
 class SitesController < ApplicationController
+  load_and_authorize_resource find_by: :slug
   skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
   add_breadcrumb page_name(:home), :root_path
 
   def show
-    @site = Site.friendly.find(params[:id])
     add_breadcrumb display_resource_name(:organisations), :organisations_path
     add_breadcrumb @site.organisation_name, organisation_path(@site.organisation)
     add_breadcrumb @site.formatted_name, :site_path
