@@ -1,6 +1,5 @@
 class SiteDecorator < ApplicationDecorator
   delegate_all
-  include Rails.application.routes.url_helpers
 
   def self.collection_decorator_class
     MapMarkersDecorator
@@ -39,10 +38,4 @@ class SiteDecorator < ApplicationDecorator
   def label_and_content(label:, content:)
     content_tag(:p, content_tag(:b, label)) + content_tag(:p, content)
   end
-
-
-    # // text +=  "<p><b>Organisme :</b></p>"
-    # // text +=  "<p>" + "<a href=" + site.organisation_website + ">"+ site.organisation_name + "</a>\r\n"
-    # // text +=  "<p>" + site.organisation_name + "</p>"
-
 end

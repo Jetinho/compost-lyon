@@ -8,8 +8,7 @@ class Site < ApplicationRecord
   scope :public_sites, -> { where(public: true) }
   scope :condominium, -> { where(site_type: "Pied d'immeuble") }
 
-  delegate :admin, to: :organisation
-  delegate :admin_id, to: :organisation
+  delegate :admin, :admin_id, to: :organisation
 
   EDITABLE_PARAMS = %i(name contact_email website_url location_information operation_conditions participation_conditions)
 
