@@ -18,6 +18,9 @@ fr:
         remember_me: 'Se souvenir de moi'
       organisation:
         name: 'Nom'
+        website_url: 'Adresse du site internet'
+        phone_number: 'Numéro de téléphone'
+        contact_email: 'Numéro de téléphone'
     hints:
       user:
         password: "Veuillez choisir un mot de passe avec au moins 6 caractères"

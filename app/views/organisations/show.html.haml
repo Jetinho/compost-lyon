@@ -6,10 +6,11 @@
 .container
   %h1.mt-3
     = title
-    %small
-      = link_to edit_organisation_path(@organisation) do
-        éditer
-        = icon('far', 'edit', class: '1x')
+    - if can? :update, @organisation
+      %small
+        = link_to edit_organisation_path(@organisation) do
+          éditer
+          = icon('far', 'edit', class: '1x')
 
   %p= @organisation.description
 

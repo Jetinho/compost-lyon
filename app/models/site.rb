@@ -8,6 +8,9 @@ class Site < ApplicationRecord
   scope :public_sites, -> { where(public: true) }
   scope :condominium, -> { where(site_type: "Pied d'immeuble") }
 
+  delegate :admin, to: :organisation
+  delegate :admin_id, to: :organisation
+
   def full_address
     [address, city, zipcode, 'France'].join(', ')
   end

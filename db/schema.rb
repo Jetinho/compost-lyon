@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_04_164534) do
+ActiveRecord::Schema.define(version: 2020_11_11_114711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,7 +45,9 @@ ActiveRecord::Schema.define(version: 2020_11_04_164534) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
     t.text "description"
-    t.string "meta_description"
+    t.bigint "user_id", default: 3, null: false
+    t.string "contact_email"
+    t.index ["user_id"], name: "index_organisations_on_user_id"
   end
 
   create_table "sites", force: :cascade do |t|
@@ -81,9 +83,13 @@ ActiveRecord::Schema.define(version: 2020_11_04_164534) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "firstname"
+    t.string "lastname"
+    t.text "bio"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "organisations", "users"
   add_foreign_key "sites", "organisations"
 end
