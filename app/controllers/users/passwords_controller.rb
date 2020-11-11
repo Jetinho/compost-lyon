@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Users::PasswordsController < Devise::PasswordsController
+  before_action :hide_breadcrumbs
+  
   # GET /resource/password/new
   # def new
   #   super
