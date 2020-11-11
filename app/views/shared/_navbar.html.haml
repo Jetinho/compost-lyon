@@ -16,12 +16,12 @@
         -#   = link_to "Home", "#", class: "nav-link"
         -# %li.nav-item
         -#   = link_to "Messages", "#", class: "nav-link"
-        %li.nav-item.dropdown
+        %li.nav-item.dropdown.cursor-pointer
           = image_tag asset_path('user-avatar'), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false
           .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "navbarDropdown"}
             -# = link_to "Action", "#", class: "dropdown-item"
             -# = link_to "Another action", "#", class: "dropdown-item"
             = link_to t('users.sign_out'), destroy_user_session_path, method: :delete, class: "dropdown-item"
-      -# - else
-      -#   %li.nav-item
-      -#     = link_to "Login", new_user_session_path, class: "nav-link"
+      - else
+        %li.nav-item
+          = link_to "Me connecter", new_user_session_path, class: "btn btn-outline-secondary"
