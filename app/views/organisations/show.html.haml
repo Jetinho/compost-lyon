@@ -24,4 +24,4 @@
 .container.mt-5
   = render partial: "sites/site", collection: @sites
 
-= render 'shared/leaflet_sites_map', sites: @sites.to_json
+= render 'shared/leaflet_sites_map', markers_data: @sites.to_json
