@@ -2,6 +2,9 @@ fr:
   pages:
     home: 'Accueil'
     about: 'A propos'
+    collective_composting:
+      title: 'Compostage collectif à Lyon et dans les environs'
+      description: "La carte du compostage collectif de Lyon métropole : retrouvez le composteurs de quartier et de copropriété, avec les informations pour les rejoindre."
   conversion:
     contact:
       link: 'http://contact.compost-lyon.fr/7131-compost-lyon-contactez-nous?neo_campaign=contact&neo_medium=click_popup&uuid=efabd22b-9748-456b-8b6e-0f9d469ce134'

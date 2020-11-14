@@ -46,6 +46,7 @@ class SitesController < ApplicationController
   end
 
   def add_site_breadcrumbs
+    add_breadcrumb display_resource_name(:sites), :sites_path
     add_breadcrumb display_resource_name(:organisations), :organisations_path
     add_breadcrumb @site.organisation_name, organisation_path(@site.organisation)
     add_breadcrumb @site.formatted_name, :site_path

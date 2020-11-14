@@ -1,6 +1,9 @@
 include ApplicationHelper
 Rails.application.routes.draw do
   root to: 'pages#home'
+  get 'composteurs-collectifs/', to: redirect('/compostage-collectif')
+  get 'composteurs-collectifs/:site_name', to: redirect('/compostage-collectif/%{site_name}')
+
   get page_path_name(:about), to: 'pages#about', as: 'about'
   match "/404", to: "errors#not_found", via: :all
   match "/422", to: "errors#unacceptable", via: :all
