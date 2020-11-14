@@ -24,12 +24,12 @@ fr:
       name: 'Composteurs collectifs de quartier'
       title: 'Composteurs collectifs de quartier de Lyon et des environs'
       description: 'Trouvez les composteurs collectifs de quartier et rejoignez ou créez un site de compostage près de chez vous à Lyon ou dans les environs'
-      path_name: 'composteurs-de-quartier'
+      path_name: 'composteurs-collectifs-de-quartier'
     condominium_sites:
       name: 'Composteurs collectifs de copropriété'
       title: 'Composteurs collectifs de copropriété à Lyon et dans les environs'
       description: 'Retrouvez les composteurs collectifs de copropriété et rejoignez créez un site de compostage dans votre copropriété'
-      path_name: 'composteurs-de-copropriété'
+      path_name: 'composteurs-collectifs-de-copropriete'
   conversion:
     contact:
       link: 'http://contact.compost-lyon.fr/7131-compost-lyon-contactez-nous?neo_campaign=contact&neo_medium=click_popup&uuid=efabd22b-9748-456b-8b6e-0f9d469ce134'
