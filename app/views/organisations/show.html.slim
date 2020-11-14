@@ -4,19 +4,19 @@
 = content_for :meta_description, @organisation.meta_description
 
 .container
-  %h1.mt-3
+  h1.mt-3
     = title
     - if can? :update, @organisation
-      %small
+      small
         = link_to edit_organisation_path(@organisation) do
-          éditer
+          | éditer
           = icon('far', 'edit', class: '1x')
 
-  %p= @organisation.description
+  p= @organisation.description
 
   .h2.mb-3
     = @organisation.slug == 'eisenia' ? "Lombricomposteurs" : "Composteurs"
-    à Lyon et dans la région
+    | à Lyon et dans la région
 
 
 #map.mt-3

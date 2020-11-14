@@ -4,9 +4,9 @@
 = content_for :meta_description, description
 
 .container
-  %h1.mt-3= title
+  h1.mt-3= title
 
-  %p= description
+  p= description
 
 .container.mt-5
   = render partial: "organisations/organisation", collection: @organisations

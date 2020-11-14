@@ -1,0 +1,22 @@
+.row
+  .col-sm-9
+    .site-card
+      h3= site.formatted_name
+      .float-right= link_to("+ d'infos", site_path(site), class: 'btn btn-primary')
+      label.font-weight-bold Adresse
+      p
+        = site.address
+        br
+        = [site.zipcode, site.city].join(' ')
+      - site.location_information
+        label.font-weight-bold Localisation
+        p= site.location_information
+      - site.operation_conditions
+        label.font-weight-bold Fonctionnement
+        p= site.operation_conditions
+      - site.participation_conditions
+        label.font-weight-bold Participation
+        p= site.participation_conditions
+      - site.contact_email
+        label.font-weight-bold Contact
+        p= mail_to(site.contact_email, site.contact_email)
