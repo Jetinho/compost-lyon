@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'composteurs-collectifs/:site_name', to: redirect('/compostage-collectif/%{site_name}')
 
   get page_path_name(:about), to: 'pages#about', as: 'about'
+  get page_path_name(:collective_composting), to: 'pages#collective_composting', as: 'collective_composting'
   match "/404", to: "errors#not_found", via: :all
   match "/422", to: "errors#unacceptable", via: :all
   match "/500", to: "errors#internal_server_error", via: :all
@@ -18,9 +19,15 @@ Rails.application.routes.draw do
       sign_up: devise_path_name(:sign_up),
       password:  devise_path_name(:password)
     }
-    resources :organisations, path: resource_path_name(:organisations)
-    resources :condominium_sites, path: resource_path_name(:condominium_sites), only: :index
-    resources :sites, path: resource_path_name(:sites) do
+    namespace :collective_composting, path: page_path_name(:collective_composting) do
+      resources :organisations, path: resource_path_name(:organisations)
+    end
+    resources :condominium_sites, path: resource_path_name(:condominium_sites) do
+      collection do
+        get 'search'
+      end
+    end
+    resources :sites, path: resource_path_name(:sites), controller: 'neighbourhood_sites' do
       collection do
         get 'search'
       end

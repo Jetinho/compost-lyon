@@ -1,6 +1,6 @@
 class Site < ApplicationRecord
   extend FriendlyId
-  belongs_to :organisation
+  belongs_to :organisation, class_name: 'CollectiveComposting::Organisation'
   geocoded_by :full_address
   before_validation :set_formatted_name#, if: Proc.new { |site| site.name_changed? }
   friendly_id :formatted_name, use: :slugged
@@ -20,9 +20,8 @@ class Site < ApplicationRecord
     [address, city, zipcode, 'France'].join(', ')
   end
 
-  # To be added
-  def photo
-    # code
+  def condominium_site?
+    site_type == "Pied d'immeuble"
   end
 
   # Move to decorator

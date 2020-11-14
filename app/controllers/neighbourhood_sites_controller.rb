@@ -1,25 +1,10 @@
-class SitesController < ApplicationController
+class NeighbourhoodSitesController < SitesController
   skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
-  load_resource instance_name: :site, find_by: :slug, only: [ :show, :edit, :update ], class: Site
-  authorize_resource instance_name: :site, find_by: :slug, only: [ :edit, :update ], class: Site
-  add_breadcrumb page_name(:home), :root_path
-  add_breadcrumb page_name(:collective_composting), :collective_composting_path
 
-  def show
-    add_site_breadcrumbs
-  end
-
-  def edit
-    add_site_breadcrumbs
-  end
-
-  def update
-    if @site.update(site_params)
-      flash[:success] = successful_update_flash_message
-      redirect_to @site.decorate.composting_site_path
-    else
-      render :edit, alert: @site.errors
-    end
+  def index
+    @sites = Site.public_sites.all
+    @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
+    add_breadcrumb page_name(:sites), :sites_path
   end
 
   def search
@@ -42,7 +27,6 @@ class SitesController < ApplicationController
   end
 
   def add_site_breadcrumbs
-    add_breadcrumb page_name(:collective_composting), :collective_composting_path
     add_breadcrumb page_name(:sites), :sites_path
     add_breadcrumb @site.organisation_name, collective_composting_organisation_path(@site.organisation)
     add_breadcrumb @site.formatted_name, :site_path

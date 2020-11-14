@@ -1,11 +1,13 @@
 = render 'shared/load_leaflet_fullwidth'
+= content_for :meta_title, page_title(:home)
+= content_for :meta_description, page_description(:home)
 
 #homeBanner.banner style= "background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(#{asset_path('home_background.jpg')})"
 
   .container.py-5
     .row
       .banner-content.col-sm-8.py-3
-        h1 Compost Lyon - tout sur le compost à Lyon
+        h1= page_title(:home)
         p
           | Vous êtes sensible au sujet de la valorisation des déchets organiques et souhaitez composter vos biodéchets sur Lyon ou sa région ?
           br

@@ -1,3 +1,12 @@
+.navbar {
+  .navbar-nav {
+    .dropdown-menu { left: inherit; }
+  }
+  .dropdown-toggle {
+    .nav-link { display: inline-block; }
+  }
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
