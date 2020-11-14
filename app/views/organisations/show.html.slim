@@ -7,10 +7,10 @@
   h1.mt-3
     = title
     - if can? :update, @organisation
-      small
+      small.ml-1
         = link_to edit_organisation_path(@organisation) do
           | éditer
-          = icon('far', 'edit', class: '1x')
+          = icon('far', 'edit', class: '1x ml-1')
 
   p= @organisation.description
 

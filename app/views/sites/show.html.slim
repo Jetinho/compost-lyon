@@ -10,10 +10,10 @@
       h1
         = title
         - if can? :update, @site
-          small
+          small.ml-1
             = link_to edit_site_path(@site) do
               | éditer
-              = icon('far', 'edit', class: '1x')
+              = icon('far', 'edit', class: '1x ml-1')
 
       label.font-weight-bold Adresse
       p
