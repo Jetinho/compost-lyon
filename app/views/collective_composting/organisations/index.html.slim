@@ -1,0 +1,12 @@
+- title = page_name(:organisations)
+- description = page_description(:organisations)
+= content_for :meta_title, title
+= content_for :meta_description, description
+
+.container
+  h1.mt-3= title
+
+  p= description
+
+.container.mt-5
+  = render partial: "collective_composting/organisations/organisation", collection: @organisations

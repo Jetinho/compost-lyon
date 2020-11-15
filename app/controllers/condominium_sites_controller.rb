@@ -1,10 +1,15 @@
-class CondominiumSitesController < ApplicationController
-  skip_before_action :authenticate_user!#, only: [ :home ]
-    add_breadcrumb "Accueil", :root_path
+class CondominiumSitesController < SitesController
 
   def index
     @sites = Site.condominium.all
     @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
-    add_breadcrumb "Composteurs de copropriété (\"Pied d'immeuble\")", :condominium_sites_path
+    add_breadcrumb page_name(:condominium_sites), :condominium_sites_path
+  end
+
+  private
+
+  def add_site_breadcrumbs
+    add_breadcrumb page_name(:condominium_sites), :condominium_sites_path
+    add_breadcrumb @site.formatted_name, :site_path
   end
 end

@@ -5,6 +5,14 @@ class SiteDecorator < ApplicationDecorator
     MapMarkersDecorator
   end
 
+  def composting_site_path
+    condominium_site? ? condominium_site_path(site) : site_path(site)
+  end
+
+  def edit_composting_site_path
+    condominium_site? ? edit_condominium_site_path(site) : edit_site_path(site)
+  end
+
   def map_marker_display
     content = content_tag(:h6, content_tag(:b, name))
     content += label_and_content(label: 'Adresse', content: raw(format_address))
@@ -20,15 +28,15 @@ class SiteDecorator < ApplicationDecorator
 
   def format_address
     content = address ? address + tag(:br) : ""
-    content + zipcode + ' ' + city
+    content + zipcode.to_s + ' ' + city.to_s
   end
 
   def details_btn
-    link_to("+ d'infos", site_path(site), target: :blank, class: 'btn btn-primary')
+    link_to("+ d'infos", composting_site_path, target: :blank, class: 'btn btn-primary')
   end
 
   def format_organisation
-    link_to(organisation.name, organisation_path(organisation), target: :blank)
+    link_to(organisation.name, collective_composting_organisation_path(organisation), target: :blank)
   end
 
   def format_email

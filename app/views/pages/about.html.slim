@@ -1,0 +1,240 @@
+= content_for :meta_title, page_title(:about)
+= content_for :meta_description, page_description(:about)
+
+.container
+  .text-content
+    h1.my-3= page_title(:about)
+    p
+      | Compost Lyon a pour but de simplifier et d'encourager la pratique du compostage pour les habitants de Lyon.
+      br
+      | Pour celà, la plateforme recense les sites de compostage existants et les acteurs engagés sur la question.
+      br
+      | Nous proposerons bientôt un système simplifié de gestion des participants et des listes d'attente,
+      | et un outil de gestion et suivi des permanences et de la participation.
+    p
+      | Le nombre de composteurs en activité s'est beaucoup développé depuis une dizaine d'années,
+      |  mais reste malheureusement insuffisant pour permettre la valorisation d'une part significative de nos biodéchets.
+    p
+      |	Compost Lyon va donc mettre à disposition de manière simplifiée les informations nécessaires à la création de nouveaux sites,
+      |  et surtout proposer aux citoyens de se fédérer par zone géographique pour pouvoir initier de nouveaux projets.
+
+    h2 Objectifs de Compost Lyon
+    ul
+      li Faciliter l’accès au compostage pour les habitants de la métropole de Lyon et de ses alentours.
+      li
+        | Sensibiliser sur les enjeux de la gestion des déchets organiques :
+        ul
+          li Eviter l’incinération des biodéchets, source d’émissions inutiles de gaz à effet de serre
+          li Favoriser le retour de la matière organique vers les sols agricoles sous forme de compost de qualité
+          li Mobiliser les citoyens pour développer le compostage à grande échelle sur la métropole de Lyon.
+          li Fédérer les initiatives locales sur le sujet.
+          li Promouvoir l’économie circulaire, les acteurs locaux et régionaux.
+    h2.my-2 Motivations
+    p
+      | Le recyclage des déchets organiques grâce au compostage est
+      b  une porte ouverte sur l'écologie
+      |  et représente
+      b  une opportunité de se reconnecter au monde vivant qui nous entoure
+      | , à commencer par les organismes détritivores dont l'existence et l'action transforme
+      | nos 'déchets' en une ressource précieuse pour le monde végétal.
+      br
+      | Le sujet est donc au coeur de la transition accélérée qu'il nous incombe de mener, et qui est la responsabilité partagée de chaque citoyen en capacité d'agir.
+    p
+      | Conscient que la technologie est un outil dont l'usage est à double tranchant par son impact sur l'environnement,
+      |  l'idée ici est d'essayer de l'utiliser à bon escient pour encourager et simplifier la pratique du compostage.
+      br
+      |  La facilité avec laquelle l'information circule aujourd'hui grâce à l'outil numérique a engendré une
+      |  consommation massive et exponentielle de données, avec en tête la consommation de vidéo en streaming.
+      |  Elle permet aussi la diffusion massive de fake news, théories complotistes et de messages haineux...
+    p
+      | MAIS...
+      i  "Là où croît le péril, croît aussi ce qui sauve."
+      | (Friedrich Hölderlin)
+    p
+      b Il ne tient qu'à nous de nous engager
+      |  sur les sujets qui nous interpellent,
+      |  d'agir à l'échelle où l'on a une influence, de rejoindre des collectifs et
+      |  associations engagées sur ces thématiques.
+      br
+      b A nous d'inventer des modèles vertueux
+      |  et d'imaginer des futurs désirables.
+      br
+      | A nous de mobiliser des gens autour de nous pour les causes que nous défendons.
+      br
+      b C'est à nous de nous rassembler, de faire front
+      |  pour agir où l'on peut et
+      |  pour solliciter l'engagement et l'action nos responsables politiques,
+      |  indispensable pour faire évoluer le cadre sociétal dans lequel on évolue.
+      br
+      | C'est cette combinaison d'
+      b engagement
+      |  et d'
+      b actions concrètes
+      |  , à toutes les échelles, qui nous permettra
+      |  d'
+      b apporter une réponse à la hauteur des enjeux auxquels nous sommes tous confrontés
+      | , que l'on ait déjà les yeux ouverts sur l'état du monde qui nous entoure ou que l'on se
+      |  complaise dans l'inaction et le déni.
+
+    h2.my-2 Etat des lieux et choix technologiques
+    p
+      | Le projet a été initié en octobre 2020 et est en cours de développement.
+      br
+      | Il sera en évolution perpétuelle au gré des retours et suggestions des utilisateurs.
+    p
+      | Compost Lyon utilise autant que possibles des outils OpenSource.
+      br
+      = "L'application est basée sur le framework "
+      = link_to 'Ruby on Rails', 'https://rubyonrails.org/', target: :blank
+      = " et utilise "
+      = link_to 'OpenStreetMap', 'https://www.openstreetmap.org/', target: :blank
+      = ", "
+      = link_to 'MapBox', 'https://wiki.openstreetmap.org/wiki/Mapbox', target: :blank
+      = " et la librairie "
+      = link_to 'Leaflet.js', 'https://leafletjs.com/', target: :blank
+      |  pour la cartographie.
+      br
+      = "Le code est "
+      = link_to 'disponible sur Github', "https://github.com/Jetinho/compost-lyon", target: :blank
+      |  si vous souhaitez le consulter.
+      br
+      | Si vous êtes intéressé pour participer au projet, n'hésitez pas à prendre contact : il y a de quoi faire !
+    p
+      | Parmi les pistes de travail : développer des fonctionnalités permettant de l
+      ul
+        li
+          | Pour les composteurs collectifs :
+          ul
+            li Gérer la liste des participants et la liste d'attente
+            li Faciliter la gestion des permanences et du suivi de la participation.
+        li Rassembler par zone géographique les citoyens motivés pour créer des collectifs et ouvrir des composteurs de quartier
+        li Faciliter les démarches auprès des acteurs, et notamment de la métropole
+
+      h2.my-2 Qu'est-ce que Compost Lyon ?
+      p
+        | Bonjour et bienvenue à vous qui avez été assez curieux pour arriver jusqu'ici !
+      p
+        | Compost Lyon est pour l'instant une initiative individuelle, sans but lucratif.
+        br
+        | Selon l'évolution des choses, le projet pourrait se structurer en collectif ou en association.
+      p
+        | Je suis depuis 2019 référent du site de compostage Aristide Briand Lyon, monté par l'association Vol'Terre avec le financement de la métropole de Lyon.
+        br
+        |  Ayant eu du mal à trouver de l'information pertinente, exhaustive et à jour quand je me suis intéressé au sujet,
+        |  j'avais depuis un moment l'idée de rassembler en un seul endroit toute l'information disponible sur le compostage à Lyon, avec notamment une carte des composteurs en activité.
+        br
+        | J'ai profité du calme imposé par le confinement en soirée et les weekends pour passer de l'idée à la réalisation.
+      p
+        | Si ça vous intéresse, voici dans les grandes lignes qui je suis et comment j'en suis arrivé là :
+      p
+        | Je m'appelle Julien. J'ai 30 ans.
+        br
+        | Originaire de la campagne grenobloise, j'habite à Lyon depuis fin 2016.
+        br
+        | Passé par Marseille (2009-2011) pour des études en école de commerce, je pars pour un échange universitaire de 6 mois Sao Paulo, au Brésil (2013-2016)...
+        |  et y reste finalement pendant 3 ans.
+        br
+        = "J'y travaille sur le développement commercial de l'entreprise "
+        = link_to 'Datalink Instruments', 'https://datalink-instruments.com/', target: :blank
+        |  (fabriquant grenoblois d'analyseur d'eau en continu pour la production d'eau potable et l'épuration des eaux usées & industrielles).
+        br
+        | Pendant cette période, je bosse sur du commercial, de l'administratif,
+        |  mais aussi sur du travail technique et scientifique (tests de matériel en conditions, projets pilotes, rapports d'application).
+        br
+        = "Je prends goût au travail de terrain, et apprends vite à ne pas faire de manière pour mettre les main dans "
+        strike la m***e
+        |  dans les eaux usées - avec des gants s'il vous plait ;)
+      p
+        = "Avant mon 'rapatriement', je me forme sur le secteur du web et la programmation informatique (bootcamp "
+        = link_to 'Le Wagon', 'https://www.lewagon.com/', target: :blank
+        | , formation accélérée sur 9 semaines).
+        br
+        = "Arrivé à Lyon, je rejoins en tant que développeur web l'équipe de "
+        = link_to 'Neocamino', 'https://www.neocamino.com/', target: :blank
+        |  (Solution logicielle et accompagnement pour le développement des petites entreprises grâce au numérique)
+        | , dont j'accompagne pendant 2 ans le 'décollage' (2017-2019).
+      p
+        | En parallèle, après 3 ans dans un environnement hyper-urbain à SP, je passe autant de temps que possible
+        |  à la campagne, dans les montagnes de Belledonne, à travailler de mes mains.
+        br
+        | Je mets en place un compost familial et réalise le travail de 'lobbying' pour que chacun prenne cette nouvelle habitude de tri.
+        br
+        | Par dessus tout, je prend conscience au fur et à mesure d'un besoin viscéral de mettre les mains dans la terre,
+        |  d'apprendre à cultiver (une partie de) sa nourriture et de se connecter avec le vivant qui nous entoure.
+        br
+        | Ces idées germent et poussent au fur et ma mesure que la satisfaction de la vie lyonnaise,
+        |  dans une ville à taille encore 'humaine' qui m'a rapidement charmé, s'estompe malgré tout
+        |  sous l'effet de la sensation de déconnexion, de déracinement.
+        br
+        | Comme le chante si bien Maxime Le Forestier, je me sens
+        = link_to " 'comme un arbre dans la ville'.", 'https://www.youtube.com/watch?v=clDxk0Wh--4'
+      p
+        | Début 2019, je quitte mon job de développeur.
+        br
+        | Après en avoir eu marre de 'faire du commerce',
+        |  je finis aussi par me lasser de 'faire du code'. Je m'offre une phase de prise de recul,
+        |  d'introspection nourrie de nombreuses lectures qui finissent de m'ouvrir les yeux sur les failles de notre
+        |  système sociétal, de nos modèles agricoles, sur le caractère autodestructeur de notre mode de fonctionnement,
+        |  et sur la dimension autistique du choix de vivre de manière anthropocentrée, déconnectée du reste du vivant,
+        |  quand l'ensemble de la vie sur notre planète s'est développée par relations d'interdépendance.
+      p
+        | A ce moment, j'envisage très sérieusement de me former dans le secteur agricole
+        |  et de 'tout larguer pour partir à la campagne faire du maraîchage.'
+        br
+        | Je vais à la rencontre d'agriculteurs, des services d'accompagnement de la chambre d'agriculture,
+        |  passe par la case de la pratique pour me confronter à la réalité...
+        br
+        | Prenant conscience que ce genre de projet, pour avoir des chances de réussir, se prépare sur le temps long,
+        |  et que j'ai d'autres engagements qui m'ancrent à Lyon pour quelques temps,
+        |  je finis par envisager les chemins possibles pour réaliser ma transition 'en douceur', en restant en ville pour le moment.
+      p
+        | Je décide de mettre en place le plus de 'petits gestes' me permettant de vivre le plus possible en accord avec mes principes :
+        br
+        | La première étape sera le compostage de mes déchets organiques. Je m'étais renseigné sur la question quelques mois auparavant,
+        |  avais envoyé un mail -resté lettre morte- à un composteur de quartier près de chez moi,
+        |  fait plusieurs expéditions ponctuelles de 30 min et + de vélo pour jeter mes épluchures dans des composteurs ouverts au public...
+        br
+        | J'écume les quelques sites des acteurs engagés sur la question et me perds dans la diversité d'information disponible, pas toujours pertinente ou à jour.
+        |  Je finis par contacter les services de la métropole, qui me transmettent les coordonnées d'un acteur du compostage sur mon quartier.
+        br
+        | Je contacte donc l'
+        = link_to "association Vol'Terre", 'https://www.volterre.org/', target: :blank
+        | , qui gère plusieurs composteurs de quartier à Lyon 3.
+        br
+        | Coup de chance : un nouveau composteur de quartier va ouvrir d'ici quelques semaines à 2 pas de chez moi !
+        br
+        | L'asso recrute les futurs référents pour le site, et c'est ainsi que je finis par m'engager sur le secteur du compostage.
+      p
+        | Conscient des enjeux importants autour de la gestion des biodéchets à l'échelle d'une métropole comme Lyon,
+        |  et du lien évident entre cet enjeux et celui de la vie des sols agricoles,
+        |  je décide de me rapprocher des acteurs du compostage sur la métropole pour commencer à travailler sur la question.
+        br
+        | Depuis début 2020, j'ai contacté la plupart de ces acteurs et rencontré une bonne partie d'entre eux
+        |  (OuiCompost, Compost'Elles, association Eisenia, Terrestris, Réseau Compost Citoyen).
+      p
+        | Aujourd'hui, en parallèle d'une activité professionnelle en tant qu'indépendan
+        |  (Développement commercial, web marketing, enseignement),
+        = " je travaille 3 jours par semaine depuis mars 2020 pour l'entreprise "
+        = link_to 'Terrestris.', 'https://www.terrestris.fr/', target: :blank
+        br
+        |  On plante des arbres, on collecte des biodéchets qu'on valorise par lombricompostage,
+        |  on élève des vers de compost, on produit du lombricompost,
+        |  et on vend des lombricomposteurs et des vers pour ces derniers.
+        br
+        = "Je donne aussi des coups de mains ponctuels à l'association "
+        = link_to 'Eisenia', 'https://www.eisenia.org/', target: :blank
+        = " sur leur site internet,"
+        |  pour prêter main forte sur des chantiers, ou pour promouvoir le compostage et le lombricompostage lors d'événements.
+        p
+        | Je suis donc à présent engagé sur la question du compostage de manière bénévole et professionnelle avec différentes structures.
+        br
+        | Pour autant, je travaille sur le site Compost Lyon de manière individuelle et indépendante, sur mon temps libre,
+        |  en tant que simple citoyen désireux de mettre ses compétences au profit d'une cause vertueuse.
+      p
+        | Si vous souhaitez participer au projet, proposer des partenariats ou collaborations,
+        |  partager des idées de développement, des informations sur les sites de compostages et les acteurs,
+        |  ou pour toute autre suggestion, n'hésitez pas à me contacter :
+      p
+        | Julien Jet pour Compost Lyon
+        br
+        = mail_to 'lyoncompost@gmail.com', 'lyoncompost@gmail.com'

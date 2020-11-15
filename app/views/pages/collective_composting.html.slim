@@ -1,0 +1,39 @@
+= render 'shared/load_leaflet_fullwidth'
+= content_for :meta_title, page_title(:collective_composting)
+= content_for :meta_description, page_description(:collective_composting)
+
+.banner.below-breadcrumbs style= "background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(#{asset_path('home_background.jpg')})"
+
+  .container.py-5
+    .row
+      .banner-content.col-sm-8.py-3
+        h1= page_title(:collective_composting)
+        p
+          | Aujourd'hui, il est possible de faire installer des composteurs collectifs près de chez vous
+          |  pour vous permettre de composter à Lyon. Que ce soit dans une copropriété ou sur l'espace public,
+          |  les composteurs collectifs sont une part de la solution pour valoriser déchets organiques à l'échelle de la métropole.
+          br
+          | Nous vous informons et vous accompagnons dans votre démarche pour vous mettre au compostage collectif :
+        .row
+          .col-sm-6= link_to('Composteurs de quartier', sites_path, class: 'btn btn-primary mb-3')
+          .col-sm-6= link_to('Composteurs de copropriété', condominium_sites_path, class: 'btn btn-secondary')
+
+.container.py-5
+  h2 Où composter à Lyon : la carte du compostage collectif
+  p
+    b Le compostage collectif
+    |  permet de
+    b<> mutualiser les efforts et l'investissement
+    | nécessaire au compostage des biodéchets. En ville, il est donc préférable au compostage individuel,
+    |  qui peut être une solution temporaire en attendant de rejoindre un composteur collectif.
+  p
+    | Sur la carte ci-dessous, vous retrouverez tous les composteurs collectifs recensés sur la métropole de Lyon et ses environs.
+    br
+    | Cette carte montre indifféremment les composteurs de quartiers et les composteurs de copropriété (dont l'accès est réservé aux habitants)
+    br
+    | Si vous souhaitez voir uniquement les composteurs de quartiers, rendez-vous sur la
+    = link_to(' carte des composteurs de quartier de Lyon', sites_path)
+
+  #map
+
+= render 'shared/leaflet_sites_map', markers_data: @site_markers_data

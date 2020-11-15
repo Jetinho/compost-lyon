@@ -1,14 +1,7 @@
 fr:
-  pages:
-    about: 'A propos'
   resources:
     new: 'nouveau'
     edit: 'edition'
     search: 'rechercher'
-    organisations:
-      name: 'Acteurs'
-      description: Découvrez les acteurs du compostage sur la métropole de Lyon. Acteurs institutionnels, associations et entreprises travaillant sur le compostage des déchets organiques.
-    sites:
-      name: 'Composteurs Collectifs'
-    condominium_sites:
-      name: 'Composteurs de Copropriété'
+  flashes:
+    successful_update: "Informations mises à jour"

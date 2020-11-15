@@ -1,0 +1,33 @@
+.navbar.navbar-expand-sm.navbar-light.navbar-lewagon
+  = link_to root_path, class: "navbar-brand" do
+    = image_tag image_path('logo.png')
+  button.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarSupportedContent" data-toggle="collapse" type="button"
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    / .d-none
+    ul.navbar-nav.mr-auto
+      li.nav-item.dropdown
+        li.nav-item.dropdown-toggle.cursor-pointer#collectiveCompostingDropdown data= { toggle: "dropdown" } aria-haspopup= true aria-expanded= false
+          span.nav-link= page_name(:collective_composting)
+        .dropdown-menu aria-labelledby="collectiveCompostingDropdown"
+          = link_to menu_item_name(:collective_composting), collective_composting_path, class: "nav-link"
+          .dropdown-divider
+          = link_to page_name(:district_composting_sites), sites_path, class: "nav-link"
+          = link_to page_name(:condominium_sites), condominium_sites_path, class: "nav-link"
+          = link_to page_name(:organisations), collective_composting_organisations_path, class: "nav-link"
+      li.nav-item= link_to page_name(:about), about_path, class: "nav-link"
+      li.nav-item.contact-btn= link_to t('conversion.contact.cta'), t('conversion.contact.link'), class: "btn btn-primary"
+      - if user_signed_in?
+        / %li.nav-item.active
+        /   = link_to "Home", "#", class: "nav-link"
+        / %li.nav-item
+        /   = link_to "Messages", "#", class: "nav-link"
+        li.nav-item.dropdown.cursor-pointer
+          = image_tag image_path('user-avatar.png'), class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false
+          .dropdown-menu.dropdown-menu-right aria-labelledby="navbarDropdown"
+            / = link_to "Action", "#", class: "dropdown-item"
+            / = link_to "Another action", "#", class: "dropdown-item"
+            = link_to t('devise.actions.sign_out'), destroy_user_session_path, method: :delete, class: "dropdown-item"
+      - else
+        li.nav-item
+          = link_to "Me connecter", new_user_session_path, class: "btn btn-outline-secondary"
