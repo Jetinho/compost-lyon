@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_11_224535) do
+ActiveRecord::Schema.define(version: 2020_11_15_210731) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 2020_11_11_224535) do
     t.string "location_information"
     t.string "slug"
     t.string "formatted_name"
+    t.boolean "metropole_funding"
     t.index ["organisation_id"], name: "index_sites_on_organisation_id"
     t.index ["slug"], name: "index_sites_on_slug", unique: true
   end
