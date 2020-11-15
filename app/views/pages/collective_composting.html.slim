@@ -34,20 +34,6 @@
     | Si vous souhaitez voir uniquement les composteurs de quartiers, rendez-vous sur la
     = link_to(' carte des composteurs de quartier de Lyon', sites_path)
 
-
-  / %p
-  /   Certains composteurs collectifs sont accessibles librement
-  /   = link_to('Voir les composteurs en libre accès', '#')
-  /   %br
-  /   D'autres nécessitent de rejoindre un collectif.
-  /   = link_to("En savoir plus sur les composteurs collectifs", '#')
-  /   %p
-  /     Enfin, bon nombre de composteurs collectifs sont installés sur des espaces privés.
-  /     %br
-  /     Peut-être avez-vous la chance d'en avoir un à disposition !
-  /     = link_to("Voir les composteurs de copropriété / Pied d'immeuble", '#copropriete')
-  /     (209)
-
   #map
 
 = render 'shared/leaflet_sites_map', markers_data: @site_markers_data
