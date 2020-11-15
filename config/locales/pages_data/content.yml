@@ -1,7 +1,7 @@
 fr:
   pages:
     home:
-      name: 'Accueil'
+      name: 'Compost Lyon - Accueil'
       title: 'Compost Lyon - tout sur le compost à Lyon'
       description: "Retrouvez toute l'info sur la gestion du compost à Lyon. Acteurs, carte des composteurs, solutions pour les particuliers et les professionnels"
     about:
@@ -20,10 +20,11 @@ fr:
       title: 'Les acteurs du compostage collectif à Lyon'
       description: Découvrez les acteurs du compostage collectif sur la métropole de Lyon. Acteurs institutionnels, associations et entreprises travaillant sur le compostage collectif de quartier ou de copropriété.
       path_name: 'acteurs'
-    sites:
+    district_composting_sites:
       name: 'Composteurs collectifs de quartier'
       title: 'Composteurs collectifs de quartier de Lyon et des environs'
-      description: 'Trouvez les composteurs collectifs de quartier et rejoignez ou créez un site de compostage près de chez vous à Lyon ou dans les environs'
+      description: "Les composteurs de quartier sont une part de la solution pour valoriser les déchets organiques à l'échelle de la métropole<br>Trouvez et rejoignez un composteur de quartier près de chez vous, ou formez un collectif pour en créer un !"
+      meta_description: 'Trouvez les composteurs collectifs de quartier et rejoignez ou créez un site de compostage près de chez vous à Lyon ou dans les environs'
       path_name: 'composteurs-collectifs-de-quartier'
     condominium_sites:
       name: 'Composteurs collectifs de copropriété'
@@ -37,12 +38,21 @@ fr:
     professionals:
       link: 'http://contact.compost-lyon.fr/7132-valorisation-des-biodechets-pour-les-professionnels?neo_campaign=info-professionnels&neo_medium=click_popup&uuid=e22b4bb6-8cb3-4ede-b9b2-7abdc63a3791'
       cta: "Professionnels : valoriser mes biodéchets"
-    district_compost_creation:
-      link: 'http://contact.compost-lyon.fr/7133-creer-un-composteur-de-quartier-la-demarche-pas-a-pas?neo_campaign=creer-un-composteur-de-quartier&neo_medium=click_popup&uuid=78748aa1-368c-4962-a82a-6994dea6e277'
-      cta: "Monter un composteur collectif"
     condominium_compost_creation:
       link: 'http://contact.compost-lyon.fr/7134-creer-un-composteur-de-copropriete-la-demarche-pas-a-pas?neo_campaign=creer-un-composteur-de-copropriete&neo_medium=click_popup&uuid=cb928247-7115-4aaf-a53e-8e68c3c398cc'
       cta: "Monter un composteur de copropriété"
     dropoff_points:
       link: 'http://contact.compost-lyon.fr/7134-creer-un-composteur-de-copropriete-la-demarche-pas-a-pas?neo_campaign=creer-un-composteur-de-copropriete&neo_medium=click_popup&uuid=cb928247-7115-4aaf-a53e-8e68c3c398cc'
       cta: "Plus d'infos"
+    district_composting_site_creation:
+      link: '#districtCompostingSiteCreation'
+      cta: "Créer un composteur de quartier"
+    district_composting_site_collective_creation:
+      link: 'http://contact.compost-lyon.fr/7187-creer-un-composteur-de-quartier-rejoindre-ou-creer-un-collectif?neo_campaign=creer-un-collectif-pour-monter-un-composteur-de-quartier&neo_medium=click_popup&uuid=cb30a5d5-1cf3-4b25-a365-381f9d6b0fac'
+      cta: "Je veux créer un composteur collectif dans mon quartier"
+    district_composting_site_add_existing:
+      link: 'http://contact.compost-lyon.fr/7186-ajouter-un-composteur-de-quartier?neo_campaign=ajouter-un-composteur-de-quartier&neo_medium=click_popup&uuid=f14dd43d-71e6-4dd8-9a27-04bcdc62992c'
+      cta: ' nous en informer'
+    district_composting_site_join:
+      link: "#districtCompostingSiteJoin"
+      cta: Rejoindre un composteur de quartier

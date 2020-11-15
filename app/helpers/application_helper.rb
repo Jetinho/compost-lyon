@@ -16,12 +16,20 @@ module ApplicationHelper
     I18n.t("pages.#{page}.name")
   end
 
+  def page_meta_title(page)
+    I18n.t("pages.#{page}.meta_title", default: page_title(page))
+  end
+
   def page_title(page)
     I18n.t("pages.#{page}.title")
   end
 
+  def page_meta_description(page)
+    I18n.t("pages.#{page}.meta_description", default: page_description(page))
+  end
+
   def page_description(page)
-    I18n.t("pages.#{page}.description")
+    raw I18n.t("pages.#{page}.description")
   end
 
   def devise_path_name(action)

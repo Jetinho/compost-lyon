@@ -29,7 +29,7 @@ Rails.application.routes.draw do
         get 'search'
       end
     end
-    resources :sites, path: resource_path_name(:sites), controller: 'neighbourhood_sites' do
+    resources :sites, path: resource_path_name(:district_composting_sites), controller: 'district_composting_sites' do
       collection do
         get 'search'
       end

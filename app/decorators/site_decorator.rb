@@ -28,7 +28,7 @@ class SiteDecorator < ApplicationDecorator
 
   def format_address
     content = address ? address + tag(:br) : ""
-    content + zipcode + ' ' + city
+    content + zipcode.to_s + ' ' + city.to_s
   end
 
   def details_btn

@@ -1,10 +1,10 @@
-class NeighbourhoodSitesController < SitesController
+class DistrictCompostingSitesController < SitesController
   skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
 
   def index
     @sites = Site.public_sites.all
     @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
-    add_breadcrumb page_name(:sites), :sites_path
+    add_breadcrumb page_name(:district_composting_sites), :sites_path
   end
 
   def search
@@ -27,7 +27,7 @@ class NeighbourhoodSitesController < SitesController
   end
 
   def add_site_breadcrumbs
-    add_breadcrumb page_name(:sites), :sites_path
+    add_breadcrumb page_name(:district_composting_sites), :sites_path
     add_breadcrumb @site.organisation_name, collective_composting_organisation_path(@site.organisation)
     add_breadcrumb @site.formatted_name, :site_path
   end

@@ -42,7 +42,7 @@ h1 > small {
   }
 }
 
-#homeBanner {
+.banner {
   min-height: 60vh;
   background-position: center;
   .banner-content {
@@ -53,6 +53,10 @@ h1 > small {
     font-size: 32px;
     font-weight: bold;
   }
+}
+
+.banner.below-breadcrumbs {
+  margin-top : -1rem;
 }
 
 .cta {

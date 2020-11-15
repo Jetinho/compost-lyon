@@ -1,5 +1,66 @@
-= render 'index',
-  sites: @sites,
-  markers_data: @site_markers_data,
-  title: t('pages.sites.title'),
-  description: t('pages.sites.description')
+= render 'shared/load_leaflet_fullwidth'
+= content_for :meta_title, page_meta_title(:district_composting_sites)
+= content_for :meta_description, page_meta_description(:district_composting_sites)
+
+.banner.below-breadcrumbs style= "background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(#{asset_path('home_background.jpg')})"
+  .container.py-5
+    .row
+      .banner-content.col-sm-8.py-3
+        h1= page_title(:district_composting_sites)
+        p= page_description(:district_composting_sites)
+        .row
+          .col-sm-6
+            = link_to(t('conversion.district_composting_site_join.cta'),
+              t('conversion.district_composting_site_join.link'), class: 'btn btn-primary mb-3')
+          .col-sm-6= link_to(t('conversion.district_composting_site_creation.cta'), t('conversion.district_composting_site_creation.link'), class: 'btn btn-secondary')
+
+.container.mt-3#districtCompostingSiteJoin
+  h2 La carte des composteurs de quartier
+  p
+    | La plupart des composteurs de quartier fonctionnent avec une liste de membre.
+    br
+    | Si le composteur est déjà complet, en général vous rejoindrez une liste d'attente
+    |  et serez informés dès qu'une place se libérera (ça arrive régulièrement au gré des déménagements).
+    br
+    b Pour rejoindre un composteur de quartier
+    | , trouvez le sur la carte ou dans la liste ci-dessous et cliquez pour accéder aux informations.
+    br
+    | Vous trouverez un email de contact qui vous permettra de vous inscrire.
+    br
+    br
+    | Vous pouvez aussi trouver le plus proche de chez vous à partir d'une adresse :
+
+  = form_with url: search_sites_path, method: :get, data: {remote: false} do |form|
+    .form-group
+      .row
+        .col-sm-6= text_field_tag(:address, nil, placeholder: 'Saisissez une addresse', class: 'form-control' )
+        .col-sm-6= submit_tag("Rechercher", class: 'btn btn-primary')
+
+  p
+  | Si vous connaissez un composteur de quartier qui n'est pas référencé sur la carte,
+  |  vous pouvez
+  = link_to t('conversion.district_composting_site_add_existing.cta'), t('conversion.district_composting_site_add_existing.link')
+  |  et nous mettrons les données à jour rapidement !
+  #map.mt-3
+
+  h3.mt-3#districtCompostingSiteCreation Créer un composteur de quartier
+  p
+  | Pour créer un composteur collectif dans votre quartier, il vous faut monter
+  |  une équipe pour porter le projet ou rejoindre un collectif en création dans le voisinage.
+  p
+  | Vous voulez monter un composteur collectif dans votre quartier ? D'autres personnes ont peut-être les mêmes aspirations :
+  br
+  | Rejoignez-les pour donner vie à ce projet !
+  br
+  br
+  = link_to(t('conversion.district_composting_site_collective_creation.cta'), t('conversion.district_composting_site_collective_creation.link'), class: 'btn btn-primary')
+  br
+  br
+  | Si vous êtes déjà plusieurs à porter le projet, vous pouvez
+  = link_to ' lancer la démarche auprès du Grand Lyon', 'https://demarches.toodego.com/demande-de-compostage-collectif-quartier/', target: :blank
+  |  pour obtenir le financement du projet.
+
+  h2.my-3 Liste des composteurs de quartier
+  = render partial: "sites/site", collection: @sites
+
+= render 'shared/leaflet_sites_map', markers_data: @site_markers_data

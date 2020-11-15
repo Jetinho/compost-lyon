@@ -43,7 +43,7 @@ class SitesController < ApplicationController
 
   def add_site_breadcrumbs
     add_breadcrumb page_name(:collective_composting), :collective_composting_path
-    add_breadcrumb page_name(:sites), :sites_path
+    add_breadcrumb page_name(:district_composting_sites), :sites_path
     add_breadcrumb @site.organisation_name, collective_composting_organisation_path(@site.organisation)
     add_breadcrumb @site.formatted_name, :site_path
   end
