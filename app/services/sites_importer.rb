@@ -16,7 +16,7 @@ class SitesImporter
     csv_data = send("data_#{slug}".to_sym)
     csv_data.each do |csv_line|
       site_data = map_site_data(slug, csv_line)
-      organisation = Organisation.find_by_slug(slug)
+      organisation = CollectiveComposting::Organisation.find_by_slug(slug)
       site = organisation.sites.build(site_data)
       sleep 1 unless site.geocoded? # respect Nominatim quota https://github.com/alexreisner/geocoder/blob/master/README_API_GUIDE.md
       site.save

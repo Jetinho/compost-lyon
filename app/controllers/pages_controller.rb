@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :about ]
+  skip_before_action :authenticate_user!, only: [ :home, :collective_composting, :about ]
 
   def home
     sites = SiteDecorator.decorate_collection(Site.public_sites)

@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 ORGANISATIONS = ["Eisenia", "Grand Lyon Métropole"]
 ORGANISATIONS.each do |name|
-  Organisation.create(name: name, slug: name.parameterize)
+  CollectiveComposting::Organisation.create(name: name, slug: name.parameterize)
 end
 
 importer = SitesImporter.new
-Organisation.all.each do |o|
+CollectiveComposting::Organisation.all.each do |o|
   importer.import o.slug
 end

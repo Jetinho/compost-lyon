@@ -4,7 +4,8 @@ require 'support/database_cleaner'
 class SiteTest < ActiveSupport::TestCase
   describe "name changes" do
     before do
-      @organisation = Organisation.create(name: 'test')
+      user = User.find_by(email: 'test@gmail.com') || User.create(email: 'test@gmail.com', password: 'compost')
+      @organisation ||= CollectiveComposting::Organisation.create(name: 'test', user_id: user.id)
     end
     describe "name is 'Compost Bahadourian (de la Guill)'" do
       it "slug is 'composteur-bahadourian-de-la-guill'" do
