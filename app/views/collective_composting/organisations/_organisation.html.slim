@@ -2,7 +2,7 @@
   .col-sm-9
     h3.mt-3= organisation.name
     .float-right= link_to("Plus d'infos", collective_composting_organisation_path(organisation), class: 'btn btn-info')
-    p= organisation.description
+    p= simple_format organisation.description
     label.font-weight-bold Sites de compostage :
     p
       = organisation.nb_sites
