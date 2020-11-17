@@ -27,6 +27,7 @@
           .dropdown-menu.dropdown-menu-right aria-labelledby="navbarDropdown"
             / = link_to "Action", "#", class: "dropdown-item"
             / = link_to "Another action", "#", class: "dropdown-item"
+            = link_to t('devise.actions.edit'), edit_user_registration_path, class: "dropdown-item"
             = link_to t('devise.actions.sign_out'), destroy_user_session_path, method: :delete, class: "dropdown-item"
       - else
         li.nav-item

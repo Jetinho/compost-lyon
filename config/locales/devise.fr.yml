@@ -144,6 +144,7 @@ fr:
       sign_out: Deconnexion
       sign_in: Connexion
       sign_up: Inscription
+      edit: Modifier mes identifiants
       reset_password: Ré-initialiser mon mot de passe
     path_names:
       sign_in: 'connexion'
