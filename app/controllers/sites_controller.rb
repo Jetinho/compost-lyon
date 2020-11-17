@@ -6,6 +6,8 @@ class SitesController < ApplicationController
   add_breadcrumb page_name(:collective_composting), :collective_composting_path
 
   def show
+    @sites_marker_data = SiteDecorator.decorate_collection([@site]).to_map_marker_json
+
     add_site_breadcrumbs
   end
 

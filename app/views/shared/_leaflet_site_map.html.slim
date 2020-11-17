@@ -11,21 +11,13 @@ javascript:
       accessToken: accessToken
   }).addTo(mymap);
 
-  var site = #{raw @site.to_json};
+  var data = #{raw @sites_marker_data};
 
-  var marker = L.marker([site.latitude, site.longitude]).addTo(mymap);
-  var text = "<h6><b>" + site.name + "</b></h6>"
-  text +=  "<p><b>Adresse :</b></p>"
-  text +=  "<p>" + site.address + "<br>"
-  text +=  site.zipcode + "<br>"
-  text +=  site.city + "</p>"
-  text +=  "<p><b>Accès :</b></p>"
-  text +=  "<p>" + site.participation_conditions + "<br>"
-  text +=  site.operation_conditions + "</p>"
-  text +=  "<p><b>Contact :</b></p>"
-  text +=  "<p><a href='mailto:" + site.contact_email + "'>" + site.contact_email + "</a></p>"
-  // text +=  "<p><b>Organisme :</b></p>"
-  // text +=  "<p>" + "<a href=" + site.organisation_website + ">"+ site.organisation_name + "</a>\r\n"
-  // text +=  "<p>" + site.organisation_name + "</p>"
-
-  marker.bindPopup(text);
+  data.forEach((site, i) => {
+    if (site.latitude == null) {
+      return;
+    }
+    var marker = L.marker([site.latitude, site.longitude]).addTo(mymap);
+    var text = site.map_marker_display;
+    marker.bindPopup(text);
+  });

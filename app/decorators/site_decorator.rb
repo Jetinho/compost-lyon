@@ -17,8 +17,8 @@ class SiteDecorator < ApplicationDecorator
     content = content_tag(:h6, content_tag(:b, name))
     content += label_and_content(label: 'Adresse', content: raw(format_address))
     content += label_and_content(label: 'Acteur', content: format_organisation)
-    content += label_and_content(label: 'Fonctionnement', content: operation_conditions) if operation_conditions?
-    content += label_and_content(label: 'Participation', content: participation_conditions) if participation_conditions?
+    content += label_and_content(label: 'Fonctionnement', content: simple_format(operation_conditions)) if operation_conditions?
+    content += label_and_content(label: 'Participation', content: simple_format(participation_conditions)) if participation_conditions?
     content += label_and_content(label: 'Contact', content: format_email) if contact_email
     content += details_btn
     content
