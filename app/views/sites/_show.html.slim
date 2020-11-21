@@ -30,6 +30,9 @@
       - if site.participation_conditions
         label.font-weight-bold Participation
         p=simple_format site.participation_conditions
+      - if site.website_url
+        label.font-weight-bold Site internet
+        p= link_to(site.website_url, site.website_url)
       - if site.contact_email
         label.font-weight-bold Contact
         p= mail_to(site.contact_email, site.contact_email)
