@@ -14,12 +14,12 @@
 
   p=simple_format @organisation.description
 
-  .h2.mb-3
+
+  h2.mb-3
     = @organisation.slug == 'eisenia' ? "Lombricomposteurs" : "Composteurs"
-    | à Lyon et dans la région
+    |  à Lyon et dans la région
 
-
-#map.mt-3
+  #map.mt-3
 
 .container.mt-5
   = render partial: "sites/site", collection: @sites
