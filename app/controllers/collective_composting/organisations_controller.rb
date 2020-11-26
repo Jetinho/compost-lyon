@@ -10,6 +10,19 @@ module CollectiveComposting
       add_organisation_breadcrumbs
     end
 
+    def new
+      authorize! :create, @organisation
+    end
+
+    def create
+       if @organisation.save
+         redirect_to collective_composting_organisation_path(@organisation)
+       else
+         render :new, alert: 'Erreur de création'
+       end
+       authorize! :create, @organisation
+    end
+
     def edit
       authorize! :edit, @organisation
       add_organisation_breadcrumbs

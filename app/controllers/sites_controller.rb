@@ -7,7 +7,6 @@ class SitesController < ApplicationController
 
   def show
     @sites_marker_data = SiteDecorator.decorate_collection([@site]).to_map_marker_json
-
     add_site_breadcrumbs
   end
 
