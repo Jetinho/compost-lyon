@@ -2,15 +2,22 @@ class Site < ApplicationRecord
   extend FriendlyId
   belongs_to :organisation, class_name: 'CollectiveComposting::Organisation'
   geocoded_by :full_address
-  before_validation :set_formatted_name#, if: Proc.new { |site| site.name_changed? }
+  validates :name, presence: true
+  validates :slug, presence: true
+
   friendly_id :formatted_name, use: :slugged
+  before_validation :set_slug
+  after_validation :set_formatted_name, if: Proc.new { |site| site.name_changed? }
   after_validation :geocode, if: Proc.new { |site| !site.geocoded? || site.address_changed? || site.zipcode_changed? }
   scope :public_sites, -> { where(public: true) }
   scope :condominium, -> { where(site_type: "Pied d'immeuble") }
 
   delegate :admin, :admin_id, to: :organisation
 
-  EDITABLE_PARAMS = %i(name contact_email website_url location_information operation_conditions participation_conditions)
+  EDITABLE_PARAMS = %i(
+    name contact_email website_url location_information operation_conditions participation_conditions
+    latitude longitude address city zipcode public site_type organisation_id
+  )
 
   def self.editable_params
     EDITABLE_PARAMS
@@ -46,6 +53,10 @@ class Site < ApplicationRecord
   # To decorator
 
   private
+
+  def set_slug
+    self.slug = name.parameterize
+  end
 
   def set_formatted_name
     format_name = name.gsub(/compost?(\w)+/i, 'Composteur')

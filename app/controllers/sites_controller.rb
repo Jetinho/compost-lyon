@@ -1,7 +1,7 @@
 class SitesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
-  load_resource instance_name: :site, find_by: :slug, only: [ :show, :edit, :update ], class: Site
-  authorize_resource instance_name: :site, find_by: :slug, only: [ :edit, :update ], class: Site
+  load_resource instance_name: :site, find_by: :slug, only: [ :show, :new, :edit, :create, :update ], class: Site, param_method: :site_params
+  authorize_resource instance_name: :site, find_by: :slug, only: [ :new, :edit, :create, :update ], class: Site
   add_breadcrumb page_name(:home), :root_path
   add_breadcrumb page_name(:collective_composting), :collective_composting_path
 
@@ -10,8 +10,21 @@ class SitesController < ApplicationController
     add_site_breadcrumbs
   end
 
+  def new
+    authorize! :create, @site
+  end
+
   def edit
     add_site_breadcrumbs
+  end
+
+  def create
+    if @site.save
+      redirect_to @site.decorate.composting_site_path
+    else
+      render :new, alert: 'Erreur de création'
+    end
+    authorize! :create, @site
   end
 
   def update
