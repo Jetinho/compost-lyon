@@ -48,7 +48,7 @@ class Site < ApplicationRecord
   end
 
   def website_url
-    self[:website_url].presence || organisation.website_url
+    self[:website_url].presence || organisation&.website_url
   end
   # To decorator
 

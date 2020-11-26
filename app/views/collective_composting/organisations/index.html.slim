@@ -5,6 +5,8 @@
 
 .container
   h1.mt-3= title
+  - if can? :create, CollectiveComposting::Organisation
+    .float-right= link_to("Nouveau", new_collective_composting_organisation_path, class: 'btn btn-primary')
 
   p= description
 

@@ -16,6 +16,8 @@
 
 .container.mt-3#districtCompostingSiteJoin
   h2 La carte des composteurs de quartier
+  - if can? :create, CollectiveComposting::Organisation
+    .float-right= link_to("Nouveau", new_site_path, class: 'btn btn-primary')
   p
     | La plupart des composteurs de quartier fonctionnent avec une liste de membre.
     br
