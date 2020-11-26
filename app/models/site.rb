@@ -47,6 +47,10 @@ class Site < ApplicationRecord
     organisation.name
   end
 
+  def contact_email
+    self[:contact_email].presence || organisation&.contact_email
+  end
+
   def website_url
     self[:website_url].presence || organisation&.website_url
   end
