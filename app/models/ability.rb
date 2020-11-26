@@ -10,8 +10,14 @@ class Ability
     else
       can :read, [CollectiveComposting::Organisation, Site]
       can :update, CollectiveComposting::Organisation, user_id: user.id
-      can :update, Site do |site|
-        site.admin_id == user.id
+      can :update, Site, admin_id: user.id
+    end
+
+    def can? action, subject, *extra_args
+      if subject.is_a? Draper::Decorator
+        super action, subject.object, *extra_args
+      else
+        super
       end
     end
 
