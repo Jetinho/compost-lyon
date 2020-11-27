@@ -13,6 +13,9 @@
           = icon('far', 'edit', class: '1x ml-1')
 
   p=simple_format @organisation.description
+  - if @organisation.website_url.presence
+    label> Site internet :
+    span= link_to @organisation.website_url, @organisation.website_url
 
 
   h2.mb-3
