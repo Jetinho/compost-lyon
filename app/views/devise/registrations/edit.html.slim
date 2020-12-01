@@ -14,17 +14,20 @@
             p
             | Currently waiting confirmation for:
             resource.unconfirmed_email
+          = f.input :current_password,
+          hint: t('devise.registrations.edit.we_need_your_current_password_to_confirm_your_changes'),
+          required: true,
+          input_html: { autocomplete: "current-password" }
           = f.input :password,
+                      label: t('simple_form.labels.user.new_password'),
                       hint: t('devise.registrations.edit.leave_blank_if_you_don_t_want_to_change_it'),
                       required: false,
                       input_html: { autocomplete: "new-password" }
           = f.input :password_confirmation,
+                      label: t('simple_form.labels.user.new_password_confirmation'),
                       required: false,
+                      hint: t('devise.registrations.edit.leave_blank_if_you_don_t_want_to_change_it'),
                       input_html: { autocomplete: "new-password" }
-          = f.input :current_password,
-                      hint: t('devise.registrations.edit.we_need_your_current_password_to_confirm_your_changes'),
-                      required: true,
-                      input_html: { autocomplete: "current-password" }
 
         .form-actions
           .cta= f.button :submit, t('devise.actions.edit'), class: 'btn btn-primary'

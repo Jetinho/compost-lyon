@@ -1,6 +1,16 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
   # Settings specified here will take precedence over those in config/application.rb.
+
+  config.action_mailer.default_url_options = { host: "http://compost-lyon.fr" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'ssl0.ovh.net',
+    port:                 587,
+    domain:               'compost-lyon.fr',
+    user_name:            'julien@compost-lyon.fr',
+    password:             Rails.application.credentials.dig(:emailing, Rails.env.to_sym, :julien, :password),
+    authentication:       'plain',
+    enable_starttls_auto: true }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
