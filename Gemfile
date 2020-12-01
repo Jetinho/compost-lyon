@@ -75,6 +75,9 @@ gem 'draper'
 # Authorizations
 gem 'cancancan'
 
+# Emailing
+gem "letter_opener", :group => :development
+
 # SEO related
 gem 'friendly_id'
 gem 'sitemap_generator'

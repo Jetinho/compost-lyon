@@ -14,7 +14,9 @@ fr:
     labels:
       user:
         password: 'Mot de passe'
+        new_password: 'Nouveau mot de passe'
         password_confirmation: 'Confirmer le mot de passe'
+        new_password_confirmation: 'Confirmer le nouveau mot de passe'
         remember_me: 'Se souvenir de moi'
       organisation:
         name: 'Nom'

@@ -6,4 +6,12 @@ class User < ApplicationRecord
 
   has_one :organisation, foreign_key: "user_id", class_name: 'CollectiveComposting::Organisation'
   has_many :sites, through: :organisations
+
+  def name
+    firstname.presence || lastname.presence || email
+  end
+
+  def full_name
+    name = [firstname, lastname].join(' ')
+  end
 end
