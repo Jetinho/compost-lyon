@@ -29,6 +29,7 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 require("packs/google_analytics.js.erb")
+require("packs/ga4_google_analytics.js.erb")
 
 // document.addEventListener('turbolinks:load', () => {
 //   // Call your functions here, e.g:
