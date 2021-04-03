@@ -6,11 +6,12 @@ class Site < ApplicationRecord
   validates :slug, presence: true
 
   friendly_id :formatted_name, use: :slugged
+  before_validation :set_formatted_name, if: Proc.new { |site| site.name_changed? }
   before_validation :set_slug
-  after_validation :set_formatted_name, if: Proc.new { |site| site.name_changed? }
   after_validation :geocode, if: Proc.new { |site| !site.geocoded? || site.address_changed? || site.zipcode_changed? }
   scope :public_sites, -> { where(public: true) }
   scope :condominium, -> { where(site_type: "Pied d'immeuble") }
+  scope :metropole_funding, -> { where(metropole_funding: true) }
 
   delegate :admin, :admin_id, to: :organisation
 
@@ -59,12 +60,10 @@ class Site < ApplicationRecord
   private
 
   def set_slug
-    self.slug = name.parameterize
+    self.slug = SiteNameFormatter.format_slug(formatted_name, :formatted_name)
   end
 
   def set_formatted_name
-    format_name = name.gsub(/compost?(\w)+/i, 'Composteur')
-    format_name.prepend('Composteur ') unless format_name.split.first == 'Composteur'
-    self.formatted_name = format_name
+    self.formatted_name = SiteNameFormatter.format(name)
   end
 end
