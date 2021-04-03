@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get 'composteurs-de-copropriete/', to: redirect('/composteurs-collectifs-de-copropriete')
   get 'acteurs/', to: redirect('/compostage-collectif/acteurs')
 
+  # site specific redirections
+  get 'composteurs-collectifs-de-quartier/les-coccinelles-de-sans-souci',
+    to: redirect('/composteurs-collectifs-de-quartier/composteur-les-coccinelles-de-sans-souci')
+
   get page_path_name(:about), to: 'pages#about', as: 'about'
   get page_path_name(:collective_composting), to: 'pages#collective_composting', as: 'collective_composting'
   match "/404", to: "errors#not_found", via: :all
