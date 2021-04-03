@@ -69,6 +69,10 @@ gem "slim-rails"
 gem 'geocoder'
 gem 'rails-i18n'
 
+# Error management
+gem "sentry-ruby"
+gem "sentry-rails"
+
 # Decorate model for display
 gem 'draper'
 
