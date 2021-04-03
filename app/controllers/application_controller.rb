@@ -17,4 +17,21 @@ class ApplicationController < ActionController::Base
       format.js   { head :forbidden, content_type: 'text/html' }
     end
   end
+
+
+  rescue_from Exception, :with => :internal_server_error unless Rails.env.development?
+  rescue_from ActiveRecord::RecordNotFound, :with => :not_found unless Rails.env.development?
+
+  private
+
+  def not_found(exception)
+    ExceptionLogger.send(exception, params: params, referrer: request.referrer)
+    render 'errors/not_found', status: 404
+  end
+
+  def internal_server_error(exception)
+    ExceptionLogger.send(exception)
+    render 'errors/internal_server_error', status: 500
+  end
+
 end
