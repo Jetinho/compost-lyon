@@ -60,12 +60,10 @@ class Site < ApplicationRecord
   private
 
   def set_slug
-    self.slug = formatted_name.parameterize
+    self.slug = SiteNameFormatter.format_slug(formatted_name, :formatted_name)
   end
 
   def set_formatted_name
-    format_name = name.gsub(/compost?(\w)+/i, 'Composteur')
-    format_name.prepend('Composteur ') unless format_name.split.first == 'Composteur'
-    self.formatted_name = format_name
+    self.formatted_name = SiteNameFormatter.format(name)
   end
 end
