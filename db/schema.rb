@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_15_210731) do
+ActiveRecord::Schema.define(version: 2021_02_06_204327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,6 +72,9 @@ ActiveRecord::Schema.define(version: 2020_11_15_210731) do
     t.string "slug"
     t.string "formatted_name"
     t.boolean "metropole_funding"
+    t.integer "gid"
+    t.text "json_api_data"
+    t.datetime "api_updated_at"
     t.index ["organisation_id"], name: "index_sites_on_organisation_id"
     t.index ["slug"], name: "index_sites_on_slug", unique: true
   end
