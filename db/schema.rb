@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2021_02_06_204327) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
     t.text "description"
-    t.bigint "user_id", default: 3, null: false
+    t.bigint "user_id", default: 1, null: false
     t.string "contact_email"
     t.index ["user_id"], name: "index_organisations_on_user_id"
   end
