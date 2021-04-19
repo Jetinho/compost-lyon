@@ -1,5 +1,6 @@
 include ApplicationHelper
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'pages#home'
   get 'composteurs-collectifs/', to: redirect('/composteurs-collectifs-de-quartier')
   get 'composteurs-collectifs/:site_name', to: redirect('/composteurs-collectifs-de-quartier/%{site_name}')

@@ -86,3 +86,6 @@ gem "letter_opener", :group => :development
 gem 'friendly_id'
 gem 'sitemap_generator'
 gem "breadcrumbs_on_rails"
+
+# Rails admin
+gem 'rails_admin', '~> 2.0'
