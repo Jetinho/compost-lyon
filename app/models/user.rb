@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :organisation, foreign_key: "user_id", class_name: 'CollectiveComposting::Organisation'
-  has_many :sites, through: :organisations
+  has_many :sites, through: :organisation
 
   def name
     firstname.presence || lastname.presence || email
