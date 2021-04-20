@@ -89,3 +89,4 @@ gem "breadcrumbs_on_rails"
 
 # Rails admin
 gem 'rails_admin', '~> 2.0'
+gem 'rails_admin-i18n'
