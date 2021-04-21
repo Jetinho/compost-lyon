@@ -7,10 +7,10 @@ jobs:
     workspace: ~/compost-lyon
     docker:
       - image: circleci/ruby:2.6.3-node-browsers
-      environment:
-        PGHOST: localhost
-        PGUSER: CompostLyon
-        RAILS_ENV: test
+        environment:
+          PGHOST: localhost
+          PGUSER: CompostLyon
+          RAILS_ENV: test
       - image: postgres:9.5
         environment:
           POSTGRES_USER: CompostLyon
