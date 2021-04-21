@@ -39,3 +39,4 @@
 = render 'shared/leaflet_sites_map',
   mapbox_api_token: Rails.application.credentials.mapbox[Rails.env.to_sym][:access_token],
   markers_data: raw(@site_markers_data)
+= render 'shared/footer'
