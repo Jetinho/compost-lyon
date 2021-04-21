@@ -1,3 +1,6 @@
+# Documentation here https://circleci.com/developer/orbs/orb/later/ruby-rails-setup
+# Following tutorial https://thoughtbot.com/blog/circleci-2-rails
+
 version: 2.1
 orbs:
   ruby-rails-setup: later/ruby-rails-setup@0.0.3
