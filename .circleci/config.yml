@@ -4,7 +4,7 @@ orbs:
 
 jobs:
   build:
-    workspace: ~/compost-lyon
+    working_directory: ~/compost-lyon
     docker:
       - image: circleci/ruby:2.6.3-node-browsers
         environment:
