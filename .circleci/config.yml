@@ -1,0 +1,51 @@
+version: 2.1
+orbs:
+  ruby-rails-setup: later/ruby-rails-setup@0.0.3
+
+jobs:
+  build:
+    workspace: ~/compost-lyon
+    docker:
+      - image: circleci/ruby:2.6.3-node-browsers
+      environment:
+        PGHOST: localhost
+        PGUSER: CompostLyon
+        RAILS_ENV: test
+      - image: postgres:9.5
+        environment:
+          POSTGRES_USER: CompostLyon
+          POSTGRES_DB: CompostLyon_test
+          POSTGRES_PASSWORD: ""
+    executor: ruby/default
+    steps:
+      - checkout
+
+      # Restore Cached Dependencies
+      - type: cache-restore
+        name: Restore bundle cache
+        key: compost-lyon-{{ checksum "Gemfile.lock" }}
+
+      # Bundle install dependencies
+      - run: bundle install --path vendor/bundle
+
+      # Cache Dependencies
+      - type: cache-save
+        name: Store bundle cache
+        key: compost-lyon-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
+      # Wait for DB
+      - run: dockerize -wait tcp://localhost:5432 -timeout 1m
+
+      # Setup the environment
+      - run: cp .sample.env .env
+
+      # Setup the database
+      - run: bundle exec rake db:setup
+
+      # --- RSPEC
+
+      - run:
+          name: Running tests
+          command: bundle exec rspec
