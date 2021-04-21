@@ -17,7 +17,11 @@ javascript:
     if (site.latitude == null) {
       return;
     }
-    var marker = L.marker([site.latitude, site.longitude]).addTo(mymap);
+    var composterIcon = L.icon({
+      iconUrl: site.public ? '/assets/public_composter_marker.png' : '/assets/private_composter_marker.png',
+      iconSize: [24, 24],
+    });
+    var marker = L.marker([site.latitude, site.longitude], {icon: composterIcon}).addTo(mymap);
     var text = site.map_marker_display;
     marker.bindPopup(text);
   });
