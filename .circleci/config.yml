@@ -20,20 +20,8 @@ jobs:
     steps:
       - checkout
 
-      # Restore Cached Dependencies
-      - restore_cache:
-        name: Restore bundle cache
-        key: compost-lyon-{{ checksum "Gemfile.lock" }}
-
       # Bundle install dependencies
-      - run: bundle install --path vendor/bundle
-
-      # Cache Dependencies
-      - save_cache:
-        name: Store bundle cache
-        key: compost-lyon-{{ checksum "Gemfile.lock" }}
-        paths:
-          - vendor/bundle
+      - run: bundle install
 
       # Wait for DB
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
