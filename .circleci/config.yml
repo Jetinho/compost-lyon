@@ -19,7 +19,7 @@ jobs:
         environment:
           POSTGRES_USER: CompostLyon
           POSTGRES_DB: CompostLyon_test
-          POSTGRES_PASSWORD: ""
+          POSTGRES_PASSWORD: <%= ENV['COMPOSTLYON_DATABASE_PASSWORD'] %>
     executor: ruby/default
     steps:
       - checkout
