@@ -16,6 +16,7 @@ jobs:
           PGUSER: CompostLyon
           RAILS_ENV: test
           RACK_ENV: test
+          NODE_ENV: test
       - image: postgres:9.5
         environment:
           POSTGRES_USER: CompostLyon
@@ -33,7 +34,13 @@ jobs:
       
       # Bundle install dependencies
       - run: bundle install
-
+      - run: yarn install
+      - run: bin/rails webpacker:compile
+      - save_cache:
+          key: v1-bundle-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+          paths:
+            - vendor/bundle
+            - public/packs-test
       # Setup the database
       - run: bundle exec rake db:drop RAILS_ENV=test
       - run: bundle exec rake db:create RAILS_ENV=test
