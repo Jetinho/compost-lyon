@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'Visitor visits' do
-  scenario 'home age' do
+  scenario 'home page' do
     visit root_path
     expect(page).to have_title('Compost Lyon - tout sur le compost à Lyon')
   end
