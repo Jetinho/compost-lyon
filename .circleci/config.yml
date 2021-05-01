@@ -15,6 +15,7 @@ jobs:
           PGHOST: localhost
           PGUSER: CompostLyon
           RAILS_ENV: test
+          RACK_ENV: test
       - image: postgres:9.5
         environment:
           POSTGRES_USER: CompostLyon
@@ -32,12 +33,6 @@ jobs:
       
       # Bundle install dependencies
       - run: bundle install
-
-      # Wait for DB
-      - run: dockerize -wait tcp://localhost:5432 -timeout 1m
-
-      # Setup the environment
-      - run: cp .sample.env .env
 
       # Setup the database
       - run: bundle exec rake db:setup
