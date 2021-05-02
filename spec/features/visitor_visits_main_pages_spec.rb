@@ -3,8 +3,6 @@ require 'rails_helper'
 feature 'Visitor visits' do
   scenario 'home page' do
     visit root_path
-    puts "-------------CREDENTIAL MB--------------"
-    puts Rails.application.credentials.mapbox[:access_token]
     expect(page).to have_title('Compost Lyon - tout sur le compost à Lyon')
   end
   scenario 'about page' do
