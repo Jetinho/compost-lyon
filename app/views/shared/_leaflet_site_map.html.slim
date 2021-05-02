@@ -18,7 +18,7 @@ javascript:
       return;
     }
     var composterIcon = L.icon({
-      iconUrl: site.public ? '/assets/public_composter_marker.png' : '/assets/private_composter_marker.png',
+      iconUrl: site.icon,
       iconSize: [24, 24],
     });
     var marker = L.marker([site.latitude, site.longitude], {icon: composterIcon}).addTo(mymap);
