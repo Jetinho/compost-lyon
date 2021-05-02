@@ -15,7 +15,7 @@ class SiteDecorator < ApplicationDecorator
 
   def icon
     asset_name = self.public ? 'public_composter_marker.png' : 'private_composter_marker.png'
-    image_tag(asset_name)
+    image_path(asset_name)
   end
 
   def map_marker_display
