@@ -5,8 +5,6 @@ feature 'Visitor visits' do
     visit root_path
     puts "-------------CREDENTIAL MB--------------"
     puts Rails.application.credentials.mapbox[:access_token]
-    puts "-------------page--------------"
-    puts page
     expect(page).to have_title('Compost Lyon - tout sur le compost à Lyon')
   end
   scenario 'about page' do
