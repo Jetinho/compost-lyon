@@ -1,6 +1,6 @@
 javascript:
   var mymap = L.map('map').setView(#{center_view_on}, 20);
-  var accessToken = '#{api_token}';
+  var accessToken = '#{mapbox_api_token}';
 
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -18,9 +18,10 @@ javascript:
       return;
     }
     var composterIcon = L.icon({
-      iconUrl: site.icon,
+      iconUrl: site.icon_url,
       iconSize: [24, 24],
     });
+    console.log(composterIcon)
     var marker = L.marker([site.latitude, site.longitude], {icon: composterIcon}).addTo(mymap);
     var text = site.map_marker_display;
     marker.bindPopup(text);

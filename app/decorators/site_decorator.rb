@@ -13,8 +13,8 @@ class SiteDecorator < ApplicationDecorator
     condominium_site? ? edit_condominium_site_path(site) : edit_site_path(site)
   end
 
-  def icon
-    asset_name = self.public ? 'public_composter_marker.png' : 'private_composter_marker.png'
+  def icon_url
+    asset_name = self.public? ? 'public_composter_marker.png' : 'private_composter_marker.png'
     image_path(asset_name)
   end
 
