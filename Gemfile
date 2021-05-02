@@ -69,6 +69,9 @@ gem "slim-rails"
 gem 'geocoder'
 gem 'rails-i18n'
 
+# Fix issue in precompiling assets due to sassc-rails
+gem 'sprockets', '3.7.2'
+
 # Error management
 gem "sentry-ruby"
 gem "sentry-rails"
