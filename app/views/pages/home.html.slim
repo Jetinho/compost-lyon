@@ -54,7 +54,7 @@
         h4 Compostage de quartier
         p
           | Source de rencontres, d'échanges de bonnes pratiques, cette forme de compostage collectif met l'accent sur l'engagement citoyen, le travail collaboratif et la vie de quartier.
-          
+
         .cta.text-center
           = link_to('Découvrir les composteurs de mon quartier', '#composteursDeQuartier', class: 'btn btn-primary')
         p
@@ -122,4 +122,6 @@
         .cta.text-center
           = link_to('Comment faire du compost', '#techniquesDeCompostage', class: 'btn btn-secondary')
 
-= render 'shared/leaflet_sites_map', markers_data: @site_markers_data
+= render 'shared/leaflet_sites_map',
+  mapbox_api_token: Rails.application.credentials.mapbox[Rails.env.to_sym][:access_token],
+  markers_data: raw(@site_markers_data)

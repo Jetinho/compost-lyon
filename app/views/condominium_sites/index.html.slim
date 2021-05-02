@@ -9,4 +9,6 @@ h1.mt-3= page_title(:condominium_sites)
 .container.mt-5
   = render partial: "sites/site", collection: @sites
 
-= render 'shared/leaflet_sites_map', markers_data: @site_markers_data
+= render 'shared/leaflet_sites_map',
+  mapbox_api_token: Rails.application.credentials.mapbox[Rails.env.to_sym][:access_token],
+  markers_data: raw(@site_markers_data)

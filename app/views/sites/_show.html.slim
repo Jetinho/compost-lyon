@@ -40,4 +40,7 @@
     .col-sm-6
       #map
 
-= render 'shared/leaflet_site_map'
+= render 'shared/leaflet_site_map',
+  mapbox_api_token: Rails.application.credentials.mapbox[Rails.env.to_sym][:access_token],
+  center_view_on: @site.to_coordinates,
+  markers_data: raw(@sites_marker_data)
