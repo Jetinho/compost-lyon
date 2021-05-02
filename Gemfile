@@ -83,7 +83,9 @@ gem 'draper'
 gem 'cancancan'
 
 # Emailing
-gem "letter_opener", :group => :development
+group :development, :staging do
+  gem "letter_opener_web"
+end
 
 # SEO related
 gem 'friendly_id'
