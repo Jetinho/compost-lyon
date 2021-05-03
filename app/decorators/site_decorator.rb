@@ -13,11 +13,6 @@ class SiteDecorator < ApplicationDecorator
     condominium_site? ? edit_condominium_site_path(site) : edit_site_path(site)
   end
 
-  def icon_url
-    asset_name = self.public? ? 'public_composter_marker.png' : 'private_composter_marker.png'
-    image_path(asset_name)
-  end
-
   def map_marker_display
     content = content_tag(:h6, content_tag(:b, name))
     content += label_and_content(label: 'Adresse', content: raw(format_address))

@@ -12,13 +12,16 @@ javascript:
   }).addTo(mymap);
 
   var data = #{markers_data};
-
+  var publicSiteIconPath = '#{image_path(MapMarkersDecorator.public_composter_marker)}';
+  var privateSiteIconPath = '#{image_path(MapMarkersDecorator.private_composter_marker)}';
+  
   data.forEach((site, i) => {
     if (site.latitude == null) {
       return;
     }
+    var siteIconPath = site.public ? publicSiteIconPath : privateSiteIconPath;
     var composterIcon = L.icon({
-      iconUrl: site.icon_url,
+      iconUrl:  siteIconPath,
       iconSize: [24, 24],
     });
     console.log(composterIcon)
