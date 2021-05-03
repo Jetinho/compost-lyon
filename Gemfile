@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '3.0.1'
 
+gem 'rexml', '~> 3.2', '>= 3.2.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
+gem 'rails', '~> 6.1', '>= 6.1.3.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -52,13 +53,17 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 5.0.0'
+  gem "factory_bot_rails"
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  gem 'minitest-around'
   gem 'database_cleaner-active_record'
 end
 
@@ -68,6 +73,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "slim-rails"
 gem 'geocoder'
 gem 'rails-i18n'
+
+# Fix issue in precompiling assets due to sassc-rails
+gem 'sprockets', '3.7.2'
 
 # Error management
 gem "sentry-ruby"
@@ -80,7 +88,9 @@ gem 'draper'
 gem 'cancancan'
 
 # Emailing
-gem "letter_opener", :group => :development
+group :development, :staging do
+  gem "letter_opener_web"
+end
 
 # SEO related
 gem 'friendly_id'

@@ -1,8 +1,11 @@
 module ApplicationHelper
+
+  # Translations in config/locales/fr.yml
   def action_path_name(action)
     I18n.t("resources.#{action}")
   end
 
+  # Translations in config/locales/pages_data/content.yml
   def page_path_name(page)
     I18n.t("pages.#{page}.path_name")
   end

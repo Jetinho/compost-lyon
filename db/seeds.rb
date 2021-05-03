@@ -9,15 +9,20 @@
 puts "Cleaning database"
 Site.destroy_all
 CollectiveComposting::Organisation.destroy_all
+puts "Creating test user"
 
+user = User.create(email: "test@mail.com", password: 'password')
 puts "Creating organisations"
+
 ORGANISATIONS = ["Eisenia", "Grand Lyon Métropole"]
-ORGANISATIONS.each do |name|
-  CollectiveComposting::Organisation.create(name: name, slug: name.parameterize)
-end
-puts "#{CollectiveComposting::Organisation.count} organisations created"
+ ORGANISATIONS.each do |name|
+  CollectiveComposting::Organisation.create(name: name, slug: name.parameterize, user_id: user.id)
+ end
+ puts "#{CollectiveComposting::Organisation.count} organisations created"
+sleep 4
 
 puts "Updating organisations"
+
 eisenia = CollectiveComposting::Organisation.find_by(slug: :eisenia)
 eisenia.update(description: "Installation et maintenance de lombricomposteurs collectifs à Lyon métropole, sensibilisation et éducation à l'écologie")
 grand_lyon_metropole = CollectiveComposting::Organisation.find_by(slug: "grand-lyon-metropole")
@@ -36,4 +41,3 @@ CollectiveComposting::Organisation.all.each_with_index do |o, i|
 end
 puts "#{Site.count} sites created"
 puts "Database ready!"
-

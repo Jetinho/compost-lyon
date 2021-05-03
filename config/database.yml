@@ -83,3 +83,9 @@ production:
   database: CompostLyon_production
   username: CompostLyon
   password: <%= ENV['COMPOSTLYON_DATABASE_PASSWORD'] %>
+
+staging:
+  <<: *default
+  database: CompostLyon_staging
+  username: CompostLyon
+  password: <%= ENV['COMPOSTLYON_DATABASE_PASSWORD'] %>
