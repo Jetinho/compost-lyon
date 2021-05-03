@@ -14,7 +14,7 @@ javascript:
   var data = #{markers_data};
   var publicSiteIconPath = '#{image_path(MapMarkersDecorator.public_composter_marker)}';
   var privateSiteIconPath = '#{image_path(MapMarkersDecorator.private_composter_marker)}';
-  
+
   data.forEach((site, i) => {
     if (site.latitude == null) {
       return;
@@ -24,7 +24,6 @@ javascript:
       iconUrl:  siteIconPath,
       iconSize: [24, 24],
     });
-    console.log(composterIcon)
     var marker = L.marker([site.latitude, site.longitude], {icon: composterIcon}).addTo(mymap);
     var text = site.map_marker_display;
     marker.bindPopup(text);
