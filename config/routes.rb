@@ -1,7 +1,7 @@
 include ApplicationHelper
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  mount LetterOpenerWeb::Engine, at: "/letter_opener" unless Rails.env.production?
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" unless Rails.env.production? || Rails.env.test?
 
   root to: 'pages#home'
   get 'composteurs-collectifs/', to: redirect('/composteurs-collectifs-de-quartier')
