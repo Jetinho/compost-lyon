@@ -167,6 +167,7 @@ GEM
       actionmailer (>= 3.2)
       letter_opener (~> 1.0)
       railties (>= 3.2)
+    libv8-node (15.14.0.1-x86_64-darwin-19)
     libv8-node (15.14.0.1-x86_64-linux)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -186,6 +187,8 @@ GEM
     multipart-post (2.1.1)
     nested_form (0.3.2)
     nio4r (2.5.7)
+    nokogiri (1.11.3-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -358,6 +361,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  x86_64-darwin-19
   x86_64-linux
 
 DEPENDENCIES
