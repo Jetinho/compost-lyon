@@ -1,6 +1,16 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "http://www.compost-lyon.fr"
-SitemapGenerator::Sitemap.create_index = true
+SitemapGenerator::Sitemap.create_index = false
+
+SitemapGenerator::Sitemap.public_path = 'tmp/sitemap'
+# Where you want your sitemap.xml.gz file to be uploaded.
+SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
+aws_access_key_id: ENV["S3_ACCESS_KEY"],
+aws_secret_access_key: ENV["S3_SECRET_KEY"],
+fog_provider: 'AWS',
+fog_directory: ENV["S3_BUCKET_NAME"],
+fog_region: ENV["S3_REGION"]
+)
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
