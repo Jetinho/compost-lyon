@@ -1,7 +1,10 @@
 class SiteNameFormatter
   def self.format(name)
-    format_name = name.gsub(/(?:le|les)?\s?compost?(\w)+/i, 'Composteur')
-    format_name.prepend('Composteur ') unless format_name.split.first == 'Composteur'
+    format_name = if name.start_with?(/(le\s|les\s)?compost?(\w)+\b/i)
+      name.gsub(/(?:le|les)?\s?compost?(\w)+/i, 'Composteur')
+    else
+      name.prepend('Composteur ')
+    end
     format_name.strip
   end
 

@@ -35,5 +35,40 @@ RSpec.describe Site, :type => :model do
         expect(site.slug).to eq("composteur-clos-de-fourviere")
       end
     end
+    describe "name is 'Le compost Masaryk '" do
+      it "slug is 'composteur-masaryk'" do
+        site = @organisation.sites.create(name: "Le compost Masaryk")
+        expect(site.formatted_name).to eq("Composteur Masaryk")
+        expect(site.slug).to eq("composteur-masaryk")
+      end
+    end
+    describe "name is 'Compost Aristide Briand Caluire'" do
+      it "slug is 'composteur-aristide-briand-caluire'" do
+        site = @organisation.sites.create(name: "Compost Aristide Briand Caluire")
+        expect(site.formatted_name).to eq("Composteur Aristide Briand Caluire")
+        expect(site.slug).to eq("composteur-aristide-briand-caluire")
+      end
+    end
+    describe "name is 'Ô Compost d'or'" do
+      it "slug is 'composteur-o-compost-d-or'" do
+        site = @organisation.sites.create(name: "Ô Compost d'or")
+        expect(site.formatted_name).to eq("Composteur Ô Compost d'or")
+        expect(site.slug).to eq("composteur-o-compost-d-or")
+      end
+    end
+    describe "name is 'La République des Composteuses'" do
+      it "slug is 'composteur-la-republique-des-composteuses'" do
+        site = @organisation.sites.create(name: "La République des Composteuses")
+        expect(site.formatted_name).to eq("Composteur La République des Composteuses")
+        expect(site.slug).to eq("composteur-la-republique-des-composteuses")
+      end
+    end
+    describe "name is 'TUBA Composte'" do
+      it "slug is 'composteur-tuba-composte'" do
+        site = @organisation.sites.create(name: "TUBA Composte")
+        expect(site.formatted_name).to eq("Composteur TUBA Composte")
+        expect(site.slug).to eq("composteur-tuba-composte")
+      end
+    end
   end
 end
