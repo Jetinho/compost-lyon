@@ -31,7 +31,7 @@ class GrandLyonSitesUpdater
 
   # Will update existing data to use JSON
   def fetch_sites_data
-    response = open(DATA_URL).read
+    response = URI.open(DATA_URL).read
     JSON.load(response)["values"]
   end
 
@@ -46,13 +46,20 @@ class GrandLyonSitesUpdater
   end
 
   def find_existing_site(site_data)
+    find_site_by_gid(site_data) || find_site_by_slug(site_data)
+  end
+
+  def find_site_by_gid(site_data)
+    gid = site_data["gid"]
+    Site.find_by_gid gid
+  end
+
+  def find_site_by_slug(site_data)
     slug = SiteNameFormatter.format_slug(site_data["nom"])
     site = Site.find_by_slug slug
-    if !site
-      slug = 'composteur-' + slug
-      site = Site.find_by_slug slug
-    end
-    site
+    return site if site
+    prefixed_slug = 'composteur-' + slug
+    site = Site.find_by_slug prefixed_slug
   end
 
   def update_site(site, site_data)
