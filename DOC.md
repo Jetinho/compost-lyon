@@ -24,6 +24,10 @@ Data to be completed with information worth sharing with people participating to
 Edit credentials :
 `EDITOR=vim rails credentials:edit`
 
+## Data source used for retrieving data
+
+[Data Grand Lyon - sites de compostage (JSON)](https://download.data.grandlyon.com/ws/grandlyon/gip_proprete.gipcomposteur_latest/all.json?maxfeatures=-1&start=1)
+
 ## Useful resources :
 
 - [Heroku for rails apps - Getting Started on Heroku with Rails 5.x](https://devcenter.heroku.com/articles/getting-started-with-rails5)
