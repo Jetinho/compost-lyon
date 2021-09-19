@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'composteurs-collectifs-de-quartier/les-coccinelles-de-sans-souci', to: redirect('/composteurs-collectifs-de-quartier/composteur-les-coccinelles-de-sans-souci')
   get 'composteurs-collectifs-de-quartier/composteur-tuba-composteur', to: redirect('/composteurs-collectifs-de-quartier/composteur-tuba-composte')
 
+  # Sitemaps
+  get '/sitemap.xml.gz', to: redirect("http://#{ENV['S3_BUCKET_NAME']}.s3.eu-west-3.amazonaws.com/sitemaps/sitemap.xml.gz")
+  get '/sitemap1.xml.gz', to: redirect("http://#{ENV['S3_BUCKET_NAME']}.s3.eu-west-3.amazonaws.com/sitemaps/sitemap1.xml.gz")
+
   get page_path_name(:about), to: 'pages#about', as: 'about'
   get page_path_name(:collective_composting), to: 'pages#collective_composting', as: 'collective_composting'
   match "/404", to: "errors#not_found", via: :all
