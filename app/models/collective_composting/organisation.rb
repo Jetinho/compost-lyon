@@ -5,8 +5,13 @@ module CollectiveComposting
     belongs_to :admin, class_name: 'User', foreign_key: :user_id
     has_many :sites
 
-    EDITABLE_PARAMS = %i(name email website_url phone_number description)
+    SUPERADMIN_EDITABLE_PARAMS = %i(name email website_url phone_number description)
+    EDITABLE_PARAMS = %i(email website_url phone_number description)
 
+    def self.superadmin_editable_params
+      SUPERADMIN_EDITABLE_PARAMS
+    end
+  
     def self.editable_params
       EDITABLE_PARAMS
     end
