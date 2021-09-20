@@ -22,10 +22,6 @@ class DistrictCompostingSitesController < SitesController
 
   private
 
-  def site_params
-    params.require(:site).permit(Site.editable_params)
-  end
-
   def add_site_breadcrumbs
     add_breadcrumb page_name(:district_composting_sites), :sites_path
     add_breadcrumb @site.organisation_name, collective_composting_organisation_path(@site.organisation)
