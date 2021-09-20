@@ -9,7 +9,7 @@
       .col-sm-6.form-group
         - unless can? :manage, @site
           = f.association :organisation, class: 'form-control', disabled: true, input_html: {value: current_user.organisation}
-        = f.input :name, class: 'form-control'
+          = f.input :name, class: 'form-control', disabled: true
         = f.input :contact_email, class: 'form-control'
         = f.input :website_url, class: 'form-control'
         = f.input :location_information, class: 'form-control'
@@ -19,6 +19,7 @@
       .col-sm-6.form-group
         - if can? :manage, @site
           = f.association :organisation, class: 'form-control'
+          = f.input :name, class: 'form-control'
           = f.input :latitude, class: 'form-control'
           = f.input :longitude, class: 'form-control'
           = f.input :slug, class: 'form-control'
