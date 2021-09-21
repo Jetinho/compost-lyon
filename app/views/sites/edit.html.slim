@@ -15,6 +15,8 @@
         = f.input :location_information, class: 'form-control'
         = f.input :operation_conditions, class: 'form-control'
         = f.input :participation_conditions, class: 'form-control', input_html: { rows: 5 }
+        = f.label :photo
+        = f.file_field :photo, direct_upload: true, class: 'form-control'
         = f.submit 'Enregistrer', class: 'btn btn-primary'
       .col-sm-6.form-group
         - if can? :manage, @site
@@ -27,3 +29,4 @@
         = f.input :zipcode, class: 'form-control'
         = f.input :site_type, collection: [["Pied d'immeuble", "Pied d'immeuble"], ['Quartier', 'Quartier'], ['Prive', 'Prive'], ['Restaurant', 'Restaurant']], class: 'form-control'
         = f.input :public, class: 'form-control'
+

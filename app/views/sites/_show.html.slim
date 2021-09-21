@@ -37,6 +37,13 @@
         label.font-weight-bold Contact
         p= mail_to(site.contact_email, site.contact_email)
 
+      dt Photo :
+      dd
+      - if site.photo.filename
+        = link_to site.photo do
+          .wrapper-image.relative.rounded-2xl.mb-6.shadow-custom-card
+          = image_tag site.photo.variant(resize: "250x250")
+
     .col-sm-6
       #map
 

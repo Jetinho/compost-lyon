@@ -103,3 +103,8 @@ gem 'rails_admin-i18n'
 
 # Storage
 gem "fog-aws"
+gem "aws-sdk-s3", require: false
+
+# Image manipulations
+gem "mini_magick"
+gem "image_processing"

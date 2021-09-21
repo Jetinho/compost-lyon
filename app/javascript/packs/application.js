@@ -31,6 +31,8 @@ import "bootstrap";
 require("packs/google_analytics.js.erb")
 require("packs/ga4_google_analytics.js.erb")
 
+require("custom/direct_upload")
+
 // document.addEventListener('turbolinks:load', () => {
 //   // Call your functions here, e.g:
 //   // initSelect2();
