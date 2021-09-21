@@ -14,6 +14,8 @@
         = f.input :location_information, class: 'form-control'
         = f.input :operation_conditions, class: 'form-control'
         = f.input :participation_conditions, class: 'form-control', input_html: { rows: 5 }
+        = f.label :photo
+        = f.file_field :photo, direct_upload: true, class: 'form-control'
         = f.submit 'Enregistrer', class: 'btn btn-primary'
       .col-sm-6.form-group
         = f.association :organisation, class: 'form-control', disabled: !super_admin, input_html: {value: current_user.organisation}

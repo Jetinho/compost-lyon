@@ -4,6 +4,7 @@ class Site < ApplicationRecord
   geocoded_by :full_address
   validates :name, presence: true
   validates :slug, presence: true
+  has_one_attached :photo
 
   friendly_id :formatted_name, use: :slugged
   before_validation :set_formatted_name, if: Proc.new { |site| site.name_changed? }
@@ -17,7 +18,7 @@ class Site < ApplicationRecord
 
   SUPERADMIN_EDITABLE_PARAMS = %i(
     name contact_email website_url location_information operation_conditions participation_conditions
-    slug latitude longitude address city zipcode public site_type organisation_id
+    latitude longitude address city zipcode public site_type organisation_id photo
   )
 
   EDITABLE_PARAMS = %i(
