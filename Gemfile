@@ -102,4 +102,4 @@ gem 'rails_admin', '~> 2.0'
 gem 'rails_admin-i18n'
 
 # Storage
-gem "fog-aws"
+gem "aws-sdk-s3", require: false
