@@ -22,7 +22,7 @@ class Site < ApplicationRecord
 
   EDITABLE_PARAMS = %i(
     contact_email website_url location_information operation_conditions participation_conditions
-    latitude longitude address city zipcode public site_type organisation_id
+    latitude longitude address city zipcode organisation_id
   )
 
   def self.superadmin_editable_params

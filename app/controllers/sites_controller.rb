@@ -52,7 +52,8 @@ class SitesController < ApplicationController
   private
 
   def site_params
-    current_user.super_admin? ? params.require(:site).permit(Site.superadmin_editable_params) : params.require(:site).permit(Site.editable_params)
+    current_user.super_admin? ? params.require(:site).permit(Site.superadmin_editable_params) :
+                                params.require(:site).permit(Site.editable_params)
   end
 
   def add_site_breadcrumbs
