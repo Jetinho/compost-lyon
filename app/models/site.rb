@@ -15,10 +15,19 @@ class Site < ApplicationRecord
 
   delegate :admin, :admin_id, to: :organisation
 
-  EDITABLE_PARAMS = %i(
+  SUPERADMIN_EDITABLE_PARAMS = %i(
     name contact_email website_url location_information operation_conditions participation_conditions
-    latitude longitude address city zipcode public site_type organisation_id
+    slug latitude longitude address city zipcode public site_type organisation_id
   )
+
+  EDITABLE_PARAMS = %i(
+    contact_email website_url location_information operation_conditions participation_conditions
+    latitude longitude address city zipcode organisation_id
+  )
+
+  def self.superadmin_editable_params
+    SUPERADMIN_EDITABLE_PARAMS
+  end
 
   def self.editable_params
     EDITABLE_PARAMS

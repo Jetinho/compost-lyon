@@ -46,7 +46,8 @@ module CollectiveComposting
     private
 
     def organisation_params
-      params.require(:collective_composting_organisation).permit(Organisation.editable_params)
+      current_user.super_admin? ? params.require(:collective_composting_organisation).permit(Organisation.superadmin_editable_params) :
+                                  params.require(:collective_composting_organisation).permit(Organisation.editable_params)
     end
 
     def add_organisation_breadcrumbs
