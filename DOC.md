@@ -30,7 +30,7 @@ Edit credentials :
 
 ## Update sitemap manually after adding resources
 
-`heroku run rake sitemap:refresh`
+`heroku run rake sitemap:refresh --app compost-lyon`
 
 ## Useful resources :
 
