@@ -28,6 +28,10 @@ Edit credentials :
 
 [Data Grand Lyon - sites de compostage (JSON)](https://download.data.grandlyon.com/ws/grandlyon/gip_proprete.gipcomposteur_latest/all.json?maxfeatures=-1&start=1)
 
+## Update sitemap manually after adding resources
+
+`heroku run rake sitemap:refresh`
+
 ## Useful resources :
 
 - [Heroku for rails apps - Getting Started on Heroku with Rails 5.x](https://devcenter.heroku.com/articles/getting-started-with-rails5)
