@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_one :organisation, foreign_key: "user_id", class_name: 'CollectiveComposting::Organisation'
+  has_one :organisation, foreign_key: "user_id"
   has_many :sites, through: :organisation
 
   def name

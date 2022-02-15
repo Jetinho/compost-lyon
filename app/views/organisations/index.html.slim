@@ -1,0 +1,14 @@
+- title = page_name(:organisations)
+- description = page_description(:organisations)
+= content_for :meta_title, title
+= content_for :meta_description, description
+
+.container
+  h1.mt-3= title
+  - if can? :create, Organisation
+    .float-right= link_to("Nouveau", new_organisation_path, class: 'btn btn-primary')
+
+  p= description
+
+.container.mt-5
+  = render partial: "organisations/organisation", collection: @organisations

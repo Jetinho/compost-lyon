@@ -22,7 +22,7 @@ feature 'Visitor visits' do
     expect(page).to have_title('Composteurs collectifs de copropriété à Lyon')
   end
   scenario 'organisations index' do
-    visit collective_composting_organisations_path
+    visit organisations_path
     expect(page).to have_title('Compostage collectif - les acteurs')
   end
 end

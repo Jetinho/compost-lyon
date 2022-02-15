@@ -36,7 +36,7 @@ class SiteDecorator < ApplicationDecorator
   end
 
   def format_organisation
-    link_to(organisation.name, collective_composting_organisation_path(organisation), target: :blank)
+    link_to(organisation.name, organisation_path(organisation), target: :blank)
   end
 
   def format_email
