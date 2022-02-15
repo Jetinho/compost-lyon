@@ -19,7 +19,7 @@ fr:
       name: 'Compostage collectif - les acteurs'
       title: 'Les acteurs du compostage collectif à Lyon'
       description: Découvrez les acteurs du compostage collectif sur la métropole de Lyon. Acteurs institutionnels, associations et entreprises travaillant sur le compostage collectif de quartier ou de copropriété.
-      path_name: 'acteurs'
+      path_name: 'compostage-collectif/acteurs'
     district_composting_sites:
       name: 'Composteurs collectifs de quartier'
       title: 'Composteurs collectifs de quartier de Lyon et des environs'

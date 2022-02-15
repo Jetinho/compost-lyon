@@ -32,9 +32,8 @@ Rails.application.routes.draw do
       sign_up: devise_path_name(:sign_up),
       password:  devise_path_name(:password)
     }
-    namespace :collective_composting, path: page_path_name(:collective_composting) do
-      resources :organisations, path: resource_path_name(:organisations), except: :destroy
-    end
+
+    resources :organisations, path: resource_path_name(:organisations), except: :destroy
     resources :condominium_sites, except: :destroy, path: resource_path_name(:condominium_sites)
     resources :sites, except: :destroy, path: resource_path_name(:district_composting_sites), controller: 'district_composting_sites' do
       collection do

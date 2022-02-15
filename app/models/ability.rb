@@ -10,8 +10,8 @@ class Ability
       can :access, :rails_admin       # only allow admin users to access Rails Admin
       can :access, :dashboard
     else
-      can :read, [CollectiveComposting::Organisation, Site]
-      can :update, CollectiveComposting::Organisation, user_id: user.id
+      can :read, [Organisation, Site]
+      can :update, Organisation, user_id: user.id
       can :update, Site, admin_id: user.id
     end
 

@@ -1,6 +1,6 @@
 class Site < ApplicationRecord
   extend FriendlyId
-  belongs_to :organisation, class_name: 'CollectiveComposting::Organisation'
+  belongs_to :organisation
   geocoded_by :full_address
   validates :name, presence: true
   validates :slug, presence: true

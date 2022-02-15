@@ -15,7 +15,7 @@ class GrandLyonSitesUpdater
  # Les Sources
   def initialize
     @update_time = Time.now
-    @grand_lyon = CollectiveComposting::Organisation.find_by_slug('grand-lyon-metropole')
+    @grand_lyon = Organisation.find_by_slug('grand-lyon-metropole')
     @existing_sites_gids = []
   end
 
