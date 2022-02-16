@@ -6,47 +6,44 @@
 
 .mt-5
 .container
-  .row
-    .col-sm-6
-      h1
-        = title
-        - if can? :update, site
-          small.ml-1
-            = link_to site.edit_composting_site_path do
-              | éditer
-              = icon('far', 'edit', class: '1x ml-1')
-
-      label.font-weight-bold Adresse
-      p
-        = site.address
-        br
-        = [site.zipcode, site.city].join(' ')
-      - if site.location_information
-        label.font-weight-bold Localisation
-        p=simple_format site.location_information
-      - if site.operation_conditions
-        label.font-weight-bold Fonctionnement
-        p=simple_format site.operation_conditions
-      - if site.participation_conditions
-        label.font-weight-bold Participation
-        p=simple_format site.participation_conditions
-      - if site.website_url
-        label.font-weight-bold Site internet
-        p= link_to(site.website_url, site.website_url)
-      - if site.contact_email
-        label.font-weight-bold Contact
-        p= mail_to(site.contact_email, site.contact_email)
-
-      - if site.photo.filename
-        dt Photo :
-        dd
-          = link_to site.photo do
-            .wrapper-image.relative.rounded-2xl.mb-6.shadow-custom-card
-            = image_tag site.photo.variant(resize: "250x250")
-
-    .col-sm-6
-      #map
-
+.col.d-flex.justify-content-center
+  .card.mb-3 style=("width: 1400px;")
+    .row.no-gutters 
+      .col-md-6 
+        - if site.photo.filename
+          dd style=("width: 100%;")
+            = link_to site.photo do
+              = image_tag site.photo, width: "100%" 
+        #map style=("width: 100%;")
+      .col-md-6
+        .card-body
+          h4.card-title
+            = title
+            - if can? :update, site
+              small.ml-1
+                = link_to site.edit_composting_site_path do
+                  | éditer
+                  = icon('far', 'edit', class: '1x ml-1')
+          label.font-weight-bold Adresse
+          p
+            = site.address
+            br
+            = [site.zipcode, site.city].join(' ')
+          - if site.location_information && !site.location_information.empty?
+            label.font-weight-bold Localisation
+            p=simple_format site.location_information
+          - if site.operation_conditions && !site.operation_conditions.empty?
+            label.font-weight-bold Fonctionnement
+            p=simple_format site.operation_conditions
+          - if site.participation_conditions && !site.participation_conditions.empty?
+            label.font-weight-bold Participation
+            p=simple_format site.participation_conditions
+          - if site.website_url && !site.website_url.empty?
+            label.font-weight-bold Site internet
+            p= link_to(site.website_url, site.website_url)
+          - if site.contact_email
+            label.font-weight-bold Contact
+            p= mail_to(site.contact_email, site.contact_email)
 = render 'shared/leaflet_site_map',
   mapbox_api_token: Rails.application.credentials.mapbox[Rails.env.to_sym][:access_token],
   center_view_on: @site.to_coordinates,
