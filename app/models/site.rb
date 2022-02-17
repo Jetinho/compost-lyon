@@ -6,27 +6,27 @@ class Site < ApplicationRecord
   validates :slug, presence: true
 
   friendly_id :formatted_name, use: :slugged
-  before_validation :set_formatted_name, if: Proc.new { |site| site.name_changed? }
+  before_validation :set_formatted_name, if: proc { |site| site.name_changed? }
   before_validation :set_slug
-  after_validation :geocode, if: Proc.new { |site| !site.geocoded? || site.address_changed? || site.zipcode_changed? }
+  after_validation :geocode, if: proc { |site| !site.geocoded? || site.address_changed? || site.zipcode_changed? }
   scope :public_sites, -> { where(public: true) }
   scope :condominium, -> { where(site_type: "Pied d'immeuble") }
   scope :metropole_funding, -> { where(metropole_funding: true) }
 
-  delegate :admin, :admin_id, to: :organisation
+  delegate :manager, :manager_id, to: :organisation
 
-  SUPERADMIN_EDITABLE_PARAMS = %i(
+  ADMIN_EDITABLE_PARAMS = %i[
     name contact_email website_url location_information operation_conditions participation_conditions
     slug latitude longitude address city zipcode public site_type organisation_id
-  )
+  ]
 
-  EDITABLE_PARAMS = %i(
+  EDITABLE_PARAMS = %i[
     contact_email website_url location_information operation_conditions participation_conditions
     latitude longitude address city zipcode organisation_id
-  )
+  ]
 
-  def self.superadmin_editable_params
-    SUPERADMIN_EDITABLE_PARAMS
+  def self.admin_editable_params
+    ADMIN_EDITABLE_PARAMS
   end
 
   def self.editable_params
@@ -39,14 +39,6 @@ class Site < ApplicationRecord
 
   def condominium_site?
     site_type == "Pied d'immeuble"
-  end
-
-  # Move to decorator
-  def description
-    preffix = "Composteur collectif #{format_site_type.downcase}"
-    content = "\'#{formatted_name }\'."
-    suffix = "Rejoignez-nous ou créez votre collectif pour composter à Lyon !"
-    [preffix, content, suffix].join(' ')
   end
 
   def format_site_type
@@ -64,7 +56,6 @@ class Site < ApplicationRecord
   def website_url
     self[:website_url].presence || organisation&.website_url.presence
   end
-  # To decorator
 
   private
 
