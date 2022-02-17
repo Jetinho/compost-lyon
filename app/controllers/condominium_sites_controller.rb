@@ -1,7 +1,7 @@
 class CondominiumSitesController < SitesController
 
   def index
-    @sites = Site.condominium.all
+    @sites = Site.condominium.all.includes(:organisation)
     @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
     add_breadcrumb page_name(:condominium_sites), :condominium_sites_path
   end
