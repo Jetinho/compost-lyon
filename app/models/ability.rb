@@ -12,7 +12,7 @@ class Ability
     else
       can :read, [Organisation, Site]
       can :update, Organisation, user_id: user.id
-      can :update, Site, admin_id: user.id
+      can :update, Site, manager_id: user.id
     end
 
     def can? action, subject, *extra_args
