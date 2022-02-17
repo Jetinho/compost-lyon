@@ -37,7 +37,7 @@ class OrganisationsController < ApplicationController
   end
 
   def index
-    @organisations = Organisation.all
+    @organisations = Organisation.all.includes(:sites_basic_data)
     add_breadcrumb page_name(:collective_composting), :collective_composting_path
     add_breadcrumb page_name(:organisations), :organisations_path
   end

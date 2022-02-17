@@ -3,9 +3,10 @@ class Organisation < ApplicationRecord
   friendly_id :name, use: :slugged
   belongs_to :admin, class_name: 'User', foreign_key: :user_id
   has_many :sites
+  has_many :sites_basic_data, -> { select(:id, :name, :organisation_id) }, class_name: 'Site'
 
-  SUPERADMIN_EDITABLE_PARAMS = %i(name email website_url phone_number description)
-  EDITABLE_PARAMS = %i(email website_url phone_number description)
+  SUPERADMIN_EDITABLE_PARAMS = %i[name email website_url phone_number description]
+  EDITABLE_PARAMS = %i[email website_url phone_number description]
 
   def self.superadmin_editable_params
     SUPERADMIN_EDITABLE_PARAMS
@@ -28,6 +29,6 @@ class Organisation < ApplicationRecord
   end
 
   def nb_sites
-    sites.count
+    sites_basic_data.size
   end
 end

@@ -2,7 +2,7 @@ class DistrictCompostingSitesController < SitesController
   skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
 
   def index
-    @sites = Site.public_sites.all
+    @sites = Site.public_sites.all.includes(:organisation)
     @site_markers_data = SiteDecorator.decorate_collection(@sites).to_map_marker_json
     add_breadcrumb page_name(:district_composting_sites), :sites_path
   end

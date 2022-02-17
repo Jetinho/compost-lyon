@@ -1,7 +1,8 @@
 class SitesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :show, :index, :search ]
-  load_resource instance_name: :site, find_by: :slug, only: [ :show, :new, :edit, :create, :update ], class: Site, param_method: :site_params
-  authorize_resource instance_name: :site, find_by: :slug, only: [ :new, :edit, :create, :update ], class: Site
+  skip_before_action :authenticate_user!, only: %i[show index search]
+  load_resource instance_name: :site, find_by: :slug, only: %i[show new edit create update],
+                class: Site, param_method: :site_params
+  authorize_resource instance_name: :site, find_by: :slug, only: %i[new edit create update], class: Site
   add_breadcrumb page_name(:home), :root_path
   add_breadcrumb page_name(:collective_composting), :collective_composting_path
 
@@ -39,8 +40,9 @@ class SitesController < ApplicationController
   private
 
   def site_params
-    current_user.super_admin? ? params.require(:site).permit(Site.superadmin_editable_params) :
-                                params.require(:site).permit(Site.editable_params)
+    return params.require(:site).permit(Site.superadmin_editable_params) if current_user.super_admin?
+
+    params.require(:site).permit(Site.editable_params)
   end
 
   def address
@@ -56,6 +58,6 @@ class SitesController < ApplicationController
   end
 
   def geocoding_results
-    Geocoder.search(address).select{|r| r.data['address']['country_code'] == 'fr'}
+    Geocoder.search(address).select { |r| r.data['address']['country_code'] == 'fr' }
   end
 end
