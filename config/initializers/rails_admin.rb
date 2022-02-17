@@ -15,7 +15,7 @@ RailsAdmin.config do |config|
   ## == CancanCan ==
   config.authorize_with :cancancan
   config.authorize_with do
-    unless current_user.super_admin?
+    unless current_user.admin?
       flash[:alert] = 'Sorry, no admin access for you.'
       redirect_to main_app.root_path
     end

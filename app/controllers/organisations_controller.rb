@@ -1,6 +1,6 @@
 class OrganisationsController < ApplicationController
   load_and_authorize_resource find_by: :slug
-  skip_before_action :authenticate_user!, only: [ :show, :index ]
+  skip_before_action :authenticate_user!, only: %i[show index]
   add_breadcrumb page_name(:home), :root_path
 
   def show
@@ -14,12 +14,12 @@ class OrganisationsController < ApplicationController
   end
 
   def create
-     if @organisation.save
-       redirect_to organisation_path(@organisation)
-     else
-       render :new, alert: 'Erreur de création'
-     end
-     authorize! :create, @organisation
+    authorize! :create, @organisation
+    if @organisation.save
+      redirect_to organisation_path(@organisation)
+    else
+      render :new, alert: 'Erreur de création'
+    end
   end
 
   def edit
@@ -45,8 +45,9 @@ class OrganisationsController < ApplicationController
   private
 
   def organisation_params
-    current_user.super_admin? ? params.require(:organisation).permit(Organisation.superadmin_editable_params) :
-                                params.require(:organisation).permit(Organisation.editable_params)
+    return params.require(:organisation).permit(Organisation.admin_editable_params) if current_user.admin?
+
+    params.require(:organisation).permit(Organisation.editable_params)
   end
 
   def add_organisation_breadcrumbs

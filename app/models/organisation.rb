@@ -1,22 +1,22 @@
 class Organisation < ApplicationRecord
   extend FriendlyId
   friendly_id :name, use: :slugged
-  belongs_to :admin, class_name: 'User', foreign_key: :user_id
+  belongs_to :manager, class_name: 'User', foreign_key: :user_id
   has_many :sites
   has_many :sites_basic_data, -> { select(:id, :name, :organisation_id) }, class_name: 'Site'
 
-  SUPERADMIN_EDITABLE_PARAMS = %i[name email website_url phone_number description]
+  ADMIN_EDITABLE_PARAMS = %i[name email website_url phone_number description]
   EDITABLE_PARAMS = %i[email website_url phone_number description]
 
-  def self.superadmin_editable_params
-    SUPERADMIN_EDITABLE_PARAMS
+  def self.admin_editable_params
+    ADMIN_EDITABLE_PARAMS
   end
 
   def self.editable_params
     EDITABLE_PARAMS
   end
 
-  def admin_id
+  def manager_id
     user_id
   end
 
