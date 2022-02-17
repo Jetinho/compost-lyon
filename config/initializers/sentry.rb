@@ -6,12 +6,8 @@ Sentry.init do |config|
   # of transactions for performance monitoring.
   # We recommend adjusting this value in production
   if Rails.env.production?
-    config.traces_sample_rate = 0.5
+    config.traces_sample_rate = 0.2
   else
     config.traces_sample_rate = 0
-  end 
-  # or
-  config.traces_sampler = lambda do |context|
-    Rails.env.production? ? true : false
   end
 end
