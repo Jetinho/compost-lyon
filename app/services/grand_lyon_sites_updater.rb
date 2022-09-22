@@ -88,7 +88,7 @@ class GrandLyonSitesUpdater
       zipcode: site_data["address"]["postalCode"],
       city: site_data["address"]["addressLocality"],
       site_type: site_data["typesite"],
-      installation_date: site_data["dateinstal"].to_date,
+      installation_date: site_data["dateinstal"].presence&.to_date,
       public: (site_data["typesite"].strip == 'Quartier'),
       contact_email: site_data["mail"],
       json_api_data: site_data.to_json,
