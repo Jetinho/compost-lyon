@@ -40,7 +40,7 @@ class SitesController < ApplicationController
   private
 
   def site_params
-    return params.require(:site).permit(Site.superadmin_editable_params) if current_user.admin?
+    return params.require(:site).permit(Site.admin_editable_params) if current_user.admin?
 
     params.require(:site).permit(Site.editable_params)
   end
