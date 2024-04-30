@@ -10,7 +10,7 @@ jobs:
   build:
     working_directory: ~/compost-lyon
     docker:
-      - image: circleci/ruby:3.0.1-buster-node-browsers-legacy
+      - image: circleci/ruby:3.2.4-browsers
         environment:
           PGHOST: localhost
           PGUSER: CompostLyon
